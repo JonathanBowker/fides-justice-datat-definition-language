@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#getting-started-with-justice-common-schema" class="md-skip">
+        <a href="#getting-started-with-justice-definition-language-jdl" class="md-skip">
           Skip to content
         </a>
       
@@ -297,9 +297,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
+  <a href="#requirements" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisites
+      Requirements
     </span>
   </a>
   
@@ -312,20 +312,23 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#3-schema-overview-schemaoverviewmd" class="md-nav__link">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-considerations" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Schema Overview (schema/overview.md)
+      Additional Considerations
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#schema-overview-schemaoverviewmd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schema Overview (schema/overview.md)
+    </span>
+  </a>
   
 </li>
       
@@ -910,9 +913,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
+  <a href="#requirements" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisites
+      Requirements
     </span>
   </a>
   
@@ -925,20 +928,23 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#3-schema-overview-schemaoverviewmd" class="md-nav__link">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-considerations" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Schema Overview (schema/overview.md)
+      Additional Considerations
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#schema-overview-schemaoverviewmd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schema Overview (schema/overview.md)
+    </span>
+  </a>
   
 </li>
       
@@ -960,35 +966,49 @@
   
 
 
-<h1 id="getting-started-with-justice-common-schema">Getting Started with Justice Common Schema</h1>
-<p>This guide walks you through the implementation of JCS for your criminal trial case management system.</p>
-<h2 id="prerequisites">Prerequisites</h2>
+<h1 id="getting-started-with-justice-definition-language-jdl">Getting Started with Justice Definition Language (JDL)</h1>
+<p>This guide provides a comprehensive walkthrough for implementing JDL within your criminal trial case management system.</p>
+<h2 id="requirements">Requirements</h2>
 <ul>
-<li>Basic knowledge of MongoDB or Elasticsearch.</li>
-<li>Familiarity with JSON or YAML for data structuring.</li>
-<li>Access to a suitable database environment.</li>
+<li>Basic understanding of MongoDB or Elasticsearch.</li>
+<li>Knowledge of JSON or YAML for structuring data.</li>
+<li>Access to an appropriate database environment.</li>
 </ul>
 <h2 id="installation">Installation</h2>
 <ol>
-<li>Clone the JCS repository:
-   ```bash
-   git clone https://github.com/your-username/justice-common-schema.git</li>
+<li>
+<p>Clone the JDL repository:
+   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/your-username/justice-definition-language.git
+</code></pre></div></p>
+</li>
+<li>
+<p>Navigate to the project directory:
+   <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>justice-definition-language
+</code></pre></div></p>
+</li>
+<li>
+<p>Follow any additional setup instructions in the repository’s README file to install dependencies and set up your environment.</p>
+</li>
 </ol>
-<p><strong>Additional Points:</strong>
-- Add a section on integrating JCS with existing databases and applications.
-- Include sample code snippets for setting up the schema in different environments.</p>
-<h4 id="3-schema-overview-schemaoverviewmd">3. Schema Overview (schema/overview.md)</h4>
-<p><strong>Content Example:</strong>
-```markdown</p>
-<h1 id="schema-overview">Schema Overview</h1>
-<p>JCS is divided into several core components that correspond to different aspects of criminal trial cases. The schema includes:</p>
+<h2 id="additional-considerations">Additional Considerations</h2>
 <ul>
-<li><strong>Case Information</strong>: Fields related to the case ID, type, jurisdiction, and status.</li>
-<li><strong>Participant Information</strong>: Information on the individuals involved in the trial, such as defendants, judges, and lawyers.</li>
-<li><strong>Evidence Metadata</strong>: Details about different types of evidence (physical, digital, testimonial).</li>
-<li><strong>Court Proceedings</strong>: Data on hearings, motions, court orders, and verdicts.</li>
+<li>Integrate JDL with existing databases and applications using the provided guidelines and integration examples.</li>
+<li>Explore sample code snippets demonstrating how to set up the schema in various environments (e.g., MongoDB, Elasticsearch).</li>
 </ul>
-<p>Each section is designed to ensure that data is captured comprehensively and is compatible across systems.</p>
+<h2 id="schema-overview-schemaoverviewmd">Schema Overview (schema/overview.md)</h2>
+<p><strong>Example Content:</strong>
+<div class="highlight"><pre><span></span><code><span class="gh"># Schema Overview</span>
+
+The Justice Definition Language (JDL) schema is organized into several key components, each representing a distinct aspect of criminal trial cases. The schema includes:
+
+<span class="k">-</span><span class="w"> </span><span class="gs">**Case Details**</span>: Information related to the case, such as the case ID, type, jurisdiction, and current status.
+<span class="k">-</span><span class="w"> </span><span class="gs">**Participants**</span>: Data on individuals involved in the trial, including defendants, judges, attorneys, and witnesses.
+<span class="k">-</span><span class="w"> </span><span class="gs">**Evidence Details**</span>: Metadata covering different types of evidence, including physical, digital, and testimonial, along with information on the chain of custody.
+<span class="k">-</span><span class="w"> </span><span class="gs">**Court Proceedings**</span>: Information on court events such as hearings, motions, court orders, and verdicts.
+
+Each component is designed to ensure comprehensive data capture, facilitating interoperability and consistency across various justice systems.
+</code></pre></div></p>
+<p>By following this guide, you will gain a foundational understanding of how to implement and integrate JDL effectively into your criminal trial case management system.</p>
 
 
 
