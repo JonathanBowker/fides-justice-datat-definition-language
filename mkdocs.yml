@@ -5,6 +5,7 @@ site_description: A comprehensive definition language for managing justice-relat
 site_author: Jonathan Bowker
 site_url: https://jonathanbowker.github.io/justice-definition-language
 repo_url: https://github.com/JonathanBowker/judicial-electronic-data-interchange
+
 repo_name: GitHub
 theme:
   name: material
