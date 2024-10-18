@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="getting-started/">
       
-      
-        <link rel="next" href="references/data-standards/">
+        <link rel="next" href="getting-started/">
       
       
       <link rel="icon" href="assets/images/favicon.png">
@@ -20,11 +18,14 @@
     
     
       
-        <title>Justice Common Schema</title>
+        <title>Justice Definition Language</title>
       
     
     
       <link rel="stylesheet" href="assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -43,6 +44,8 @@
       
     
     
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -53,7 +56,12 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -62,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#what-is-jcs" class="md-skip">
+        <a href="#what-is-justice-definition-languege" class="md-skip">
           Skip to content
         </a>
       
@@ -78,7 +86,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Justice Common Schema" class="md-header__button md-logo" aria-label="Justice Common Schema" data-md-component="logo">
+    <a href="." title="Justice Definition Language" class="md-header__button md-logo" aria-label="Justice Definition Language" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -92,21 +100,21 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Justice Common Schema
+            Justice Definition Language
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Index
+              Introduction
             
           </span>
         </div>
       </div>
     </div>
     
+      
     
-      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -173,56 +181,16 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Justice Common Schema" class="md-nav__button md-logo" aria-label="Justice Common Schema" data-md-component="logo">
+    <a href="." title="Justice Definition Language" class="md-nav__button md-logo" aria-label="Justice Definition Language" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Justice Common Schema
+    Justice Definition Language
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="guidelines/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Guidelines
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="getting-started/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Getting Started
-  </span>
-  
-
-      </a>
-    </li>
-  
-
     
       
       
@@ -242,7 +210,7 @@
           
   
   <span class="md-ellipsis">
-    Index
+    Introduction
   </span>
   
 
@@ -253,7 +221,7 @@
         
   
   <span class="md-ellipsis">
-    Index
+    Introduction
   </span>
   
 
@@ -273,18 +241,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-jcs" class="md-nav__link">
+  <a href="#what-is-justice-definition-languege" class="md-nav__link">
     <span class="md-ellipsis">
-      What is JCS?
+      What is Justice Definition Languege?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#purpose-of-jcs" class="md-nav__link">
+  <a href="#purpose-of-jdl" class="md-nav__link">
     <span class="md-ellipsis">
-      Purpose of JCS
+      Purpose of JDL
     </span>
   </a>
   
@@ -300,18 +268,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#new-to-jcs" class="md-nav__link">
+  <a href="#new-to-jdl" class="md-nav__link">
     <span class="md-ellipsis">
-      New to JCS?
+      New to JDL?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#my-data-doesnt-map-with-jcs" class="md-nav__link">
+  <a href="#my-data-doesnt-map-with-jdl" class="md-nav__link">
     <span class="md-ellipsis">
-      My Data Doesn’t Map with JCS
+      My Data Doesn’t Map with JDL
     </span>
   </a>
   
@@ -340,6 +308,26 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     
     
     
@@ -348,10 +336,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -362,8 +350,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             References
           </label>
@@ -432,10 +420,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -446,8 +434,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Schema
           </label>
@@ -506,7 +494,7 @@
         
   
   <span class="md-ellipsis">
-    Victim_Support
+    Victim Support
   </span>
   
 
@@ -548,7 +536,7 @@
         
   
   <span class="md-ellipsis">
-    Probation_Parole
+    Probation Parole
   </span>
   
 
@@ -674,7 +662,7 @@
         
   
   <span class="md-ellipsis">
-    Judicial_Procedures
+    Judicial Procedures
   </span>
   
 
@@ -695,7 +683,91 @@
         
   
   <span class="md-ellipsis">
-    Bail_Detention
+    Bail Detention
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Guidelines
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Guidelines
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="guidelines/integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="guidelines/usage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Usage
   </span>
   
 
@@ -733,7 +805,7 @@
             
   
   <span class="md-ellipsis">
-    Guides
+    Examples
   </span>
   
 
@@ -742,90 +814,6 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            Guides
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="guides/integration/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Integration
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="guides/usage/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Usage
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
-        
-          
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Examples
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Examples
           </label>
@@ -838,7 +826,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guides/examples/yaml-examples/" class="md-nav__link">
+      <a href="guidelines/examples/yaml-examples/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -859,7 +847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guides/examples/json-examples/" class="md-nav__link">
+      <a href="guidelines/examples/json-examples/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -905,18 +893,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-jcs" class="md-nav__link">
+  <a href="#what-is-justice-definition-languege" class="md-nav__link">
     <span class="md-ellipsis">
-      What is JCS?
+      What is Justice Definition Languege?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#purpose-of-jcs" class="md-nav__link">
+  <a href="#purpose-of-jdl" class="md-nav__link">
     <span class="md-ellipsis">
-      Purpose of JCS
+      Purpose of JDL
     </span>
   </a>
   
@@ -932,18 +920,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#new-to-jcs" class="md-nav__link">
+  <a href="#new-to-jdl" class="md-nav__link">
     <span class="md-ellipsis">
-      New to JCS?
+      New to JDL?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#my-data-doesnt-map-with-jcs" class="md-nav__link">
+  <a href="#my-data-doesnt-map-with-jdl" class="md-nav__link">
     <span class="md-ellipsis">
-      My Data Doesn’t Map with JCS
+      My Data Doesn’t Map with JDL
     </span>
   </a>
   
@@ -973,26 +961,26 @@
                   
 
 
-  <h1>Index</h1>
+  <h1>Introduction</h1>
 
-<p>This is the documentation of <strong>JCS version 1.0.0</strong>.</p>
-<h3 id="what-is-jcs">What is JCS?</h3>
-<p>The Justice Common Schema (JCS) is an open-source, proposed model for a human-readable "taxonomy" of justice-related data types, behaviours, and usages. Developed with input from legal and technical experts in the AI Justice Community, JCS aims to establish a standardised, interoperable schema for managing criminal trial data. </p>
-<p>JCS is intended to facilitate the integration of <strong>Retrieval Augmented Generative Systems (RAGS)</strong> into the typical trail preparation process. By providing a unified framework, JCS ensures that justice-related data is consistent, interoperable, and easily accessible, allowing different systems and platforms to communicate effectively.</p>
-<h3 id="purpose-of-jcs">Purpose of JCS</h3>
-<p>The purpose of JCS is to develop a common schema that serves as a standard for structuring justice-related data. It aims to:
+<p>This is the documentation of <strong>JDL version 1.0.0</strong>.</p>
+<h3 id="what-is-justice-definition-languege">What is Justice Definition Languege?</h3>
+<p>The <strong>Justice Definition Languege</strong> is an open-source model for a human and machine-readable "taxonomy" of justice-related data types, behaviours, and usages. It adopts the <a href="https://assets.publishing.service.gov.uk/media/5e3853baed915d095784f4e4/JDL-data-standards-catalogue-6.pdf">Criminal Justice System Exchange Data Standards</a>. </p>
+<p>Developed by Advanced Analytica with input from legal and technical experts in the AI Justice Community, JDL aims to establish a standardised, extensible, and interoperable schema for managing criminal trial data with artififical intelligence.  JDL is intended to facilitate the integration of case data with generative AI models via <strong>Retrieval Augmented Generative (RAG)</strong> systems. By providing a unified framework, JCS ensures that justice-related data is consistent, interoperable, and easily accessible, allowing different systems and platforms to communicate effectively.</p>
+<h3 id="purpose-of-jdl">Purpose of JDL</h3>
+<p>The purpose of JDL is to develop a common schema that serves as a standard for structuring justice-related data. It aims to:
 - <strong>Standardize Data</strong>: Define a unified set of fields and data types used across criminal trial and legal data management systems.
 - <strong>Enhance Interoperability</strong>: Enable seamless data exchange and integration between different databases, systems, and applications, supporting AI and generative technologies.
 - <strong>Improve Usability</strong>: Create a human-readable and machine-friendly format, making it easier for legal professionals, data scientists, and developers to work with justice-related information efficiently.
 - <strong>Support RAGS</strong>: Develop a schema that supports the deployment of Retrieval Augmented Generative Systems into case preparation workflows, enhancing the efficiency and accuracy of legal processes.</p>
 <h3 id="schema-structure">Schema Structure</h3>
-<p>JCS specifies field names and data types suitable for various justice-related applications, including criminal case management, legal evidence tracking, and court proceedings. It organizes these fields into levels that indicate the importance and expected usage of each field at different stages of a trial. This structured approach allows for flexible adaptation as cases or needs evolve. </p>
-<h3 id="new-to-jcs">New to JCS?</h3>
-<p>If you’re new to JCS and want to understand its benefits and core concepts, the <strong>Getting Started</strong> section is a great place to begin.</p>
-<h3 id="my-data-doesnt-map-with-jcs">My Data Doesn’t Map with JCS</h3>
-<p>JCS is designed to be flexible. If your legal data includes additional details that don’t map directly to JCS, you can extend the schema by adding custom fields. Follow the guidelines provided in the <strong>Guidelines and Best Practices</strong> section to ensure consistency.</p>
+<p>JDL specifies field names and data types suitable for various justice-related applications, including criminal case management, legal evidence tracking, and court proceedings. It organizes these fields into levels that indicate the importance and expected usage of each field at different stages of a trial. This structured approach allows for flexible adaptation as cases or needs evolve. </p>
+<h3 id="new-to-jdl">New to JDL?</h3>
+<p>If you’re new to JDL and want to understand its benefits and core concepts, the <strong>Getting Started</strong> section is a great place to begin.</p>
+<h3 id="my-data-doesnt-map-with-jdl">My Data Doesn’t Map with JDL</h3>
+<p>JDL is designed to be flexible. If your legal data includes additional details that don’t map directly to JDL, you can extend the schema by adding custom fields. Follow the guidelines provided in the <strong>Guidelines and Best Practices</strong> section to ensure consistency.</p>
 <h3 id="maturity">Maturity</h3>
-<p>JCS follows <strong>Semantic Versioning</strong> for its releases. Major updates to JCS are aligned with significant changes and improvements in legal data management technologies and justice processes. </p>
+<p>JDL follows <strong>Semantic Versioning</strong> for its releases. Major updates to JDL are aligned with significant changes and improvements in legal data management technologies and justice processes. </p>
 <p>Feedback on the schema’s structure, missing fields, or areas for improvement is highly encouraged. For contributions, please see the <strong>Contribution Guidelines</strong>.</p>
 
 

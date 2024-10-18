@@ -1,0 +1,11 @@
+/* Change the header (navbar) background color */
+.md-header {
+    background-color: #8e3fb5 !important; /* Indigo 500 */
+}
+
+/* Optionally change the text color of the header (navbar) */
+.md-header .md-header-nav__title,
+.md-header .md-header-nav__button,
+.md-header .md-header-nav__link {
+    color: white !important; /* Makes sure text is visible on an indigo background */
+}
