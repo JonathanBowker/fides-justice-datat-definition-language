@@ -1,1 +1,1 @@
-# justice-common-schema
+# justice-definition-language
