@@ -1,0 +1,89 @@
+site_name: Judicial Electronic Data Interchange (JEDI) 
+logo: images/logo.webp
+site_description: A comprehensive definition language for managing justice-related
+  data types and behaviours in the realm of artificial intelligence.
+site_author: Jonathan Bowker
+site_url: https://github.com/JonathanBowker/judicial-electronic-data-interchange
+repo_url: https://github.com/JonathanBowker/judicial-electronic-data-interchange
+
+repo_name: GitHub
+theme:
+  name: material
+  palette:
+  - scheme: default
+    primary: indigo
+    accent: indigo
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
+  - scheme: slate
+    primary: indigo
+    accent: indigo
+    toggle:
+      icon: material/brightness-4
+      name: Switch to light mode
+  features:
+  - content.code.copy
+  - header.autohide
+  language: en
+  localization:
+    code:
+      copy: Copy code
+      copied: Copied!
+plugins:
+- search
+- tags
+extra:
+  meta:
+  - name: keywords
+    content: justice, schema, definition language, data standard, legal technology,
+      criminal justice
+  - property: og:title
+    content: Judicial Electronic Data Interchange Language
+  - property: og:description
+    content: A comprehensive schema for managing justice-related data.
+  - property: og:url
+    content: https://jonathanbowker.github.io/justice-definition-language
+  - property: og:image
+    content: https://example.com/social-image.png
+extra_css:
+- stylesheets/extra.css
+markdown_extensions:
+- admonition
+- attr_list
+- pymdownx.tasklist
+- pymdownx.superfences
+- pymdownx.details
+- pymdownx.tilde
+- pymdownx.magiclink
+- pymdownx.inlinehilite
+- pymdownx.extra
+- md_in_html
+nav:
+- Introduction: index.md
+- Getting Started: getting-started.md
+- References:
+  - Data Standards: references/data-standards.md
+  - Glossary: references/glossary.md
+- Blog:
+  - 2024 02 15 Update: blog/2024-02-15-update.md
+  - 2024 01 01 Welcome: blog/2024-01-01-welcome.md
+- Schema:
+  - Participants: schema/participants.md
+  - Overview: schema/overview.md
+  - Victim Support: schema/victim_support.md
+  - Evidence: schema/evidence.md
+  - Probation Parole: schema/probation_parole.md
+  - Offenses: schema/offenses.md
+  - Sentences: schema/sentences.md
+  - Cases: schema/cases.md
+  - Events: schema/events.md
+  - Enforcement: schema/enforcement.md
+  - Judicial Procedures: schema/judicial_procedures.md
+  - Bail Detention: schema/bail_detention.md
+- Guidelines:
+  - Integration: guidelines/integration.md
+  - Usage: guidelines/usage.md
+- Examples:
+  - Yaml Examples: guidelines/examples/yaml-examples.md
+  - Json Examples: guidelines/examples/json-examples.md
