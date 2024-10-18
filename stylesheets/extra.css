@@ -10,6 +10,11 @@
     color: white !important; /* Makes sure text is visible on an indigo background */
 }
 
+.md-header-nav__button .md-logo {
+    max-height: 40px; /* Adjust the size as needed */
+    width: auto;
+}
+
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
