@@ -16,6 +16,18 @@
     width: auto;
 }
 
+/* Top Left Icon (Logo) Styling */
+.md-header-nav__button .md-logo {
+    filter: brightness(0) invert(1); /* Makes the logo white */
+    transition: filter 0.3s ease; /* Smooth transition effect */
+    max-height: 40px; /* Adjust the size as needed */
+    width: auto;
+}
+
+.md-header-nav__button .md-logo:hover {
+    filter: brightness(0.8) invert(1); /* Slight grey tint on hover */
+}
+
 /* General link styling for all links on the site */
 a,
 .md-typeset a {
