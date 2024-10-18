@@ -525,11 +525,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../offenses/" class="md-nav__link">
+      <a href="../offences.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Offenses
+    offences
   </span>
   
 
@@ -741,9 +741,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#11-caseoffense_ids" class="md-nav__link">
+  <a href="#11-caseoffence_ids" class="md-nav__link">
     <span class="md-ellipsis">
-      11. case.offense_ids
+      11. case.offence_ids
     </span>
   </a>
   
@@ -1278,9 +1278,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#11-caseoffense_ids" class="md-nav__link">
+  <a href="#11-caseoffence_ids" class="md-nav__link">
     <span class="md-ellipsis">
-      11. case.offense_ids
+      11. case.offence_ids
     </span>
   </a>
   
@@ -1411,7 +1411,7 @@
 
 
 <h1 id="case-fields">Case Fields</h1>
-<p>The <strong>Case Fields</strong> section of the Judicial Electronic Data Interchange (JEDI) language  captures information about legal cases, including details about case status, type, parties involved, and important dates. The <strong>ID</strong> field is essential for uniquely identifying each case and linking it with other entities like participants, offenses, and judicial procedures. This comprehensive documentation allows for effective management and tracking of cases throughout their lifecycle within the justice system.</p>
+<p>The <strong>Case Fields</strong> section of the Judicial Electronic Data Interchange (JEDI) language  captures information about legal cases, including details about case status, type, parties involved, and important dates. The <strong>ID</strong> field is essential for uniquely identifying each case and linking it with other entities like participants, offences, and judicial procedures. This comprehensive documentation allows for effective management and tracking of cases throughout their lifecycle within the justice system.</p>
 <h2 id="field-set-overview">Field Set Overview</h2>
 <p>The <strong>Cases Fields</strong> include attributes such as case ID, status, type, involved parties, and key dates, providing a complete record of each case and its progression.</p>
 <h3 id="core-fields">Core Fields</h3>
@@ -1501,9 +1501,9 @@
 <td><code>["PP123", "PP456"]</code></td>
 </tr>
 <tr>
-<td><code>case.offense_ids</code></td>
+<td><code>case.offence_ids</code></td>
 <td><code>array</code></td>
-<td>An array of unique identifiers for the offenses associated with the case.</td>
+<td>An array of unique identifiers for the offences associated with the case.</td>
 <td><code>["OFF123", "OFF456"]</code></td>
 </tr>
 <tr>
@@ -1623,10 +1623,10 @@
 <li><strong>Description</strong>: An array of unique identifiers for probation or parole records linked to the case.</li>
 <li><strong>Example</strong>: <code>["PP123", "PP456"]</code></li>
 </ul>
-<h4 id="11-caseoffense_ids">11. <code>case.offense_ids</code></h4>
+<h4 id="11-caseoffence_ids">11. <code>case.offence_ids</code></h4>
 <ul>
 <li><strong>Type</strong>: <code>array</code></li>
-<li><strong>Description</strong>: An array of unique identifiers for the offenses associated with the case.</li>
+<li><strong>Description</strong>: An array of unique identifiers for the offences associated with the case.</li>
 <li><strong>Example</strong>: <code>["OFF123", "OFF456"]</code></li>
 </ul>
 <h4 id="12-casesentence_ids">12. <code>case.sentence_ids</code></h4>
@@ -1685,7 +1685,7 @@
 <span class="w">  </span><span class="nt">victim_support_ids</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;SUPPORT123&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;SUPPORT456&quot;</span><span class="p p-Indicator">]</span>
 <span class="w">  </span><span class="nt">evidence_ids</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;EVID123&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;EVID456&quot;</span><span class="p p-Indicator">]</span>
 <span class="w">  </span><span class="nt">probation_parole_ids</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;PP123&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;PP456&quot;</span><span class="p p-Indicator">]</span>
-<span class="w">  </span><span class="nt">offense_ids</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;OFF123&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;OFF456&quot;</span><span class="p p-Indicator">]</span>
+<span class="w">  </span><span class="nt">offence_ids</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;OFF123&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;OFF456&quot;</span><span class="p p-Indicator">]</span>
 <span class="w">  </span><span class="nt">sentence_ids</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;SENT123&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;SENT456&quot;</span><span class="p p-Indicator">]</span>
 <span class="w">  </span><span class="nt">event_ids</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;EVT123&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;EVT456&quot;</span><span class="p p-Indicator">]</span>
 <span class="w">  </span><span class="nt">enforcement_ids</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;ENF123&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;ENF456&quot;</span><span class="p p-Indicator">]</span>
@@ -1709,7 +1709,7 @@
 <span class="w">    </span><span class="nt">&quot;victim_support_ids&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;SUPPORT123&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;SUPPORT456&quot;</span><span class="p">],</span>
 <span class="w">    </span><span class="nt">&quot;evidence_ids&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;EVID123&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;EVID456&quot;</span><span class="p">],</span>
 <span class="w">    </span><span class="nt">&quot;probation_parole_ids&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;PP123&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;PP456&quot;</span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;offense_ids&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;OFF123&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;OFF456&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;offence_ids&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;OFF123&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;OFF456&quot;</span><span class="p">],</span>
 <span class="w">    </span><span class="nt">&quot;sentence_ids&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;SENT123&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;SENT456&quot;</span><span class="p">],</span>
 <span class="w">    </span><span class="nt">&quot;event_ids&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;EVT123&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;EVT456&quot;</span><span class="p">],</span>
 <span class="w">    </span><span class="nt">&quot;enforcement_ids&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;ENF123&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;ENF456&quot;</span><span class="p">],</span>
