@@ -3,9 +3,8 @@ logo: images/logo.webp
 site_description: A comprehensive definition language for managing justice-related
   data types and behaviours in the realm of artificial intelligence.
 site_author: Jonathan Bowker
-site_url: https://github.com/JonathanBowker/judicial-electronic-data-interchange
+site_url: https://jonathanbowker.github.io/justice-definition-language
 repo_url: https://github.com/JonathanBowker/judicial-electronic-data-interchange
-
 repo_name: GitHub
 theme:
   name: material
