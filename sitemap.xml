@@ -1,91 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://jonathanbowker.github.io/justice-definition-language/</loc>
+         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/</loc>
          <lastmod>2024-10-18</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/justice-definition-language/getting-started/</loc>
+         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/getting-started/</loc>
          <lastmod>2024-10-18</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/justice-definition-language/blog/2024-01-01-welcome/</loc>
+         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/blog/2024-01-01-welcome/</loc>
          <lastmod>2024-10-18</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/justice-definition-language/blog/2024-02-15-update/</loc>
+         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/blog/2024-02-15-update/</loc>
          <lastmod>2024-10-18</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/justice-definition-language/guidelines/integration/</loc>
+         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/guidelines/integration/</loc>
          <lastmod>2024-10-18</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/justice-definition-language/guidelines/usage/</loc>
+         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/guidelines/usage/</loc>
          <lastmod>2024-10-18</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/justice-definition-language/guidelines/examples/json-examples/</loc>
+         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/guidelines/examples/json-examples/</loc>
          <lastmod>2024-10-18</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/justice-definition-language/guidelines/examples/yaml-examples/</loc>
+         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/guidelines/examples/yaml-examples/</loc>
          <lastmod>2024-10-18</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/justice-definition-language/references/data-standards/</loc>
+         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/references/data-standards/</loc>
          <lastmod>2024-10-18</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/justice-definition-language/references/glossary/</loc>
+         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/references/glossary/</loc>
          <lastmod>2024-10-18</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/justice-definition-language/schema/bail_detention/</loc>
+         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/schema/bail_detention/</loc>
          <lastmod>2024-10-18</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/justice-definition-language/schema/cases/</loc>
+         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/schema/cases/</loc>
          <lastmod>2024-10-18</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/justice-definition-language/schema/enforcement/</loc>
+         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/schema/enforcement/</loc>
          <lastmod>2024-10-18</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/justice-definition-language/schema/events/</loc>
+         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/schema/events/</loc>
          <lastmod>2024-10-18</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/justice-definition-language/schema/evidence/</loc>
+         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/schema/evidence/</loc>
          <lastmod>2024-10-18</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/justice-definition-language/schema/judicial_procedures/</loc>
+         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/schema/judicial_procedures/</loc>
          <lastmod>2024-10-18</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/justice-definition-language/schema/offenses/</loc>
+         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/schema/offenses/</loc>
          <lastmod>2024-10-18</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/justice-definition-language/schema/overview/</loc>
+         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/schema/overview/</loc>
          <lastmod>2024-10-18</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/justice-definition-language/schema/participants/</loc>
+         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/schema/participants/</loc>
          <lastmod>2024-10-18</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/justice-definition-language/schema/probation_parole/</loc>
+         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/schema/probation_parole/</loc>
          <lastmod>2024-10-18</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/justice-definition-language/schema/sentences/</loc>
+         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/schema/sentences/</loc>
          <lastmod>2024-10-18</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/justice-definition-language/schema/victim_support/</loc>
+         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/schema/victim_support/</loc>
          <lastmod>2024-10-18</lastmod>
     </url>
 </urlset>
