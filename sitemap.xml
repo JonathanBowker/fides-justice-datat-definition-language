@@ -1,91 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/</loc>
-         <lastmod>2024-10-18</lastmod>
+         <loc>https://jonathanbowker.github.io/justice-information-exchange/</loc>
+         <lastmod>2024-10-20</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/getting-started/</loc>
-         <lastmod>2024-10-18</lastmod>
+         <loc>https://jonathanbowker.github.io/justice-information-exchange/role/</loc>
+         <lastmod>2024-10-20</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/blog/2024-01-01-welcome/</loc>
-         <lastmod>2024-10-18</lastmod>
+         <loc>https://jonathanbowker.github.io/justice-information-exchange/blog/2024-01-01-welcome/</loc>
+         <lastmod>2024-10-20</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/blog/2024-02-15-update/</loc>
-         <lastmod>2024-10-18</lastmod>
+         <loc>https://jonathanbowker.github.io/justice-information-exchange/blog/2024-02-15-update/</loc>
+         <lastmod>2024-10-20</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/guidelines/integration/</loc>
-         <lastmod>2024-10-18</lastmod>
+         <loc>https://jonathanbowker.github.io/justice-information-exchange/examples/json-examples/</loc>
+         <lastmod>2024-10-20</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/guidelines/usage/</loc>
-         <lastmod>2024-10-18</lastmod>
+         <loc>https://jonathanbowker.github.io/justice-information-exchange/examples/yaml-examples/</loc>
+         <lastmod>2024-10-20</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/guidelines/examples/json-examples/</loc>
-         <lastmod>2024-10-18</lastmod>
+         <loc>https://jonathanbowker.github.io/justice-information-exchange/references/data-standards/</loc>
+         <lastmod>2024-10-20</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/guidelines/examples/yaml-examples/</loc>
-         <lastmod>2024-10-18</lastmod>
+         <loc>https://jonathanbowker.github.io/justice-information-exchange/references/glossary/</loc>
+         <lastmod>2024-10-20</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/references/data-standards/</loc>
-         <lastmod>2024-10-18</lastmod>
+         <loc>https://jonathanbowker.github.io/justice-information-exchange/structures/</loc>
+         <lastmod>2024-10-20</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/references/glossary/</loc>
-         <lastmod>2024-10-18</lastmod>
+         <loc>https://jonathanbowker.github.io/justice-information-exchange/structures/getting-started/</loc>
+         <lastmod>2024-10-20</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/schema/bail_detention/</loc>
-         <lastmod>2024-10-18</lastmod>
+         <loc>https://jonathanbowker.github.io/justice-information-exchange/structures/hearing/</loc>
+         <lastmod>2024-10-20</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/schema/cases/</loc>
-         <lastmod>2024-10-18</lastmod>
+         <loc>https://jonathanbowker.github.io/justice-information-exchange/structures/materials/</loc>
+         <lastmod>2024-10-20</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/schema/enforcement/</loc>
-         <lastmod>2024-10-18</lastmod>
+         <loc>https://jonathanbowker.github.io/justice-information-exchange/structures/offence/</loc>
+         <lastmod>2024-10-20</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/schema/events/</loc>
-         <lastmod>2024-10-18</lastmod>
+         <loc>https://jonathanbowker.github.io/justice-information-exchange/structures/organisation_unit_identifier/</loc>
+         <lastmod>2024-10-20</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/schema/evidence/</loc>
-         <lastmod>2024-10-18</lastmod>
+         <loc>https://jonathanbowker.github.io/justice-information-exchange/structures/overview/</loc>
+         <lastmod>2024-10-20</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/schema/judicial_procedures/</loc>
-         <lastmod>2024-10-18</lastmod>
+         <loc>https://jonathanbowker.github.io/justice-information-exchange/structures/person/</loc>
+         <lastmod>2024-10-20</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/schema/offenses/</loc>
-         <lastmod>2024-10-18</lastmod>
+         <loc>https://jonathanbowker.github.io/justice-information-exchange/structures/postal_address/</loc>
+         <lastmod>2024-10-20</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/schema/overview/</loc>
-         <lastmod>2024-10-18</lastmod>
+         <loc>https://jonathanbowker.github.io/justice-information-exchange/structures/prosecution/</loc>
+         <lastmod>2024-10-20</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/schema/participants/</loc>
-         <lastmod>2024-10-18</lastmod>
+         <loc>https://jonathanbowker.github.io/justice-information-exchange/structures/result/</loc>
+         <lastmod>2024-10-20</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/schema/probation_parole/</loc>
-         <lastmod>2024-10-18</lastmod>
+         <loc>https://jonathanbowker.github.io/justice-information-exchange/structures/result_qualifier/</loc>
+         <lastmod>2024-10-20</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/schema/sentences/</loc>
-         <lastmod>2024-10-18</lastmod>
-    </url>
-    <url>
-         <loc>https://jonathanbowker.github.io/judicial-electronic-data-interchange/schema/victim_support/</loc>
-         <lastmod>2024-10-18</lastmod>
+         <loc>https://jonathanbowker.github.io/justice-information-exchange/structures/role/</loc>
+         <lastmod>2024-10-20</lastmod>
     </url>
 </urlset>
