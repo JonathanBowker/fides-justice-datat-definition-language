@@ -1,10 +1,10 @@
-# Getting Started with Judicial Electronic Data Interchange Language (JEDI)
+# Getting Started with Judicial Electronic Data Interchange (JEDI) language 
 
 This guide provides a comprehensive walkthrough for implementing JEDI within your criminal trial case management system.
 
 ## Requirements
 
-- Basic understanding of MongoDB or Elasticsearch.
+- Basic understanding of NoSQL databases e.g. Firebase, MongoDB, Elasticsearch.
 - Knowledge of JSON or YAML for structuring data.
 - Access to an appropriate database environment.
 
@@ -12,12 +12,12 @@ This guide provides a comprehensive walkthrough for implementing JEDI within you
 
 1. Clone the JEDI repository:
    ```bash
-   git clone https://github.com/your-username/justice-definition-language.git
+   git clone https://github.com/JonathanBowker/judicial-electronic-data-interchange.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd justice-definition-language
+   cd judicial-electronic-data-interchange
    ```
 
 3. Follow any additional setup instructions in the repository’s README file to install dependencies and set up your environment.
@@ -32,7 +32,7 @@ This guide provides a comprehensive walkthrough for implementing JEDI within you
 ```markdown
 # Schema Overview
 
-The Judicial Electronic Data Interchange Language (JEDI) schema is organized into several key components, each representing a distinct aspect of criminal trial cases. The schema includes:
+The Judicial Electronic Data Interchange (JEDI) language  schema is organized into several key components, each representing a distinct aspect of criminal trial cases. The schema includes:
 
 - **Case Details**: Information related to the case, such as the case ID, type, jurisdiction, and current status.
 - **Participants**: Data on individuals involved in the trial, including defendants, judges, attorneys, and witnesses.

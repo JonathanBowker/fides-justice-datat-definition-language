@@ -1,0 +1,109 @@
+# Result Qualifier Fields
+
+The **Result Qualifier Fields** section of the Justice Information Exchange (JIX) language captures information about qualifiers used to provide additional context or information about a result in a legal case. These fields ensure detailed documentation and tracking of the various qualifiers that might be applied to results within the criminal justice system.
+
+## Field Set Overview
+
+The **Result Qualifier Fields** include attributes such as the qualifier code, descriptions, and relevant dates, providing a comprehensive record of the additional information applied to results in cases.
+
+### Core Fields
+
+These are the essential fields required for documenting result qualifiers:
+
+| Field Name                     | Type      | Description                                                                 | Example                     |
+|-------------------------------|-----------|-----------------------------------------------------------------------------|-----------------------------|
+| `result_qualifier.id`         | `keyword` | A unique identifier for each result qualifier record.                       | `QUAL12345`                 |
+| `result_qualifier.case_id`    | `array`   | An array of unique identifiers for the cases associated with the result qualifier. | `["CASE12345", "CASE67890"]`|
+| `result_qualifier.code`       | `keyword` | The official code representing the result qualifier.                        | `RQ001`                     |
+| `result_qualifier.description`| `text`    | A brief description of the result qualifier.                                | `Indicates offence was racially aggravated.` |
+| `result_qualifier.start_date` | `date`    | The date when the result qualifier became valid.                            | `2020-01-01`                |
+| `result_qualifier.end_date`   | `date`    | The date when the result qualifier ceased to be valid (if applicable).      | `2023-12-31`                |
+
+### Extended Fields
+
+These fields provide additional details and context for result qualifiers:
+
+| Field Name                     | Type      | Description                                                                 | Example                     |
+|-------------------------------|-----------|-----------------------------------------------------------------------------|-----------------------------|
+| `result_qualifier.last_amended_date` | `date`    | The date when the result qualifier was last amended.                        | `2021-05-15`                |
+| `result_qualifier.notes`      | `text`    | Additional notes or remarks about the result qualifier.                     | `Qualifier amended to align with new legislation.` |
+
+### Field Details
+
+#### 1. `result_qualifier.id`
+- **Type**: `keyword`
+- **Description**: A unique identifier for each result qualifier record.
+- **Example**: `QUAL12345`
+
+#### 2. `result_qualifier.case_id`
+- **Type**: `array`
+- **Description**: An array of unique identifiers representing the cases linked to the result qualifier, allowing tracking across multiple cases.
+- **Example**: `["CASE12345", "CASE67890"]`
+
+#### 3. `result_qualifier.code`
+- **Type**: `keyword`
+- **Description**: The official code representing the result qualifier.
+- **Example**: `RQ001`
+
+#### 4. `result_qualifier.description`
+- **Type**: `text`
+- **Description**: A brief description of the result qualifier.
+- **Example**: `Indicates offence was racially aggravated.`
+
+#### 5. `result_qualifier.start_date`
+- **Type**: `date`
+- **Description**: The date when the result qualifier became valid.
+- **Example**: `2020-01-01`
+
+#### 6. `result_qualifier.end_date`
+- **Type**: `date`
+- **Description**: The date when the result qualifier ceased to be valid (if applicable).
+- **Example**: `2023-12-31`
+
+#### 7. `result_qualifier.last_amended_date`
+- **Type**: `date`
+- **Description**: The date when the result qualifier was last amended.
+- **Example**: `2021-05-15`
+
+#### 8. `result_qualifier.notes`
+- **Type**: `text`
+- **Description**: Additional notes or remarks about the result qualifier.
+- **Example**: `Qualifier amended to align with new legislation.`
+
+### Usage Notes
+
+- **Core Fields**: These fields must be present for each result qualifier record to ensure accurate tracking and documentation within the case timeline.
+- **Extended Fields**: Additional fields can be used when further details are available or necessary for the result qualifier context.
+
+### Example Document
+
+#### YAML
+
+```yaml
+result_qualifier:
+  id: QUAL12345
+  case_id: ["CASE12345", "CASE67890"]
+  code: RQ001
+  description: Indicates offence was racially aggravated.
+  start_date: 2020-01-01
+  end_date: 2023-12-31
+  last_amended_date: 2021-05-15
+  notes: Qualifier amended to align with new legislation.
+```
+
+#### JSON
+
+```json
+{
+  "result_qualifier": {
+    "id": "QUAL12345",
+    "case_id": ["CASE12345", "CASE67890"],
+    "code": "RQ001",
+    "description": "Indicates offence was racially aggravated.",
+    "start_date": "2020-01-01",
+    "end_date": "2023-12-31",
+    "last_amended_date": "2021-05-15",
+    "notes": "Qualifier amended to align with new legislation."
+  }
+}
+```

@@ -1,0 +1,1732 @@
+{
+    "section": "3 Standards for Data Elements",
+    "elements": [
+        {
+            "id": "3.1",
+            "description": "Removed from v 6"
+        },
+        {
+            "id": "3.2",
+            "name": "Age At First Conviction",
+            "description": "Age young person was first convicted of an offence (in years).",
+            "values": [
+                "Don't Know",
+                "Not Applicable",
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17
+            ],
+            "owner": "YJB",
+            "steward": "YJB"
+        },
+        {
+            "id": "3.3",
+            "name": "Age At First Caution",
+            "description": "Age at first caution (in years).",
+            "values": [
+                "Don't Know",
+                "Not Applicable",
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17
+            ],
+            "owner": "YJB",
+            "steward": "YJB"
+        },
+        {
+            "id": "3.4",
+            "name": "Age At First Use",
+            "description": "The age of the Young Person when he/she first used the particular substance (in years).",
+            "values": [
+                "0 to 17"
+            ],
+            "owner": "YJB",
+            "steward": "YJB"
+        },
+        {
+            "id": "3.5",
+            "name": "Alcohol Level Amount",
+            "description": "The amount of alcohol present in the blood, urine, or breath of the defendant.",
+            "values": [
+                "1 - 999"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.6",
+            "name": "Amount Quantity",
+            "description": "The quantity of monetary amounts that must be input with the result code e.g. a Fine would have an Amount Quantity of one.",
+            "values": [
+                "0 to 9"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Result Sub-Group of the DSF"
+        },
+        {
+            "id": "3.7",
+            "name": "Arrest Summons Number",
+            "description": "To identify a particular defendant by their arrest/summons number (ASN), allocated by Police (or other prosecutor) when a defendant is arrested or summonsed.",
+            "values": [
+                "Refer to CPR Defendant Or Offender"
+            ],
+            "owner": "Police",
+            "steward": "PNC"
+        },
+        {
+            "id": "3.8",
+            "name": "Case Markers (Descriptive)",
+            "description": "A marker to highlight a characteristic of the case (relating to the person and/or the offence) as being of particular interest to CJO partners when handling the Case.",
+            "values": [
+                "AE Animal Rights Extremism",
+                "CD Civil Disobedience",
+                "CO Crime Against An Older Person",
+                "CW Child Witness",
+                "DH Hate Crime - Disability",
+                "DV Domestic Violence",
+                "FM Forced Marriage",
+                "FT Fatality",
+                "HC Honour Crime",
+                "HP Hate Crime - Sexual Orientation",
+                "HT Human Trafficking",
+                "KD Kidnap / false imprisonment",
+                "PT Persistently Targeted Victims",
+                "PW Prohibited Weapons",
+                "RA Hate Crime - Racist",
+                "RE Hate Crime - Religious",
+                "RP Rape",
+                "SX Sexual offence victim (other than Rape - see RP)",
+                "TG Hate Crime - Transgender",
+                "VI Vulnerable or Intimidated Victim"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.9",
+            "name": "Case Markers (Procedural)",
+            "description": "A marker to highlight the procedural characteristic of the case (relating to the person and/or the offence) as being of particular interest to CJO partners when handling the case.",
+            "values": [
+                "AA - ASBO Applied For",
+                "AG - ASBO Granted",
+                "AR - Asset Recovery",
+                "CA - Substantial Charge Alteration",
+                "DI - Drug Interventions Programme",
+                "IV - Identified Victim",
+                "MI - Media Interest",
+                "PC - Police Complaints",
+                "PD - Pre-Charge Decision",
+                "SC - DV Specialist Court",
+                "VC - Virtual Court",
+                "VI - Vulnerable or Intimidated Victim",
+                "WR - Pre-Trial Witness Interview Referral"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.10",
+            "name": "Case Stage",
+            "description": "Current stage to which the case has progressed.",
+            "values": [
+                "Referral Order",
+                "Pre-Sentence report",
+                "Post sentence",
+                "Mid Detention and Training order",
+                "Review",
+                "End order",
+                "Other"
+            ],
+            "owner": "YJB",
+            "steward": "YJB"
+        },
+        {
+            "id": "3.11",
+            "name": "CJS Offence Code",
+            "description": "A code to represent an offence (where offence is used in the generic sense covering the reasons for bringing a court case against a defendant).",
+            "values": "Must be a valid Offence Code on the PNLD-maintained Offence Codes Data Standard Database",
+            "owner": "CJSE Product Board",
+            "steward": "Standard Offence Wording Group of the Data Standards Forum."
+        },
+        {
+            "id": "3.12",
+            "name": "CJS Result Code",
+            "description": "A unique code representing a result.",
+            "values": "1001 - 9999",
+            "owner": "CJSE Product Board",
+            "steward": "Result Sub-Group of the DSF"
+        },
+        {
+            "id": "3.13",
+            "name": "Closed Response 2",
+            "description": "A set of two fixed responses from which a respondent must choose; no other value for the response is allowed.",
+            "values": [
+                "Yes",
+                "No"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.14",
+            "name": "Closed Response 4",
+            "description": "A set of four fixed responses from which a respondent must choose; no other value for the response is allowed.",
+            "values": [
+                "Don't Know",
+                "Not Applicable",
+                "Yes",
+                "No"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.15",
+            "name": "Complex Penalty Details",
+            "description": "Used for example where legislation dictates that maximum sentences vary according to the age of the defendant.",
+            "values": "The values are maintained within the PNLD Database.",
+            "owner": "CJSE Product Board",
+            "steward": "Standard Offence Wording Group of the Data Standards Forum"
+        },
+        {
+            "id": "3.17",
+            "name": "Court Case Reference Number",
+            "description": "This is a unique reference number assigned to a new occurrence of a court case created on PNC.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "PNC"
+        },
+        {
+            "id": "3.18",
+            "name": "Court Type",
+            "description": "The type of court that made the adjudication.",
+            "values": "Please contact HMCTS Libra Standing Data management Team for a list of court types.",
+            "owner": "CJSE Product Board",
+            "steward": "HMCTS"
+        },
+        {
+            "id": "3.19",
+            "name": "Courts Max Custodial Sentence Length",
+            "description": "The maximum custodial sentence in ‘units’ that can be awarded for this offence in either a Crown Court or a Magistrates Court.",
+            "values": "1 to 999",
+            "owner": "CJSE Product Board",
+            "steward": "Standard Offence Wording Group of the Data Standards Forum"
+        },
+        {
+            "id": "3.20",
+            "name": "Courts Max Custodial Sentence Unit",
+            "description": "The unit of custodial sentence paired with Courts Max Custodial Sentence Length which determines actual length.",
+            "values": [
+                "Days",
+                "Weeks",
+                "Months",
+                "Years",
+                "Life"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Standard Offence Wording Group of the Data Standards Forum"
+        },
+        {
+            "id": "3.21",
+            "name": "CPR Defendant Or Offender",
+            "description": "The first Data Element within the Criminal Prosecution Reference (CPR) to identify the instance of a person or organisation as a Defendant or Offender in a case.",
+            "values": "Only applicable to FFFUUSS (refer to Organisation Unit Identifier for an explanation of FFUUUSS) YYFFFUUSSN(11)A e.g. 93105CE0101245932H.",
+            "owner": "CJSE Product Board",
+            "steward": "CPS"
+        },
+        {
+            "id": "3.22",
+            "name": "CPR Offence Reason",
+            "description": "The second Data Element within the CPR. The Offence Code provides this Data Element.",
+            "values": "Must be a valid Offence Code on the PNLD-maintained Offence Codes Data Standard Database.",
+            "owner": "CJSE Product Board",
+            "steward": "CPS"
+        },
+        {
+            "id": "3.23",
+            "name": "CPR Offence Reason Sequence",
+            "description": "The third Data Element within the Criminal Prosecution Reference (CPR), the sequence of an Offence Reason within a Defendant or Offender.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "CPS"
+        },
+        {
+            "id": "3.24",
+            "name": "Criminal Records Office Number (CRO)",
+            "description": "To identify a particular person by their Criminal Records Office Number. The unique number assigned by the National Identification Service(NIS) or from late 1998 by National Automated Fingerprint Identification System (NAFIS) to identify the subject.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "PNC"
+        },
+        {
+            "id": "3.25",
+            "name": "Current ETE Situation",
+            "description": "Describes his/her current ‘Education, Training and Employment’ situation.",
+            "values": [
+                "Mainstream school",
+                "Work experience",
+                "College/further education",
+                "Special school",
+                "Full time work",
+                "Other training course",
+                "Pupil referral unit",
+                "Part time work",
+                "Unable to work (e.g. incapacity)",
+                "Other specialist unit",
+                "Casual/temporary work",
+                "Looking after family",
+                "Community home with education",
+                "Unemployed",
+                "Nothing currently arranged",
+                "New Deal",
+                "Home tuition",
+                "Pre-employment/life skills training",
+                "Other"
+            ],
+            "owner": "YJB",
+            "steward": "YJB"
+        },
+        {
+            "id": "3.26",
+            "name": "Custodial Indicator",
+            "description": "To indicate that the offence carries a custodial sentence i.e. that the Offender may be imprisoned for this offence.",
+            "default": "N",
+            "values": [
+                "Y",
+                "N",
+                "E"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Offence Subgroup of the Data Standards Forum"
+        },
+        {
+            "id": "3.27",
+            "name": "Date Quantity",
+            "description": "The quantity of dates that must be input with the result code (not including hearing dates).",
+            "values": [
+                "0 to 9"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Results Subgroup of the Data Standards Forum"
+        },
+        {
+            "id": "3.28",
+            "name": "Defendant Present At Hearing",
+            "description": "To show whether the defendant was present at the hearing not present at the hearing or appeared by the presence of his/her barrister or solicitor.",
+            "values": [
+                "Y",
+                "N",
+                "A",
+                "V"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "HMCTS"
+        },
+        {
+            "id": "3.29",
+            "name": "Disability Self Defined Code",
+            "description": "A code for the self-definition of disabilities.",
+            "values": [
+                "D Dyslexia",
+                "HD Hearing Difficulties",
+                "LD Learning Difficulties",
+                "MI Mental Illness",
+                "ND No Disability",
+                "OD Other Disability",
+                "PC Progressive Condition",
+                "RC Reduced Physical Capacity",
+                "RD Refusal to Disclose",
+                "RM Reduced Mobility",
+                "SD Severe Disfigurement",
+                "SI Speech Impediment",
+                "VI Visual Impairment"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "NOMS"
+        },
+        {
+            "id": "3.30",
+            "name": "Disqualification Type Code",
+            "description": "To indicate the type (code) of driving disqualification that can be awarded for the offence.",
+            "values": [
+                "D",
+                "N",
+                "O"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "PNC"
+        },
+        {
+            "id": "3.31",
+            "name": "Duration Length",
+            "description": "The quantity of [Duration Unit] awarded e.g. for two years imprisonment Duration Length = 2 and Duration Unit = Y (years).",
+            "values": "1 - 999",
+            "owner": "CJSE Product Board",
+            "steward": "HMCTS"
+        },
+        {
+            "id": "3.32",
+            "name": "Duration Quantity",
+            "description": "The quantity of durations that must be input with the result code e.g. a suspended sentence would have three durations one for the length of sentence one for the supervision period and one for the operational period.",
+            "values": [
+                "0 to 9"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "HMCTS"
+        },
+        {
+            "id": "3.33",
+            "name": "Duration Unit",
+            "description": "The unit of Duration Length.",
+            "values": [
+                "H",
+                "D",
+                "W",
+                "M",
+                "Y",
+                "L"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "HMCTS"
+        },
+        {
+            "id": "3.34",
+            "name": "England And Wales Indicator",
+            "description": "To show whether the CJS Result Code is outside the jurisdiction of the CJS.",
+            "values": [
+                "Y",
+                "N"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Result Sub-Group of the DSF"
+        },
+        {
+            "id": "3.35",
+            "name": "Ethnicity Observed 4 Plus 1 Code",
+            "description": "The Police 4+1 ETHNICITY code as used in the police identification.",
+            "values": [
+                "0 not recorded/not known",
+                "1 White",
+                "2 Black",
+                "3 Asian",
+                "4 Other"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Police"
+        },
+        {
+            "id": "3.36",
+            "name": "Ethnicity Observed 6 Plus 1 Code",
+            "description": "The seven values (6+1) used in various Police applications to describe a person’s ethnic appearance to a third party.",
+            "values": [
+                "0 not recorded/not known",
+                "1 White - North European",
+                "2 White - South European",
+                "3 Black",
+                "4 Asian",
+                "5 Chinese, Japanese or any other South East Asian",
+                "6 Arabic or North African"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Police"
+        },
+        {
+            "id": "3.37",
+            "name": "Ethnicity Self Defined Code",
+            "description": "The code used to indicate the source of the definition. Self defined or observed. The ONS 16+1 ETHNICITY code as used in the census.",
+            "values": [
+                "W1 British",
+                "W2 Irish",
+                "W3 Gypsy or Irish Traveller",
+                "W9 Any other white background",
+                "M1 White and Black Caribbean",
+                "M2 White and Black African",
+                "M3 White and Asian",
+                "M9 Any other mixed",
+                "A1 Indian",
+                "A2 Pakistani",
+                "A3 Bangladeshi",
+                "A4 Chinese",
+                "A9 Any other Asian background",
+                "B1 Caribbean",
+                "B2 African",
+                "B9 Any other Black background",
+                "O2 Arab",
+                "O9 Any other NS Not stated"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.38",
+            "name": "Ethnicity Self Defined Extra Definition",
+            "description": "Free text to further define the Ethnicity Self Defined value e.g. Kosovan Roma Scottish. Only to be used where a Ethnicity Self Defined value is present.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.39",
+            "name": "Family Name",
+            "description": "The part of a person’s name used to describe family clan, tribal group or marital association (e.g. a surname).",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.40",
+            "name": "Features Of Harm Behaviour",
+            "description": "Nature of harmful behaviour.",
+            "values": [
+                "Elaborate preparation/planning",
+                "Loss of self-control",
+                "Unduly Sophisticated methods",
+                "Recklessness",
+                "Use of acquisition",
+                "Ritual or Bizarre elements"
+            ],
+            "owner": "YJB",
+            "steward": "YJB"
+        },
+        {
+            "id": "3.41",
+            "name": "Fine Indicator",
+            "description": "To indicate that the offence type carries a fine.",
+            "values": [
+                "Y",
+                "N"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Standard Offence Wording Group of the Data Standards Forum"
+        },
+        {
+            "id": "3.42",
+            "description": "Removed from v 6"
+        },
+        {
+            "id": "3.43",
+            "description": "Removed from v 6"
+        },
+        {
+            "id": "3.44",
+            "description": "Removed from v 6"
+        },
+        {
+            "id": "3.45",
+            "name": "Gender Type Code",
+            "description": "The code that represents a gender.",
+            "values": [
+                "0 not known",
+                "1 male",
+                "2 female",
+                "9 not specified"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.46",
+            "name": "Generic Date",
+            "description": "A generic data type for “Date” Data Elements.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.47",
+            "name": "Generic Long Note",
+            "description": "A Generic Data Type for “Note” Data Elements.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.48",
+            "name": "Generic Short Note",
+            "description": "A Generic Data Type for “Note” Data Elements.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.49",
+            "name": "Generic Time",
+            "description": "Generic Data Type for elements where time is required.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.50",
+            "name": "Given Name",
+            "description": "The forename or given name of a person.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.51",
+            "name": "Hearing Documentation Language",
+            "description": "An indicator to show whether the documentation for/from a court hearing is to be provided in both Welsh and English languages.",
+            "values": [
+                "W",
+                "E"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "HMCTS"
+        },
+        {
+            "id": "3.52",
+            "name": "Hearing Language Indicator",
+            "description": "An indicator to show whether the court hearing is to be held in the Welsh language.",
+            "values": [
+                "W",
+                "E"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "HMCTS"
+        },
+        {
+            "id": "3.53",
+            "description": "Removed from v 6"
+        },
+        {
+            "id": "3.54",
+            "name": "Home Office Classification",
+            "description": "The Home Office Stats Code to which the offence belongs.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Ministry of Justice (Analytical Services)"
+        },
+        {
+            "id": "3.55",
+            "description": "Removed from v 6"
+        },
+        {
+            "id": "3.56",
+            "description": "Removed from v 6"
+        },
+        {
+            "id": "3.57",
+            "name": "Language Requirement",
+            "description": "A free text field to provide notes about the defendant’s language needs, e.g. interpreter details.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.58",
+            "name": "Legal Aid Status",
+            "description": "A code to describe the current status of an application for representation under legal aid.",
+            "values": [
+                "AP Application Pending",
+                "GR Granted (one advocate)",
+                "FM Failed on Means",
+                "FJ Failed on IOJ",
+                "FB Failed Both IOJ and Means",
+                "WD Withdrawn",
+                "G2 Granted for two advocates",
+                "GQ Granted with QC"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "HMCTS"
+        },
+        {
+            "id": "3.59",
+            "name": "Legislation ID",
+            "description": "Act and section in full (not coded).",
+            "values": "A current list of legislation wordings is maintained by PNLD.",
+            "owner": "CJSE Product Board",
+            "steward": "Standard Offence Wording Group of the Data Standards Forum"
+        },
+        {
+            "id": "3.60",
+            "name": "Likely Victims",
+            "description": "Identification of likely victim categories that the individual might offend against.",
+            "values": [
+                "Siblings",
+                "Younger Children",
+                "Peers",
+                "Vulnerable adult/s",
+                "Parents/carers",
+                "Staff/people in authority",
+                "Public"
+            ],
+            "owner": "YJB",
+            "steward": "YJB"
+        },
+        {
+            "id": "3.61",
+            "name": "Living With",
+            "description": "Identification of the individuals that the Young person has mostly living with over past six months.",
+            "values": [
+                "Mother",
+                "Grandparent/s",
+                "Friend/s",
+                "Father",
+                "Other Family",
+                "Residents of home or institution",
+                "Step-parent"
+            ],
+            "owner": "YJB",
+            "steward": "YJB"
+        },
+        {
+            "id": "3.62",
+            "name": "MAPPA Level",
+            "description": "Current most appropriate MAPPA level.",
+            "values": [
+                "Category A – Level 1",
+                "Category A – Level 2",
+                "Category A – Level 3",
+                "Category B – Level 1",
+                "Category B – Level 2",
+                "Category B – Level 3",
+                "Category C – Level 1",
+                "Category C – Level 2",
+                "Category C – Level 3"
+            ],
+            "owner": "YJB",
+            "steward": "YJB"
+        },
+        {
+            "id": "3.63",
+            "name": "Max Fine Crown Court",
+            "description": "The amount (of a sum of money expressed in sterling) of the maximum fine that can be awarded for this offence in a Crown Court.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Standard Offence Wording Group of the Data Standards Forum"
+        },
+        {
+            "id": "3.64",
+            "name": "Max Fine Mag Court",
+            "description": "The amount (of a sum of money expressed in sterling) of the maximum fine that can be awarded for this offence in a Magistrates’ Crown Court.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Standard Offence Wording Group of the Data Standards Forum"
+        },
+        {
+            "id": "3.65",
+            "name": "Max Fine Type Crown Court",
+            "description": "To indicate the maximum fine level for the offence when heard in the Crown Court.",
+            "values": [
+                "F",
+                "U"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Standard Offence Wording Group of the Data Standards Forum"
+        },
+        {
+            "id": "3.66",
+            "name": "Max Fine Type Mag Court",
+            "description": "To indicate the maximum fine level code for the offence when heard in the Magistrates’ Court.",
+            "values": [
+                "S Statutory",
+                "O Other",
+                "U Unlimited",
+                "1 fine not exceeding level one on the legislative standard scale",
+                "2 fine not exceeding level two on the legislative standard scale",
+                "3 fine not exceeding level three on the legislative standard scale",
+                "4 fine not exceeding level four on the legislative standard scale",
+                "5 fine not exceeding level five on the legislative standard scale"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Standard Offence Wording Group of the Data Standards Forum"
+        },
+        {
+            "id": "3.67",
+            "name": "Max Penalty Points",
+            "description": "The maximum penalty points that can be awarded for this offence. Current range 2 to 12.",
+            "values": [
+                "0 plus 2 to 12"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Standard Offence Wording Group of the Data Standards Forum"
+        },
+        {
+            "id": "3.68",
+            "name": "Min Penalty Points",
+            "description": "The minimum penalty points that can be awarded for this offence. Current range 2 to 12 and must be equal to or less than Max Penalty Points.",
+            "values": [
+                "0 plus 2 to 12"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Standard Offence Wording Group of the Data Standards Forum"
+        },
+        {
+            "id": "3.69",
+            "name": "Mode Of Trial Reason",
+            "description": "The type/reason code for the trial.",
+            "values": [
+                "01 Summary-only offence",
+                "02 Indictable-only offence",
+                "03 Defendant consents to summary trial",
+                "04 Defendant chooses trial by jury",
+                "05 Magistrates direct trial by jury",
+                "06 Magistrates determine summary-only offence",
+                "07 No mode of Trial - Either way offence",
+                "08 Offence triable only by court martial",
+                "09 Defendant chooses trial by court martial",
+                "10 Commanding Officer orders trial by court martial"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "HMCTS"
+        },
+        {
+            "id": "3.70",
+            "name": "Name Change Sequence Number",
+            "description": "A sequence number coupled with an instance of Person Given Name and/or Person Family Name to provide the correct sequence of individual names within the person’s “full” name.",
+            "values": "1 to 99",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.71",
+            "name": "No Fixed Abode",
+            "description": "Indicator identifying if a person has no fixed permanent place of residence or abode.",
+            "values": [
+                "Y",
+                "N",
+                "I"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)."
+        },
+        {
+            "id": "3.72",
+            "name": "NOMS Number",
+            "description": "To identify a particular person by their prisoner (or National Offender Management Service) number.",
+            "values": "None",
+            "owner": "National Offender Management Service (NOMS)",
+            "steward": "NOMS"
+        },
+        {
+            "id": "3.73",
+            "name": "Notes",
+            "description": "Miscellaneous notes that are not catered for in unstructured fields.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.74",
+            "name": "Notifiable To Home Office Indicator",
+            "description": "To indicate that an Offence is required to be notified to the Home Office Government Department.",
+            "values": [
+                "Y",
+                "N"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Standard Offence Wording Group of the Data Standards Forum"
+        },
+        {
+            "id": "3.75",
+            "name": "Number Of Previous Convictions",
+            "description": "Number of previous convictions.",
+            "values": [
+                "Don’t Know",
+                "Not Applicable",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6 to 7",
+                "7 to 8",
+                "10+"
+            ],
+            "owner": "YJB",
+            "steward": "YJB"
+        },
+        {
+            "id": "3.76",
+            "name": "Number Quantity",
+            "description": "The quantity of number quantities that must be input with the result code.",
+            "values": [
+                "0 to 9"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Result Sub-Group of the DSF."
+        },
+        {
+            "id": "3.77",
+            "name": "Occupation Code",
+            "description": "Identifies the code number relevant to the named occupation.",
+            "values": "Please contact the Chair of the DSF for the list of values.",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.78",
+            "name": "Offence Category Code",
+            "description": "The categories of offences. This covers criminal and non criminal court case/proceedings types.",
+            "values": [
+                "CB Criminal",
+                "CE Non-Offence Breach",
+                "CI Indictable",
+                "CM Summary",
+                "CR Civil - Related to Criminal",
+                "CS Summary Non-motoring",
+                "EF Enforcement",
+                "EM Maintenance",
+                "EX Maintenance Enforcement of Foreign Account",
+                "VA Miscellaneous Applications (Civil)",
+                "VP Civil Proceedings"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Standard Offence Wording Group of the Data Standards Forum"
+        },
+        {
+            "id": "3.79",
+            "name": "Offence Date Code",
+            "description": "The code for the offence date to be used within the offence wording.",
+            "values": [
+                "1 = on or in",
+                "2 = before",
+                "3 = after",
+                "4 = between",
+                "5 = on or about",
+                "6 = on or before"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Standard Offence Wording Group of the Data Standards Forum"
+        },
+        {
+            "id": "3.80",
+            "name": "Offence Initiation Code",
+            "description": "Identifies the type of initiation by code.",
+            "values": [
+                "C Charge",
+                "O Other",
+                "R Remitted",
+                "Q Requisition",
+                "S Summons"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "HMCTS"
+        },
+        {
+            "id": "3.81",
+            "name": "Offence National Region Code",
+            "description": "Code for a region to which the offence applies.",
+            "values": [
+                "E England",
+                "W Wales",
+                "EW England and Wales",
+                "EWNI England, Wales and Northern Ireland",
+                "GB Great Britain",
+                "UK United Kingdom",
+                "EC European Community"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Standard Offence Wording Group of the Data Standards Forum"
+        },
+        {
+            "id": "3.82",
+            "name": "Offence Remand Status Code",
+            "description": "This specifies the remand/bail code status that accompanies the CJS Result Code.",
+            "values": [
+                "S Remanded to youth detention accommodation",
+                "C Custody or remanded into custody",
+                "L Remanded into care of Local Authority",
+                "R Re-arrested after release on bail",
+                "P Conditional bail with pre-release conditions",
+                "B Conditional bail",
+                "U Unconditional bail"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "HMCTS."
+        },
+        {
+            "id": "3.83",
+            "name": "Offence Title",
+            "description": "The unique offence title i.e. a shortened version of the offence wording.",
+            "values": "PNLD-maintained. A current list can be provided by the data standards team.",
+            "owner": "CJSE Product Board",
+            "steward": "Standard Offence Wording Group of the Data Standards Forum"
+        },
+        {
+            "id": "3.84",
+            "name": "Offence Welsh Title",
+            "description": "The unique offence title in Welsh i.e. a shortened version of the Welsh offence wording.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Standard Offence Wording Group of the Data Standards Forum"
+        },
+        {
+            "description": "The unique offence title in Welsh i.e. a shortened version of the Welsh offence wording.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Standard Offence Wording Group of the Data Standards Forum"
+        },
+        {
+            "id": "3.85",
+            "description": "Removed from v 6"
+        },
+        {
+            "id": "3.86",
+            "name": "Organisation Name",
+            "description": "The name by which an organisation wishes to be known or the official name given to an organisation.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.87",
+            "name": "OU Bottom Level Name",
+            "description": "A name to represent the lowest level physical and/or logical organisation unit within a Criminal Justice Organisation.",
+            "values": "Values will be within the managed content of the Organisation Unit Codes Data Structure.",
+            "owner": "The Owner is the individual CJO.",
+            "steward": "The steward is the individual CJO."
+        },
+        {
+            "id": "3.88",
+            "name": "OU Code Bottom Level",
+            "description": "A code to represent the lowest physical and/or logical organisation unit within a Criminal Justice Organisation.",
+            "values": [
+                "SS used by the Police Service",
+                "CPS SS Default 00",
+                "Magistrates’ Courts SS Default 00",
+                "Crown Courts SS Default 00",
+                "Probation Service SS Default 00",
+                "Prison Service SS",
+                "Youth Justice SS",
+                "Other Organisations SS"
+            ],
+            "owner": "The Owner is the individual CJO.",
+            "steward": "The steward is the individual CJO."
+        },
+        {
+            "id": "3.89",
+            "name": "OU Code Second Level",
+            "description": "A code to represent the highest physical and/or logical organisation unit level within a Criminal Justice Organisation.",
+            "values": "This Data Element is the FF code only.",
+            "owner": "The Owner is the individual CJO.",
+            "steward": "The steward is the individual CJO."
+        },
+        {
+            "id": "3.90",
+            "name": "OU Code Third Level",
+            "description": "A code to represent a middle level physical and/or logical organisation unit within a Criminal Justice Organisation.",
+            "values": "Within the leading F - see Values above",
+            "owner": "The Owner is the individual CJO.",
+            "steward": "The steward is the individual CJO."
+        },
+        {
+            "id": "3.91",
+            "name": "OU Code Top Level",
+            "description": "A code to represent a Criminal Justice Organisation or an external organisation which accesses the CJS Exchange.",
+            "values": [
+                "This Data Element is the leading F code only",
+                "Police",
+                "CPS",
+                "Magistrates’ Courts",
+                "Crown Courts",
+                "Probation Service",
+                "Prison Service",
+                "Youth Justice",
+                "Non CJO Public Sector Organisation",
+                "Voluntary Sector",
+                "Legal Practitioners",
+                "Suppliers",
+                "Private Organisation",
+                "Escorts",
+                "CJS Exchange"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.92",
+            "name": "OU Second Level Name Or Type",
+            "description": "A name to represent the highest level physical and/or logical organisation unit within a Criminal Justice Organisation.",
+            "values": "Values are within the managed content of the Organisation Unit Codes Data Structure.",
+            "owner": "The Owner is the individual CJO.",
+            "steward": "The steward is the individual CJO."
+        },
+        {
+            "id": "3.93",
+            "name": "OU Third Level Legacy Code",
+            "description": "A code to represent a physical and/or logical organisation unit at a level within a Criminal Justice Organisation.",
+            "values": "Values are within the managed content of the Organisation Unit Codes Data Structure.",
+            "owner": "The Owner is the individual CJO.",
+            "steward": "The steward is the individual CJO."
+        },
+        {
+            "id": "3.94",
+            "name": "OU Third Level Name",
+            "description": "A name to represent the middle level physical and/or logical organisation unit within a Criminal Justice Organisation.",
+            "values": "Values where available are within the managed content of the Organisation Unit Codes Data Structure.",
+            "owner": "The Owner is the individual CJO.",
+            "steward": "The steward is the individual CJO."
+        },
+        {
+            "id": "3.95",
+            "name": "OU Top Level Name",
+            "description": "A name to represent a Criminal Justice Organisation or an external organisation which accesses the CJS Exchange.",
+            "values": "See OU Code Top Level.",
+            "owner": "The Owner is the individual CJO.",
+            "steward": "The steward is the individual CJO."
+        },
+        {
+            "id": "3.96",
+            "name": "Perceived Birth Year",
+            "description": "The perceived year in which a person was born, in the absence of Birth date information.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.97",
+            "name": "Person Name Suffix",
+            "description": "A free text suffix added to a person’s name.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.98",
+            "name": "Person Name Type",
+            "description": "A coded classification of the PERSON NAME.",
+            "values": [
+                "Alias",
+                "Charge Name",
+                "Nickname",
+                "Real Name"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.99",
+            "name": "Person Notes",
+            "description": "Miscellaneous additional information about the person (free text).",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.100",
+            "name": "Person Remand Status",
+            "description": "This specifies the remand/bail status of a Person in the role of a defendant/offender resulting from a court hearing.",
+            "values": [
+                "CB Conditional Bail",
+                "HO Custody (hospital)",
+                "LA Care",
+                "NA Not Applicable",
+                "PC Police and/or HM Customs Detention",
+                "PR Custody",
+                "SA Secure Care",
+                "UB Unconditional Bail"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "HMCTS"
+        },
+        {
+            "id": "3.101",
+            "name": "Person Requested Name",
+            "description": "The name a person wishes to use which is different from the values in Title, Given name, Family Name and Name Suffix fields.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.102",
+            "name": "Person Stated Nationality",
+            "description": "Will assist courts with statistical returns and in the making of any recommendation for deportation.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.103",
+            "name": "Person Title",
+            "description": "The title of the person, for example, Mr, Mrs, Miss, etc.",
+            "values": [
+                "Mr",
+                "Mrs",
+                "Miss",
+                "Ms",
+                "Dr",
+                "Prof",
+                "Rev",
+                "Sir",
+                "Lady",
+                "Lord",
+                "Dame",
+                "Other"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.104",
+            "name": "Person Type",
+            "description": "A code that classifies the individual, for example, whether they are a defendant, witness, etc.",
+            "values": [
+                "D Defendant",
+                "W Witness",
+                "V Victim",
+                "C Complainant",
+                "O Other"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.105",
+            "name": "Postcode",
+            "description": "The UK postcode for a person's address.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.106",
+            "name": "Previous Offences",
+            "description": "A record of previous offences for a person.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.107",
+            "name": "Probation Length",
+            "description": "The length of probation assigned to an individual.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Probation Service"
+        },
+        {
+            "id": "3.108",
+            "name": "Referral Code",
+            "description": "A code identifying the source of a referral.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.109",
+            "name": "Rehabilitation Length",
+            "description": "The length of time for rehabilitation.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.110",
+            "name": "Risk Assessment",
+            "description": "The results of a risk assessment conducted on the individual.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.111",
+            "name": "Sentence Length",
+            "description": "The length of the sentence imposed by the court.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.112",
+            "name": "Status",
+            "description": "The current status of a case or individual within the criminal justice system.",
+            "values": [
+                "Active",
+                "Inactive",
+                "Closed",
+                "Pending"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.113",
+            "name": "Victim Contact",
+            "description": "Indicates whether the victim has been contacted regarding the case.",
+            "values": [
+                "Y",
+                "N"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.114",
+            "name": "Victim Type",
+            "description": "The type of victim as classified within the case.",
+            "values": [
+                "Individual",
+                "Organization",
+                "Government"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.115",
+            "name": "Witness Statement",
+            "description": "The written account of a witness regarding the events.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.116",
+            "name": "Young Person Identifier",
+            "description": "A unique identifier assigned to a young person.",
+            "values": "None",
+            "owner": "YJB",
+            "steward": "YJB"
+        },
+        {
+            "id": "3.117",
+            "name": "Youth Offending Team Code",
+            "description": "The code for the Youth Offending Team associated with the young person.",
+            "values": "None",
+            "owner": "YJB",
+            "steward": "YJB"
+        },
+        {
+            "id": "3.118",
+            "name": "Last Updated",
+            "description": "The date when the record was last updated.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.119",
+            "name": "Creation Date",
+            "description": "The date when the record was created.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.120",
+            "name": "Last Reviewed",
+            "description": "The date when the record was last reviewed.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.121",
+            "name": "Data Source",
+            "description": "The source from which the data was obtained.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.122",
+            "name": "Data Status",
+            "description": "The current status of the data entry.",
+            "values": [
+                "Valid",
+                "Invalid",
+                "Pending",
+                "Archived"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.123",
+            "name": "Comment",
+            "description": "Additional comments related to the record.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.124",
+            "name": "Attachment",
+            "description": "Files related to the record that are attached.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.125",
+            "name": "Confidentiality Level",
+            "description": "The confidentiality level of the record.",
+            "values": [
+                "Public",
+                "Confidential",
+                "Restricted"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.125",
+            "name": "Result Type Code",
+            "description": "Each result is deemed to be either Partial, Interim or Final.",
+            "values": [
+                "F Final",
+                "I Interim",
+                "P Partial"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Result Sub-Group of the DSF."
+        },
+        {
+            "id": "3.126",
+            "name": "Risk Assessment Rating",
+            "description": "A generic risk assessment scale.",
+            "values": [
+                "0 No risk",
+                "1 Low risk",
+                "2 Medium risk",
+                "3 High risk",
+                "4 Very high risk"
+            ],
+            "owner": "CJSE Product Board (secretariat)",
+            "steward": "YJB"
+        },
+        {
+            "id": "3.127",
+            "name": "Role Type Code",
+            "description": "The CJSE code associated with the type of role that an organisation or person may play within the criminal justice system.",
+            "values": [
+                "Appr Appropriate Adult",
+                "Defe Defendant/Offender",
+                "Info Informant",
+                "Inte Interpreter",
+                "Poli Police Worker",
+                "Pris Prisoner",
+                "Victi Victim",
+                "Witn Witness",
+                "Pers Youth Offending Team Person",
+                "Dealing At Court",
+                "Prac Youth Offending Team Practitioner",
+                "Youn Young Person"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.128",
+            "name": "Security Remarks",
+            "description": "Free text to record any aspect of the security requirements of the subject.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.129",
+            "name": "Seriousness Score",
+            "description": "Identifies the seriousness score assigned to an offence type.",
+            "values": "The set of Values is currently under review by the YJB.",
+            "owner": "YJB",
+            "steward": "YJB"
+        },
+        {
+            "id": "3.130",
+            "name": "Sexual Orientation",
+            "description": "An individual’s orientation towards persons of the same sex, opposite sex, or both sexes.",
+            "values": [
+                "HET Heterosexual/Straight",
+                "HOM Gay/Lesbian",
+                "BIS Bisexual",
+                "OTH Other",
+                "ND Not Disclosed"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "NOMS"
+        },
+        {
+            "id": "3.131",
+            "name": "Specific Requirements",
+            "description": "Free text to record any aspect that CJOs and others should be aware of regarding the person.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.132",
+            "description": "Removed from v 6"
+        },
+        {
+            "id": "3.133",
+            "name": "Standard Offence Wording",
+            "description": "The full wording of the offence as used in a charge against the defendant recorded on PNLD.",
+            "values": "Refer to the PNLD-maintained Offence Codes.",
+            "owner": "CJSE Product Board",
+            "steward": "Standard Offence Wording Group of the Data Standards Forum"
+        },
+        {
+            "id": "3.134",
+            "name": "Standard Statement Of Facts",
+            "description": "The full wording of the statement of facts with spaces for variables.",
+            "values": "Refer to the PNLD-maintained Offence Codes.",
+            "owner": "CJSE Product Board",
+            "steward": "Standard Offence Wording Group of the Data Standards Forum"
+        },
+        {
+            "id": "3.135",
+            "name": "Substance",
+            "description": "Descriptive name of possible substance used by an offender defendant.",
+            "values": [
+                "Alcohol",
+                "Amphetamines",
+                "Cannabis",
+                "Cocaine",
+                "Crack",
+                "Ecstasy",
+                "Heroin",
+                "LSD",
+                "Methadone",
+                "Poppers",
+                "Solvents",
+                "Steroids",
+                "Tobacco",
+                "Tranquilisers",
+                "Other"
+            ],
+            "owner": "YJB",
+            "steward": "YJB"
+        },
+        {
+            "id": "3.136",
+            "name": "Summons Code",
+            "description": "Identifies the type of summons by code.",
+            "values": [
+                "A On Application [for civil cases]",
+                "E Serious and Either Way Offences",
+                "M MC Act [section12 of the MC Act 1980]",
+                "W Witness Statement"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "HMCTS"
+        },
+        {
+            "id": "3.137",
+            "name": "System Instance",
+            "description": "An optional three digit code that identifies a system instance within a CJS Area.",
+            "values": "000-999.",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.138",
+            "name": "System Name",
+            "description": "A string which identifies the system type in plain English.",
+            "values": "Values are within the managed content of the System IDs Data Structure.",
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.139",
+            "name": "Target Court Type",
+            "description": "The type of court within which a hearing should be held.",
+            "version": "4.3",
+            "approval_date": "06/09/2007",
+            "values": [
+                "Youth Court",
+                "Magistrates’ Court"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "HMCTS"
+        },
+        {
+            "id": "3.140",
+            "name": "Telephone Type Code",
+            "description": "Free text to denote the type of telephone number.",
+            "values": [
+                "LANH LANDLINE-HOME",
+                "LANW LANDLINE-WORK",
+                "MOBH MOBILE-HOME",
+                "MOBW MOBILE-WORK",
+                "FAXH FAX-HOME",
+                "FAXW FAX-WORK",
+                "PAGH PAGER-HOME",
+                "PAGW PAGER-WORK"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.141",
+            "name": "Text Quantity",
+            "description": "The quantity of text inserts that must be input with the result code.",
+            "values": "0 to 9",
+            "owner": "CJSE Product Board",
+            "steward": "Result Sub-Group of the DSF."
+        },
+        {
+            "id": "3.142",
+            "description": "Removed from v 6"
+        },
+        {
+            "id": "3.143",
+            "name": "Time Quantity",
+            "description": "The quantity of times of day that must be input with the result code.",
+            "values": "0 to 9",
+            "owner": "CJSE Product Board",
+            "steward": "Result Sub-Group of the DSF."
+        },
+        {
+            "id": "3.144",
+            "name": "Time Since Last Conviction",
+            "description": "This is a time specified in a result.",
+            "values": [
+                "Don’t Know",
+                "Not Applicable",
+                "0",
+                "1",
+                "2+"
+            ],
+            "owner": "YJB",
+            "steward": "YJB"
+        },
+        {
+            "id": "3.145",
+            "name": "Time Since Last Conviction",
+            "description": "This is a time specified in a result e.g. to report to a police station at a specific date and time (in years).",
+            "values": [
+                "Don’t Know",
+                "Not Applicable",
+                "0",
+                "1",
+                "2+"
+            ],
+            "owner": "YJB",
+            "steward": "YJB"
+        },
+        {
+            "id": "3.146",
+            "name": "UK Internal Country Code",
+            "description": "A unique code representing a constituent internal part of the United Kingdom of Great Britain and Northern Ireland.",
+            "values": [
+                "1 England",
+                "2 Scotland",
+                "3 Wales",
+                "4 Northern Ireland",
+                "5 Isle of Man",
+                "6 Guernsey",
+                "7 Sark",
+                "8 Jersey",
+                "9 Alderney",
+                "10 Channel Islands"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.147",
+            "name": "Usage",
+            "description": "Extent of defendant/offender use of a particular substance.",
+            "values": [
+                "Ever used",
+                "Recent use",
+                "Not known to have used"
+            ],
+            "owner": "YJB",
+            "steward": "YJB"
+        },
+        {
+            "id": "3.148",
+            "name": "Vehicle Code",
+            "description": "Identifies offences involving an LGV or PCV that are of interest to the Department for Transport.",
+            "values": [
+                "L Large Goods Vehicle or Passenger carrying Vehicle",
+                "O Other"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.149",
+            "name": "Verdict Code",
+            "description": "The finding (decision) of the court.",
+            "values": [
+                "A Not Guilty but Guilty of another offence",
+                "C Caution",
+                "G Guilty",
+                "N Not Guilty",
+                "O Non-conviction"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "HMCTS"
+        },
+        {
+            "id": "3.150",
+            "name": "Victim Type",
+            "description": "One or more of the following values: Specific targeted victim, Vulnerable victim, Repeat victim, Victim not known to offender, Racially motivated offence, Same gender as young person/offender.",
+            "values": [
+                "Vulnerable victim",
+                "Specific targeted victim",
+                "Not known to young person",
+                "Same gender as young person",
+                "Same ethnic group as young person",
+                "Repeat victim"
+            ],
+            "owner": "YJB",
+            "steward": "YJB"
+        },
+        {
+            "id": "3.151",
+            "name": "Warrant Issue Date",
+            "description": "The last date for a party to comply with the terms of a direction.",
+            "values": [
+                "CC – (00 to 99)",
+                "YY – (00 to 99)",
+                "MM – (01 to 12)",
+                "DD – (01 to 31)"
+            ],
+            "owner": "CJSE Product Board",
+            "steward": "Data Standards Forum (secretariat)"
+        },
+        {
+            "id": "3.152",
+            "description": "Removed from v 6"
+        },
+        {
+            "id": "3.153",
+            "name": "Welsh Legislation",
+            "description": "Welsh version of the act and section in full (not coded).",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Standard Offence Wording Group of the Data Standards Forum"
+        },
+        {
+            "id": "3.154",
+            "name": "Welsh Offence Wording",
+            "description": "The full wording of the offence in Welsh as used in a charge against the defendant recorded on PNLD.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Standard Offence Wording Group of the Data Standards Forum"
+        },
+        {
+            "id": "3.155",
+            "name": "Welsh Statement Of Facts",
+            "description": "The full Welsh wording of the statement of facts with spaces for variables.",
+            "values": "None",
+            "owner": "CJSE Product Board",
+            "steward": "Standard Offence Wording Group of the Data Standards Forum"
+        },
+        {
+            "id": "3.156",
+            "name": "Youth Offending Team Unique Person Id",
+            "description": "Code which uniquely identifies a young person (YP). The code is locally allocated by the Youth Offending Team (YOT).",
+            "values": "None",
+            "owner": "YJB",
+            "steward": "YJB"
+        }
+    ]
+}
