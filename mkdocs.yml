@@ -1,8 +1,8 @@
 site_name: Criminal Justice Schema (CJS)
 site_description: An advanced framework for defining and managing justice-related data structures and behaviours, designed to enhance the integration of artificial intelligence in legal systems.
 site_author: Jonathan Bowker
-site_url: https://jonathanbowker.github.io/justice-information-exchange
-repo_url: https://github.com/JonathanBowker/justice-information-exchange
+site_url: https://jonathanbowker.github.io/criminal-justice-schema
+repo_url: https://github.com/JonathanBowker/criminal-justice-schema
 repo_name: GitHub
 
 theme:
@@ -40,7 +40,7 @@ extra:
     - property: og:description
       content: A comprehensive schema for managing justice-related data.
     - property: og:url
-      content: https://jonathanbowker.github.io/justice-information-exchange
+      content: https://jonathanbowker.github.io/criminal-justice-schema
     - property: og:image
       content: https://example.com/social-image.png
 
