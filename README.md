@@ -1,1 +1,1 @@
-# justice-definition-language
+# Criminal Justice Schema
