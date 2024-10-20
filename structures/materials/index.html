@@ -1350,34 +1350,52 @@
 <h3 id="example-document">Example Document</h3>
 <h4 id="yaml">YAML</h4>
 <div class="highlight"><pre><span></span><code><span class="nt">materials</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MAT12345</span>
-<span class="w">  </span><span class="nt">case_id</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;CASE12345&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;CASE67890&quot;</span><span class="p p-Indicator">]</span>
-<span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">evidence file</span>
-<span class="w">  </span><span class="nt">source</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Anytown Police Department</span>
-<span class="w">  </span><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2023-08-10</span>
-<span class="w">  </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Forensic analysis report for the crime scene.</span>
-<span class="w">  </span><span class="nt">file_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PDF</span>
-<span class="w">  </span><span class="nt">related_personnel</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;PERSON123&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;PERSON456&quot;</span><span class="p p-Indicator">]</span>
-<span class="w">  </span><span class="nt">confidentiality</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">restricted</span>
-<span class="w">  </span><span class="nt">related_events</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;EVT123&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;EVT456&quot;</span><span class="p p-Indicator">]</span>
-<span class="w">  </span><span class="nt">notes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Material requires further analysis.</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MAT001</span>
+<span class="w">      </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Forensic Report on CCTV Footage</span>
+<span class="w">      </span><span class="nt">category</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">forensic</span>
+<span class="w">      </span><span class="nt">source</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Anytown Forensic Lab</span>
+<span class="w">      </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;1&quot;</span>
+<span class="w">      </span><span class="nt">date_published</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2023-01-13&quot;</span>
+<span class="w">      </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Analysis of CCTV footage showing the robbery.</span>
+<span class="w">      </span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">English</span>
+<span class="w">      </span><span class="nt">jurisdiction</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">England and Wales</span>
+<span class="w">      </span><span class="nt">access_level</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">restricted</span>
+<span class="w">      </span><span class="nt">file_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PDF</span>
+<span class="w">      </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://forensiclabs.gov.uk/reports/MAT001.pdf</span>
+<span class="w">      </span><span class="nt">related_cases</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CASE12345</span>
+<span class="w">      </span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Dr. Jane Doe</span>
+<span class="w">      </span><span class="nt">usage_notes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">For use in court proceedings only.</span>
+<span class="w">      </span><span class="nt">expiry_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="w">      </span><span class="nt">keywords</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CCTV</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Forensic Report</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Robbery</span>
+<span class="w">      </span><span class="nt">regulatory_compliance</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CJSE</span>
+<span class="w">      </span><span class="nt">ai_rules</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">No AI usage without case officer approval.</span>
 </code></pre></div>
 <h4 id="json">JSON</h4>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;materials&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MAT12345&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;case_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;CASE12345&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;CASE67890&quot;</span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;evidence file&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Anytown Police Department&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-08-10&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Forensic analysis report for the crime scene.&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;file_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PDF&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;related_personnel&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;PERSON123&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;PERSON456&quot;</span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;confidentiality&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;restricted&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;related_events&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;EVT123&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;EVT456&quot;</span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;notes&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Material requires further analysis.&quot;</span>
-<span class="w">  </span><span class="p">}</span>
-<span class="p">}</span>
+<span class="w">        </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MAT001&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Forensic Report on CCTV Footage&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;category&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;forensic&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Anytown Forensic Lab&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;date_published&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-01-13&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Analysis of CCTV footage showing the robbery.&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;language&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;English&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;jurisdiction&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;England and Wales&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;access_level&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;restricted&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;file_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PDF&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://forensiclabs.gov.uk/reports/MAT001.pdf&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;related_cases&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;CASE12345&quot;</span><span class="p">],</span>
+<span class="w">        </span><span class="nt">&quot;author&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Dr. Jane Doe&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;usage_notes&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;For use in court proceedings only.&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;expiry_date&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;keywords&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;CCTV&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Forensic Report&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Robbery&quot;</span><span class="p">],</span>
+<span class="w">        </span><span class="nt">&quot;regulatory_compliance&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CJSE&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;ai_rules&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;No AI usage without case officer approval.&quot;</span>
+<span class="w">      </span><span class="p">}</span>
 </code></pre></div>
 
 
