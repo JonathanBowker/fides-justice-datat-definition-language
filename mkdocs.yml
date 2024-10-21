@@ -1,5 +1,5 @@
-site_name: Criminal Justice Schema (CJS)
-site_description: An advanced framework for defining and managing justice-related data structures and behaviours, designed to enhance the integration of artificial intelligence in legal systems.
+site_name: Fides - Case Definition Language 
+site_description: An extensible framework and naming protocol for defining and managing justice-related data structures and behaviours, designed to facilitate the safe use of artificial intelligence (AI) within UK Justice and Forensics System.
 site_author: Jonathan Bowker
 site_url: https://jonathanbowker.github.io/criminal-justice-schema
 repo_url: https://github.com/JonathanBowker/criminal-justice-schema
@@ -62,20 +62,24 @@ markdown_extensions:
 nav:
   - Introduction: index.md
   - References:
-      - Data Standards: references/data-standards.md
+      - Data Standards: references/data_standards.md
       - Glossary: references/glossary.md
-  - Data Structures:
-      - Overview: structures/overview.md
-      - Prosecution: structures/prosecution.md
-      - Hearing: structures/hearing.md
-      - Offence: structures/offence.md
-      - Organisation Unit Identifier: structures/organisation_unit_identifier.md
-      - Person: structures/person.md
-      - Postal Address: structures/postal_address.md
-      - Result: structures/result.md
-      - Result Qualifier: structures/result_qualifier.md
-      - Role: structures/role.md
-      - Materials: structures/materials.md
-  - Examples:
+  - Dataset Catalogue:
+      - Overview: data_catalogue/0.overview.md
+      - Criminal Prosecution Reference: data_catalogue/1.criminal_prosecution_reference.md
+      - Hearing: data_catalogue/2.hearing.md
+      - Offence: data_catalogue/3.offence.md
+      - Evidence: data_catalogue/12.evidence.md
+      - Organisation Unit Identifier: data_catalogue/4.organisation_unit_identifier.md
+      - Person: data_catalogue/5.person.md
+      - Postal Address: data_catalogue/6.postal_address.md
+      - Result (Fixed): data_catalogue/7.result_fixed.md
+      - Result Qualifier (Fixed): data_catalogue/8.result_qualifier_fixed.md
+      - Role: data_catalogue/9.role.md
+      - System ID: data_catalogue/10.system_id.md
+      - UK Internal Country: data_catalogue/11.uk_internal_country.md          
+  - Case Data Map:
+      - Overview: taxonomy/overview.md
+  - Examples Files:
       - Yaml Examples: examples/yaml-examples.md
       - Json Examples: examples/json-examples.md

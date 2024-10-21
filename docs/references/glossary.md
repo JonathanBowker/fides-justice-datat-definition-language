@@ -1,6 +1,6 @@
 # Glossary
 
-This glossary provides definitions for key terms used within the **Judicial Electronic Data Interchange (JEDI) language **. These definitions are intended to ensure clarity and consistency across all components of the schema, supporting accurate understanding and application of justice-related information.
+This glossary provides definitions for key terms used within the **Criminal Justice Schema (CJS) language**. These definitions are intended to ensure clarity and consistency across all components of the schema, supporting accurate understanding and application of justice-related information.
 
 ## A
 
