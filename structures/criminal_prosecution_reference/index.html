@@ -496,27 +496,36 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-prosecutioncpr_defendant" class="md-nav__link">
+  <a href="#1-prosecutioncpr_id" class="md-nav__link">
     <span class="md-ellipsis">
-      1. prosecution.cpr_defendant
+      1. prosecution.cpr_id
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-prosecutioncpr_offence_reason" class="md-nav__link">
+  <a href="#2-prosecutioncpr_defendant" class="md-nav__link">
     <span class="md-ellipsis">
-      2. prosecution.cpr_offence_reason
+      2. prosecution.cpr_defendant
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-prosecutioncpr_offence_sequence" class="md-nav__link">
+  <a href="#3-prosecutioncpr_offence_reason" class="md-nav__link">
     <span class="md-ellipsis">
-      3. prosecution.cpr_offence_sequence
+      3. prosecution.cpr_offence_reason
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-prosecutioncpr_offence_sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. prosecution.cpr_offence_sequence
     </span>
   </a>
   
@@ -919,27 +928,36 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-prosecutioncpr_defendant" class="md-nav__link">
+  <a href="#1-prosecutioncpr_id" class="md-nav__link">
     <span class="md-ellipsis">
-      1. prosecution.cpr_defendant
+      1. prosecution.cpr_id
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-prosecutioncpr_offence_reason" class="md-nav__link">
+  <a href="#2-prosecutioncpr_defendant" class="md-nav__link">
     <span class="md-ellipsis">
-      2. prosecution.cpr_offence_reason
+      2. prosecution.cpr_defendant
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-prosecutioncpr_offence_sequence" class="md-nav__link">
+  <a href="#3-prosecutioncpr_offence_reason" class="md-nav__link">
     <span class="md-ellipsis">
-      3. prosecution.cpr_offence_sequence
+      3. prosecution.cpr_offence_reason
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-prosecutioncpr_offence_sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. prosecution.cpr_offence_sequence
     </span>
   </a>
   
@@ -1032,10 +1050,16 @@
 </thead>
 <tbody>
 <tr>
+<td><code>prosecution.cpr_id</code></td>
+<td><code>keyword</code></td>
+<td>Unique Identifier for the Criminal Prosecution Reference.</td>
+<td><code>CPR123456</code></td>
+</tr>
+<tr>
 <td><code>prosecution.cpr_defendant</code></td>
 <td><code>keyword</code></td>
 <td>Links to a person or organisation record related to the prosecution.</td>
-<td><code>PER12345</code></td>
+<td><code>PER123456</code></td>
 </tr>
 <tr>
 <td><code>prosecution.cpr_offence_reason</code></td>
@@ -1045,47 +1069,55 @@
 </tr>
 <tr>
 <td><code>prosecution.cpr_offence_sequence</code></td>
-<td><code>integer</code></td>
-<td>A three-digit sequence number to ensure uniqueness of a CPR when multiple offences are linked.</td>
-<td><code>001</code></td>
+<td><code>integer</code> or <code>array</code></td>
+<td>A three-digit sequence number (with leading zeroes) to ensure uniqueness of a CPR when multiple offences are linked.  <code>001</code></td>
+<td></td>
 </tr>
 </tbody>
 </table>
 <h3 id="field-details">Field Details</h3>
-<h4 id="1-prosecutioncpr_defendant">1. <code>prosecution.cpr_defendant</code></h4>
+<h4 id="1-prosecutioncpr_id">1. <code>prosecution.cpr_id</code></h4>
+<ul>
+<li><strong>Type</strong>: <code>keyword</code></li>
+<li><strong>Description</strong>: Unique Identifier for the Criminal Prosecution Reference.</li>
+<li><strong>Example</strong>: <code>CPR000001</code></li>
+</ul>
+<h4 id="2-prosecutioncpr_defendant">2. <code>prosecution.cpr_defendant</code></h4>
 <ul>
 <li><strong>Type</strong>: <code>keyword</code></li>
 <li><strong>Description</strong>: Links to a person or organisation record related to the prosecution.</li>
-<li><strong>Example</strong>: <code>PER12345</code></li>
+<li><strong>Example</strong>: <code>PER123456</code></li>
 </ul>
-<h4 id="2-prosecutioncpr_offence_reason">2. <code>prosecution.cpr_offence_reason</code></h4>
+<h4 id="3-prosecutioncpr_offence_reason">3. <code>prosecution.cpr_offence_reason</code></h4>
 <ul>
 <li><strong>Type</strong>: <code>keyword</code></li>
 <li><strong>Description</strong>: Links to an offence code, such as <code>MD71101</code> (Misuse of Drugs Act 1971, class B drug - cannabis).</li>
 <li><strong>Example</strong>: <code>MD71101</code></li>
 </ul>
-<h4 id="3-prosecutioncpr_offence_sequence">3. <code>prosecution.cpr_offence_sequence</code></h4>
+<h4 id="4-prosecutioncpr_offence_sequence">4. <code>prosecution.cpr_offence_sequence</code></h4>
 <ul>
 <li><strong>Type</strong>: <code>integer</code></li>
-<li><strong>Description</strong>: A three-digit sequence number (with leading zeroes) to ensure the uniqueness of a CPR when multiple offences are linked to a defendant. </li>
-<li><strong>Example</strong>: <code>001</code></li>
+<li><strong>Description</strong>: A three-digit sequence number (001 - 999) to ensure the uniqueness of a CPR when multiple offences are linked to a defendant.</li>
+<li><strong>Example</strong>: <code>001</code> </li>
 </ul>
 <h3 id="usage-notes">Usage Notes</h3>
 <ul>
 <li><strong>Core Fields</strong>: These fields must be present for each prosecution record to maintain the integrity and traceability of prosecution data.</li>
-<li><strong>Offence Sequence</strong>: The three-digit format ensures consistency and helps distinguish between multiple offences related to the same defendant.</li>
+<li><strong>Offence Sequence</strong>: The three-digit format ensures consistency and helps distinguish between multiple offences related to the same defendant. If there are multiple offence sequences, they should be represented as an array.</li>
 </ul>
 <h3 id="example-document">Example Document</h3>
 <h4 id="yaml">YAML</h4>
 <div class="highlight"><pre><span></span><code><span class="nt">prosecution</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">cpr_defendant</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PER12345</span>
+<span class="w">  </span><span class="nt">cpr_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CPR0000001</span>
+<span class="w">  </span><span class="nt">cpr_defendant</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PER123456</span>
 <span class="w">  </span><span class="nt">cpr_offence_reason</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MD71101</span>
 <span class="w">  </span><span class="nt">cpr_offence_sequence</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">001</span>
 </code></pre></div>
 <h4 id="json">JSON</h4>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;prosecution&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;cpr_defendant&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PER12345&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;cpr_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CPR0000001&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;cpr_defendant&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PER123456&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;cpr_offence_reason&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MD71101&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;cpr_offence_sequence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">001</span>
 <span class="w">  </span><span class="p">}</span>
