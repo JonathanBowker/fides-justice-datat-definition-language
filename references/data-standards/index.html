@@ -440,11 +440,26 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#implementation-notes" class="md-nav__link">
+  <a href="#major-entities" class="md-nav__link">
     <span class="md-ellipsis">
-      Implementation Notes
+      Major Entities
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Major Entities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8-implementation-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Implementation Notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -947,11 +962,26 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#implementation-notes" class="md-nav__link">
+  <a href="#major-entities" class="md-nav__link">
     <span class="md-ellipsis">
-      Implementation Notes
+      Major Entities
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Major Entities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8-implementation-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Implementation Notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -978,52 +1008,81 @@
 <h2 id="key-data-standards">Key Data Standards</h2>
 <p>The following data standards are applied across CJS to maintain high-quality data management:</p>
 <h3 id="1-data-types">1. Data Types</h3>
-<p>Each field within the schema is assigned a specific data type. Common data types used in the schema include:</p>
+<p>Each field within the schema is assigned a specific data type. The most applicable Elasticsearch data types used in the schema include:</p>
 <ul>
-<li><strong>Keyword</strong>: Used for unique identifiers or predefined values (e.g., <code>case.id</code>, <code>participant.role</code>).</li>
-<li><strong>Text</strong>: Applied to descriptive fields that may contain free text (e.g., <code>participant.name</code>, <code>case.description</code>).</li>
-<li><strong>Date</strong>: Applied to fields requiring date values, formatted as <code>YYYY-MM-DD</code> (e.g., <code>case.start_date</code>, <code>evidence.date_collected</code>).</li>
-<li><strong>Boolean</strong>: Used for fields that represent binary values, such as <code>true</code> or <code>false</code> (e.g., <code>bail.supervision_required</code>).</li>
-<li><strong>Double</strong>: For numeric fields requiring decimal values (e.g., <code>bail.amount</code>).</li>
+<li><strong><code>keyword</code></strong>: Used for structured text that does not need to be analyzed, such as case identifiers, legal codes, and participant roles. It is ideal for exact matches, sorting, and aggregations.</li>
+<li><strong><code>text</code></strong>: Applied to unstructured text that may contain free text, such as witness statements, case descriptions, or legal documents, allowing for full-text search capabilities.</li>
+<li><strong><code>date</code></strong>: Applied to fields that store date values, following the <strong>DD-MM-YYYY</strong> format, in compliance with ISO 8601 standards (e.g., <code>offence_date</code>, <code>hearing_date</code>).</li>
+<li><strong><code>geo_point</code></strong>: Used for storing geographical locations such as crime scenes, police station locations, or courthouse addresses, enabling geo-based queries like proximity searches.</li>
+<li><strong><code>boolean</code></strong>: Represents binary values (<code>true</code> or <code>false</code>), useful for fields such as <code>bail_granted</code>, <code>supervision_required</code>, or <code>detention_status</code>.</li>
+<li><strong><code>long</code></strong>, <strong><code>integer</code></strong>: Applied to numeric fields storing whole numbers, such as case numbers, IDs, or counts (e.g., number of charges or witnesses).</li>
+<li><strong><code>float</code></strong>, <strong><code>double</code></strong>: Used for storing numerical values that require decimals, such as <code>bail_amount</code> or <code>monetary_fines</code>.</li>
+<li><strong><code>nested</code></strong>: Suitable for storing arrays of objects, where each object (e.g., multiple offences related to a case) needs to be indexed and queried independently while preserving relationships.</li>
+<li><strong><code>object</code></strong>: Represents complex records that may contain multiple fields within an object (e.g., detailed information about a person, such as name, address, and contact details).</li>
+<li><strong><code>array</code></strong>: Fields that can store multiple values (e.g., an array of evidence items, participant IDs, or case statuses).</li>
 </ul>
 <h3 id="2-naming-conventions">2. Naming Conventions</h3>
 <p>Field names follow consistent naming conventions to ensure clarity and uniformity:</p>
 <ul>
-<li>Field names are written in <strong>snake_case</strong> (e.g., <code>participant.contact_info</code>, <code>case.outcome</code>).</li>
-<li>Prefixes indicate the entity or component to which the field belongs (e.g., <code>case</code>, <code>participant</code>, <code>evidence</code>).</li>
+<li>Field names are written in <strong>snake_case</strong> (e.g., <code>person.contact_info</code>, <code>case.outcome</code>).</li>
+<li>Prefixes indicate the entity or component to which the field belongs (e.g., <code>case</code>, <code>person</code>, <code>evidence</code>).</li>
 </ul>
 <h3 id="3-date-and-time-formatting">3. Date and Time Formatting</h3>
-<p>Dates are formatted using the ISO 8601 standard (<code>YYYY-MM-DD</code>). This format ensures consistency and enables efficient sorting and filtering of date-related data.</p>
+<p>Dates are formatted using the <strong>DD-MM-YYYY</strong> format according to ISO 8601 standards. This format ensures consistency and enables efficient sorting and filtering of date-related data.</p>
 <ul>
-<li>Example: <code>2023-10-15</code></li>
+<li>Example: <code>15-10-2023</code></li>
 </ul>
 <h3 id="4-unique-identifiers">4. Unique Identifiers</h3>
-<p>Each major entity within the schema (e.g., cases, participants, evidence) is assigned a unique identifier. These identifiers are used to link related records across different components, ensuring the integrity and traceability of data:</p>
-<ul>
-<li><strong>Case ID</strong>: <code>CASE12345</code></li>
-<li><strong>Participant ID</strong>: <code>PART67890</code></li>
-<li><strong>Evidence ID</strong>: <code>EVID56789</code></li>
-</ul>
+<p>Each major entity within the schema is assigned a unique identifier (UID) following the format of <strong>three letters followed by seven digits (e.g., 0000001)</strong>. These UIDs are structured to ensure integrity and traceability of data across different components and follow the order of the entities listed in the schema:</p>
+<ol>
+<li><strong>Criminal Prosecution Reference ID</strong>: <code>PRO1234567</code></li>
+<li><strong>Hearing ID</strong>: <code>HRG0000001</code></li>
+<li><strong>Offence ID</strong>: <code>OFF0000001</code></li>
+<li><strong>Organisation Unit Identifier (OU ID)</strong>: <code>OU0000001</code></li>
+<li><strong>Person ID</strong>: <code>PER0000001</code></li>
+<li><strong>Postal Address ID</strong>: <code>ADD0000001</code></li>
+<li><strong>Result ID</strong>: <code>RES0000001</code></li>
+<li><strong>Result Qualifier ID</strong>: <code>REQ0000001</code></li>
+<li><strong>Role ID</strong>: <code>ROL0000001</code></li>
+<li><strong>System ID</strong>: <code>SYS0000001</code></li>
+<li><strong>Material ID</strong>: <code>MAT0000001</code></li>
+</ol>
+<p>These identifiers are used to link related records across different components, ensuring the integrity and traceability of data throughout the schema.</p>
 <h3 id="5-linking-and-relationships">5. Linking and Relationships</h3>
 <p>The schema is designed to establish clear relationships between different entities:</p>
 <ul>
-<li><strong>Case-Centric Structure</strong>: All components, such as participants, offences, evidence, and events, are linked to specific cases using unique identifiers.</li>
-<li><strong>Cross-Referencing</strong>: Fields like <code>related_cases</code>, <code>case_id</code>, and <code>participant_id</code> are used to create relationships between entities, ensuring all relevant information is interconnected.</li>
+<li><strong>Case-Centric Structure</strong>: All components, such as persons, offences, evidence, and events, are linked to specific cases using unique identifiers.</li>
+<li><strong>Cross-Referencing</strong>: Fields like <code>related_cases</code>, <code>case_id</code>, <code>person_id</code>, and <code>material_id</code> are used to create relationships between entities, ensuring all relevant information is interconnected.</li>
 </ul>
 <h3 id="6-validation-rules">6. Validation Rules</h3>
 <p>To maintain data integrity, certain fields have validation rules applied:</p>
 <ul>
-<li><strong>Mandatory Fields</strong>: Core fields (e.g., <code>case.id</code>, <code>participant.name</code>) are mandatory and must be provided for each record.</li>
+<li><strong>Mandatory Fields</strong>: Core fields (e.g., <code>case.id</code>, <code>person.name</code>) are mandatory and must be provided for each record.</li>
 <li><strong>Data Type Validation</strong>: Fields are validated against their specified data types to prevent inconsistencies (e.g., ensuring <code>date</code> fields contain valid dates).</li>
-<li><strong>Enumeration Lists</strong>: Fields with predefined values (e.g., <code>case.status</code>, <code>participant.role</code>) must match an approved list of values to ensure consistency.</li>
+<li><strong>Enumeration Lists</strong>: Fields with predefined values (e.g., <code>case.status</code>, <code>person.role</code>) must match an approved list of values to ensure consistency.</li>
 </ul>
 <h3 id="7-data-privacy-and-security">7. Data Privacy and Security</h3>
 <p>The schema incorporates standards to protect sensitive information:</p>
 <ul>
-<li><strong>Anonymisation</strong>: Certain fields may be anonymised to protect the identity of participants, especially for victims and witnesses.</li>
+<li><strong>Anonymisation</strong>: Certain fields may be anonymised to protect the identity of persons, especially for victims and witnesses.</li>
 <li><strong>Access Control</strong>: Data should be stored and accessed following secure protocols, ensuring that only authorised personnel can view or modify sensitive information.</li>
 </ul>
-<h2 id="implementation-notes">Implementation Notes</h2>
+<h2 id="major-entities">Major Entities</h2>
+<p>To support comprehensive and consistent data management, the <strong>Criminal Justice Schema (CJS)</strong> includes the following major entities:</p>
+<ol>
+<li><strong>Criminal Prosecution Reference</strong>: Links individuals to specific offences with a unique sequence and prosecution details.</li>
+<li><strong>Hearing</strong>: Captures data elements relevant to case hearings, including dates, locations, and outcomes.</li>
+<li><strong>Offence (Fixed)</strong>: Provides detailed information on offences, including CJS codes, legislative context, and indicators for recordability and notifiability.</li>
+<li><strong>Organisation Unit Identifier</strong>: Represents the organisational structure and units within Criminal Justice Organisations (CJOs) accessing the CJS exchange.</li>
+<li><strong>Person</strong>: Describes individuals involved in the justice system, such as defendants, victims, or legal professionals.</li>
+<li><strong>Postal Address</strong>: Details the postal addresses of persons or organisations involved in a case.</li>
+<li><strong>Result (Fixed)</strong>: Defines case outcomes, including interim, partial, or final results.</li>
+<li><strong>Result Qualifier (Fixed)</strong>: Adds additional context or information to a result, providing further classification.</li>
+<li><strong>Role</strong>: Shows the specific roles of persons or organisations in relation to a case.</li>
+<li><strong>System ID</strong>: Identifies and tracks system-related components, ensuring consistent monitoring and linking of data.</li>
+<li><strong>Material</strong>: Documents and evidence related to legal proceedings, such as reports, evidence files, and records.</li>
+</ol>
+<h3 id="8-implementation-notes">8. Implementation Notes</h3>
 <ul>
 <li>The schema should be implemented with tools and technologies that support these data standards, ensuring consistency across systems and databases.</li>
 <li>Regular audits and validations should be conducted to maintain data integrity and accuracy.</li>
