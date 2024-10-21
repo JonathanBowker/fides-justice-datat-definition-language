@@ -21,7 +21,7 @@
          <lastmod>2024-10-21</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/criminal-justice-schema/references/data-standards/</loc>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/references/data_standards/</loc>
          <lastmod>2024-10-21</lastmod>
     </url>
     <url>
@@ -33,7 +33,11 @@
          <lastmod>2024-10-21</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/criminal-justice-schema/structures/getting-started/</loc>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/structures/criminal_prosecution_reference/</loc>
+         <lastmod>2024-10-21</lastmod>
+    </url>
+    <url>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/structures/getting_started/</loc>
          <lastmod>2024-10-21</lastmod>
     </url>
     <url>
@@ -41,7 +45,7 @@
          <lastmod>2024-10-21</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/criminal-justice-schema/structures/materials/</loc>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/structures/material/</loc>
          <lastmod>2024-10-21</lastmod>
     </url>
     <url>
@@ -62,10 +66,6 @@
     </url>
     <url>
          <loc>https://jonathanbowker.github.io/criminal-justice-schema/structures/postal_address/</loc>
-         <lastmod>2024-10-21</lastmod>
-    </url>
-    <url>
-         <loc>https://jonathanbowker.github.io/criminal-justice-schema/structures/prosecution/</loc>
          <lastmod>2024-10-21</lastmod>
     </url>
     <url>
