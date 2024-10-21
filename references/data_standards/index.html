@@ -1120,10 +1120,6 @@
 <li><strong><code>date</code></strong>: Applied to fields that store date values, following the <strong>DD-MM-YYYY</strong> format, in compliance with ISO 8601 standards (e.g., <code>offence_date</code>, <code>hearing_date</code>).</li>
 <li><strong><code>geo_point</code></strong>: Used for storing geographical locations such as crime scenes, police station locations, or courthouse addresses, enabling geo-based queries like proximity searches.</li>
 <li><strong><code>boolean</code></strong>: Represents binary values (<code>true</code> or <code>false</code>), useful for fields such as <code>bail_granted</code>, <code>supervision_required</code>, or <code>detention_status</code>.</li>
-<li><strong><code>long</code></strong>, <strong><code>integer</code></strong>: Applied to numeric fields storing whole numbers, such as case numbers, IDs, or counts (e.g., number of charges or witnesses).</li>
-<li><strong><code>float</code></strong>, <strong><code>double</code></strong>: Used for storing numerical values that require decimals, such as <code>bail_amount</code> or <code>monetary_fines</code>.</li>
-<li><strong><code>nested</code></strong>: Suitable for storing arrays of objects, where each object (e.g., multiple offences related to a case) needs to be indexed and queried independently while preserving relationships.</li>
-<li><strong><code>object</code></strong>: Represents complex records that may contain multiple fields within an object (e.g., detailed information about a person, such as name, address, and contact details).</li>
 <li><strong><code>array</code></strong>: Fields that can store multiple values (e.g., an array of evidence items, participant IDs, or case statuses).</li>
 </ul>
 <h3 id="2-naming-conventions">2. Naming Conventions</h3>
