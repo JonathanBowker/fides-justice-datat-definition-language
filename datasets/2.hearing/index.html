@@ -6,19 +6,19 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An advanced framework for defining and managing justice-related data structures and behaviours, designed to enhance the integration of artificial intelligence in legal systems.">
+        <meta name="description" content="An extensible framework and naming protocol for defining and managing justice-related data structures and behaviours, designed to facilitate the safe use of artificial intelligence (AI) within UK Justice and Forensics System.">
       
       
         <meta name="author" content="Jonathan Bowker">
       
       
-        <link rel="canonical" href="https://jonathanbowker.github.io/criminal-justice-schema/structures/offence/">
+        <link rel="canonical" href="https://jonathanbowker.github.io/criminal-justice-schema/datasets/2.hearing/">
       
       
-        <link rel="prev" href="../hearing/">
+        <link rel="prev" href="../1.criminal_prosecution_reference/">
       
       
-        <link rel="next" href="../organisation_unit_identifier/">
+        <link rel="next" href="../3.offence/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Offence - Criminal Justice Schema (CJS)</title>
+        <title>Hearing - Fides - Criminal Justice Data Definition Language</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#offence-fields" class="md-skip">
+        <a href="#hearing-dataset" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Criminal Justice Schema (CJS)" class="md-header__button md-logo" aria-label="Criminal Justice Schema (CJS)" data-md-component="logo">
+    <a href="../.." title="Fides - Criminal Justice Data Definition Language" class="md-header__button md-logo" aria-label="Fides - Criminal Justice Data Definition Language" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,13 +110,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Criminal Justice Schema (CJS)
+            Fides - Criminal Justice Data Definition Language
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Offence
+              Hearing
             
           </span>
         </div>
@@ -229,13 +229,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Criminal Justice Schema (CJS)" class="md-nav__button md-logo" aria-label="Criminal Justice Schema (CJS)" data-md-component="logo">
+    <a href="../.." title="Fides - Criminal Justice Data Definition Language" class="md-nav__button md-logo" aria-label="Fides - Criminal Justice Data Definition Language" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Criminal Justice Schema (CJS)
+    Fides - Criminal Justice Data Definition Language
   </label>
   
     <div class="md-nav__source">
@@ -379,7 +379,7 @@
             
   
   <span class="md-ellipsis">
-    Data Structures
+    Case Schema
   </span>
   
 
@@ -389,7 +389,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Data Structures
+            Case Schema
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -400,7 +400,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../overview/" class="md-nav__link">
+      <a href="../0.overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -421,32 +421,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../criminal_prosecution_reference/" class="md-nav__link">
+      <a href="../1.criminal_prosecution_reference/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Criminal Prosecution Reference
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../hearing/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Hearing
   </span>
   
 
@@ -476,7 +455,7 @@
           
   
   <span class="md-ellipsis">
-    Offence
+    Hearing
   </span>
   
 
@@ -487,7 +466,7 @@
         
   
   <span class="md-ellipsis">
-    Offence
+    Hearing
   </span>
   
 
@@ -509,23 +488,38 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#field-set-overview" class="md-nav__link">
+  <a href="#dataset-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Field Set Overview
+      Dataset Overview
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Field Set Overview">
+    <nav class="md-nav" aria-label="Dataset Overview">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#core-fields" class="md-nav__link">
+  <a href="#administrative-fields" class="md-nav__link">
     <span class="md-ellipsis">
-      Core Fields
+      Administrative Fields
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primary-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primary Fields
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Primary Fields">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#extended-fields" class="md-nav__link">
@@ -547,108 +541,99 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-offenceid" class="md-nav__link">
+  <a href="#1-hearingid" class="md-nav__link">
     <span class="md-ellipsis">
-      1. offence.id
+      1. hearing.id
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-offencecase_id" class="md-nav__link">
+  <a href="#2-hearingcpr_id" class="md-nav__link">
     <span class="md-ellipsis">
-      2. offence.case_id
+      2. hearing.cpr_id
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-offencecode" class="md-nav__link">
+  <a href="#3-hearinglocation" class="md-nav__link">
     <span class="md-ellipsis">
-      3. offence.code
+      3. hearing.location
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-offencecategory" class="md-nav__link">
+  <a href="#4-hearingdate" class="md-nav__link">
     <span class="md-ellipsis">
-      4. offence.category
+      4. hearing.date
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-offencetitle" class="md-nav__link">
+  <a href="#5-hearingtime" class="md-nav__link">
     <span class="md-ellipsis">
-      5. offence.title
+      5. hearing.time
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#6-offencedate" class="md-nav__link">
+  <a href="#6-hearinglanguage" class="md-nav__link">
     <span class="md-ellipsis">
-      6. offence.date
+      6. hearing.language
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#7-offencedescription" class="md-nav__link">
+  <a href="#7-hearingdefendant_present" class="md-nav__link">
     <span class="md-ellipsis">
-      7. offence.description
+      7. hearing.defendant_present
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#8-offencelegislation" class="md-nav__link">
+  <a href="#8-hearingdocumentation_language" class="md-nav__link">
     <span class="md-ellipsis">
-      8. offence.legislation
+      8. hearing.documentation_language
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#9-offencewelsh_title" class="md-nav__link">
+  <a href="#9-hearingreport_requested_date" class="md-nav__link">
     <span class="md-ellipsis">
-      9. offence.welsh_title
+      9. hearing.report_requested_date
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#10-offencepenalty" class="md-nav__link">
+  <a href="#10-hearingreport_completed_date" class="md-nav__link">
     <span class="md-ellipsis">
-      10. offence.penalty
+      10. hearing.report_completed_date
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#11-offencerelated_materials" class="md-nav__link">
+  <a href="#11-hearingnotes" class="md-nav__link">
     <span class="md-ellipsis">
-      11. offence.related_materials
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#12-offencenotes" class="md-nav__link">
-    <span class="md-ellipsis">
-      12. offence.notes
+      11. hearing.notes
     </span>
   </a>
   
@@ -722,7 +707,49 @@
   
   
     <li class="md-nav__item">
-      <a href="../organisation_unit_identifier/" class="md-nav__link">
+      <a href="../3.offence/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Offence
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12.evidence/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evidence
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4.organisation_unit_identifier/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -743,7 +770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../person/" class="md-nav__link">
+      <a href="../5.person/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -764,7 +791,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../postal_address/" class="md-nav__link">
+      <a href="../6.postal_address/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -785,7 +812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../result/" class="md-nav__link">
+      <a href="../7.result_fixed/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -806,7 +833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../result_qualifier/" class="md-nav__link">
+      <a href="../8.result_qualifier_fixed/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -827,7 +854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../role/" class="md-nav__link">
+      <a href="../9.role/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -848,11 +875,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../material/" class="md-nav__link">
+      <a href="../10.system_id/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Material
+    System ID
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11.uk_internal_country/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UK Internal Country
   </span>
   
 
@@ -890,7 +938,7 @@
             
   
   <span class="md-ellipsis">
-    Examples
+    Taxonomy
   </span>
   
 
@@ -900,7 +948,70 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Examples
+            Taxonomy
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../taxonomy/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Case Examples
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Case Examples
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -980,23 +1091,38 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#field-set-overview" class="md-nav__link">
+  <a href="#dataset-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Field Set Overview
+      Dataset Overview
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Field Set Overview">
+    <nav class="md-nav" aria-label="Dataset Overview">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#core-fields" class="md-nav__link">
+  <a href="#administrative-fields" class="md-nav__link">
     <span class="md-ellipsis">
-      Core Fields
+      Administrative Fields
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primary-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primary Fields
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Primary Fields">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#extended-fields" class="md-nav__link">
@@ -1018,108 +1144,99 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-offenceid" class="md-nav__link">
+  <a href="#1-hearingid" class="md-nav__link">
     <span class="md-ellipsis">
-      1. offence.id
+      1. hearing.id
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-offencecase_id" class="md-nav__link">
+  <a href="#2-hearingcpr_id" class="md-nav__link">
     <span class="md-ellipsis">
-      2. offence.case_id
+      2. hearing.cpr_id
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-offencecode" class="md-nav__link">
+  <a href="#3-hearinglocation" class="md-nav__link">
     <span class="md-ellipsis">
-      3. offence.code
+      3. hearing.location
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-offencecategory" class="md-nav__link">
+  <a href="#4-hearingdate" class="md-nav__link">
     <span class="md-ellipsis">
-      4. offence.category
+      4. hearing.date
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-offencetitle" class="md-nav__link">
+  <a href="#5-hearingtime" class="md-nav__link">
     <span class="md-ellipsis">
-      5. offence.title
+      5. hearing.time
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#6-offencedate" class="md-nav__link">
+  <a href="#6-hearinglanguage" class="md-nav__link">
     <span class="md-ellipsis">
-      6. offence.date
+      6. hearing.language
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#7-offencedescription" class="md-nav__link">
+  <a href="#7-hearingdefendant_present" class="md-nav__link">
     <span class="md-ellipsis">
-      7. offence.description
+      7. hearing.defendant_present
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#8-offencelegislation" class="md-nav__link">
+  <a href="#8-hearingdocumentation_language" class="md-nav__link">
     <span class="md-ellipsis">
-      8. offence.legislation
+      8. hearing.documentation_language
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#9-offencewelsh_title" class="md-nav__link">
+  <a href="#9-hearingreport_requested_date" class="md-nav__link">
     <span class="md-ellipsis">
-      9. offence.welsh_title
+      9. hearing.report_requested_date
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#10-offencepenalty" class="md-nav__link">
+  <a href="#10-hearingreport_completed_date" class="md-nav__link">
     <span class="md-ellipsis">
-      10. offence.penalty
+      10. hearing.report_completed_date
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#11-offencerelated_materials" class="md-nav__link">
+  <a href="#11-hearingnotes" class="md-nav__link">
     <span class="md-ellipsis">
-      11. offence.related_materials
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#12-offencenotes" class="md-nav__link">
-    <span class="md-ellipsis">
-      12. offence.notes
+      11. hearing.notes
     </span>
   </a>
   
@@ -1195,12 +1312,12 @@
   
 
 
-<h1 id="offence-fields">Offence Fields</h1>
-<p>The <strong>Offence Fields</strong> section of the Criminal Justice Schema (CJS) language captures information about offences within the criminal justice system. This includes details on the type, category, and specifics of the offence, ensuring a consistent and standardised approach to documenting offences linked to legal cases.</p>
-<h2 id="field-set-overview">Field Set Overview</h2>
-<p>The <strong>Offence Fields</strong> include attributes such as the offence code, category, title, and related legal information, providing a complete record of offences associated with cases.</p>
-<h3 id="core-fields">Core Fields</h3>
-<p>These are the essential fields required for documenting offences:</p>
+<h1 id="hearing-dataset">Hearing Dataset</h1>
+<p>The <code>hearing</code> dataset contains information about legal hearings within the criminal justice system. This includes details about the location, date, time, language used, and whether the defendant was present. These fields ensure comprehensive documentation and tracking of hearings within the justice system.</p>
+<h2 id="dataset-overview">Dataset Overview</h2>
+<p>This dataset includes attributes such as the court location, hearing date and time, language used, and the presence of the defendant, providing a complete record of hearings associated with cases.</p>
+<h3 id="administrative-fields">Administrative Fields</h3>
+<p>These fields are required for managing and identifying hearing activities:</p>
 <table>
 <thead>
 <tr>
@@ -1212,51 +1329,65 @@
 </thead>
 <tbody>
 <tr>
-<td><code>offence.id</code></td>
+<td><code>hearing.id</code></td>
 <td><code>keyword</code></td>
-<td>A unique identifier for each offence record.</td>
-<td><code>OFF12345</code></td>
+<td>A unique identifier for each hearing record.</td>
+<td><code>HEAR12345</code></td>
 </tr>
 <tr>
-<td><code>offence.case_id</code></td>
+<td><code>hearing.cpr_id</code></td>
 <td><code>array</code></td>
-<td>An array of unique identifiers for the cases associated with the offence.</td>
-<td><code>["CASE12345", "CASE67890"]</code></td>
+<td>An array of unique identifiers for the cases associated with the hearing.</td>
+<td><code>["CPR123456", "CPR678910"]</code></td>
 </tr>
+</tbody>
+</table>
+<h2 id="primary-fields">Primary Fields</h2>
+<p>These fields capture the essential details about the hearing:</p>
+<table>
+<thead>
 <tr>
-<td><code>offence.code</code></td>
+<th>Field Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hearing.location</code></td>
 <td><code>keyword</code></td>
-<td>The official code representing the offence as per the criminal justice standards.</td>
-<td><code>CJS001</code></td>
+<td>The court and location where the hearing is held.</td>
+<td><code>B Magistrates’ Courts, Anytown Court</code></td>
 </tr>
 <tr>
-<td><code>offence.category</code></td>
-<td><code>keyword</code></td>
-<td>The category of the offence (e.g., theft, assault, fraud).</td>
-<td><code>theft</code></td>
-</tr>
-<tr>
-<td><code>offence.title</code></td>
-<td><code>text</code></td>
-<td>The title or name of the offence.</td>
-<td><code>Shoplifting</code></td>
-</tr>
-<tr>
-<td><code>offence.date</code></td>
+<td><code>hearing.date</code></td>
 <td><code>date</code></td>
-<td>The date when the offence occurred.</td>
-<td><code>2023-08-10</code></td>
+<td>The date when the hearing takes place.</td>
+<td><code>10-08-2023</code></td>
 </tr>
 <tr>
-<td><code>offence.description</code></td>
-<td><code>text</code></td>
-<td>A detailed description of the offence.</td>
-<td><code>Shoplifting incident at a retail store.</code></td>
+<td><code>hearing.time</code></td>
+<td><code>keyword</code></td>
+<td>The time when the hearing takes place.</td>
+<td><code>10:00 AM</code></td>
+</tr>
+<tr>
+<td><code>hearing.language</code></td>
+<td><code>keyword</code></td>
+<td>The language used during the hearing (<code>W Welsh</code>, <code>E English</code>).</td>
+<td><code>E English</code></td>
+</tr>
+<tr>
+<td><code>hearing.defendant_present</code></td>
+<td><code>boolean</code></td>
+<td>Indicates whether the defendant is present at the hearing.</td>
+<td><code>true</code></td>
 </tr>
 </tbody>
 </table>
 <h3 id="extended-fields">Extended Fields</h3>
-<p>These fields provide additional details and context for offences:</p>
+<p>These fields provide additional details and context for the hearing:</p>
 <table>
 <thead>
 <tr>
@@ -1268,146 +1399,132 @@
 </thead>
 <tbody>
 <tr>
-<td><code>offence.legislation</code></td>
-<td><code>text</code></td>
-<td>The legislation under which the offence is charged.</td>
-<td><code>Theft Act 1968</code></td>
+<td><code>hearing.documentation_language</code></td>
+<td><code>keyword</code></td>
+<td>The language used in the documentation or transcripts of the hearing (<code>W Welsh</code>, <code>E English</code>).</td>
+<td><code>E English</code></td>
 </tr>
 <tr>
-<td><code>offence.welsh_title</code></td>
-<td><code>text</code></td>
-<td>The Welsh title of the offence, if applicable.</td>
-<td><code>Ladrata Siopa</code></td>
+<td><code>hearing.report_requested_date</code></td>
+<td><code>date</code></td>
+<td>The date when a report (e.g., Pre-Sentence Report) was requested.</td>
+<td><code>15-07-2023</code></td>
 </tr>
 <tr>
-<td><code>offence.penalty</code></td>
-<td><code>text</code></td>
-<td>The potential penalty for the offence.</td>
-<td><code>Up to 6 months imprisonment or a fine</code></td>
+<td><code>hearing.report_completed_date</code></td>
+<td><code>date</code></td>
+<td>The date when the requested report was completed.</td>
+<td><code>20-07-2023</code></td>
 </tr>
 <tr>
-<td><code>offence.related_materials</code></td>
-<td><code>array</code></td>
-<td>A list of material IDs related to the offence, such as evidence files or reports.</td>
-<td><code>["MAT123", "MAT456"]</code></td>
-</tr>
-<tr>
-<td><code>offence.notes</code></td>
+<td><code>hearing.notes</code></td>
 <td><code>text</code></td>
-<td>Additional notes or remarks about the offence.</td>
-<td><code>Offender has previous convictions for similar offences.</code></td>
+<td>Additional notes or remarks about the hearing.</td>
+<td><code>Defendant requested an adjournment.</code></td>
 </tr>
 </tbody>
 </table>
 <h3 id="field-details">Field Details</h3>
-<h4 id="1-offenceid">1. <code>offence.id</code></h4>
+<h4 id="1-hearingid">1. <code>hearing.id</code></h4>
 <ul>
 <li><strong>Type</strong>: <code>keyword</code></li>
-<li><strong>Description</strong>: A unique identifier for each offence record.</li>
-<li><strong>Example</strong>: <code>OFF12345</code></li>
+<li><strong>Description</strong>: A unique identifier for each hearing record.</li>
+<li><strong>Example</strong>: <code>HEAR12345</code></li>
 </ul>
-<h4 id="2-offencecase_id">2. <code>offence.case_id</code></h4>
+<h4 id="2-hearingcpr_id">2. <code>hearing.cpr_id</code></h4>
 <ul>
 <li><strong>Type</strong>: <code>array</code></li>
-<li><strong>Description</strong>: An array of unique identifiers representing the cases linked to the offence, allowing tracking across multiple cases.</li>
-<li><strong>Example</strong>: <code>["CASE12345", "CASE67890"]</code></li>
+<li><strong>Description</strong>: An array of unique identifiers representing the cases linked to the hearing, allowing tracking across multiple cases.</li>
+<li><strong>Example</strong>: <code>["CPR123456", "CPR678910"]</code></li>
 </ul>
-<h4 id="3-offencecode">3. <code>offence.code</code></h4>
+<h4 id="3-hearinglocation">3. <code>hearing.location</code></h4>
 <ul>
 <li><strong>Type</strong>: <code>keyword</code></li>
-<li><strong>Description</strong>: The official code representing the offence as per the criminal justice standards.</li>
-<li><strong>Example</strong>: <code>CJS001</code></li>
+<li><strong>Description</strong>: The court and location where the hearing is held.</li>
+<li><strong>Example</strong>: <code>B Magistrates’ Courts, Anytown Court</code></li>
 </ul>
-<h4 id="4-offencecategory">4. <code>offence.category</code></h4>
-<ul>
-<li><strong>Type</strong>: <code>keyword</code></li>
-<li><strong>Description</strong>: The category of the offence (e.g., theft, assault, fraud).</li>
-<li><strong>Example</strong>: <code>theft</code></li>
-</ul>
-<h4 id="5-offencetitle">5. <code>offence.title</code></h4>
-<ul>
-<li><strong>Type</strong>: <code>text</code></li>
-<li><strong>Description</strong>: The title or name of the offence.</li>
-<li><strong>Example</strong>: <code>Shoplifting</code></li>
-</ul>
-<h4 id="6-offencedate">6. <code>offence.date</code></h4>
+<h4 id="4-hearingdate">4. <code>hearing.date</code></h4>
 <ul>
 <li><strong>Type</strong>: <code>date</code></li>
-<li><strong>Description</strong>: The date when the offence occurred.</li>
-<li><strong>Example</strong>: <code>2023-08-10</code></li>
+<li><strong>Description</strong>: The date when the hearing takes place.</li>
+<li><strong>Example</strong>: <code>10-08-2023</code></li>
 </ul>
-<h4 id="7-offencedescription">7. <code>offence.description</code></h4>
+<h4 id="5-hearingtime">5. <code>hearing.time</code></h4>
+<ul>
+<li><strong>Type</strong>: <code>keyword</code></li>
+<li><strong>Description</strong>: The time when the hearing takes place.</li>
+<li><strong>Example</strong>: <code>10:00 AM</code></li>
+</ul>
+<h4 id="6-hearinglanguage">6. <code>hearing.language</code></h4>
+<ul>
+<li><strong>Type</strong>: <code>keyword</code></li>
+<li><strong>Description</strong>: The language used during the hearing.</li>
+<li><strong>Example</strong>: <code>E English</code></li>
+</ul>
+<h4 id="7-hearingdefendant_present">7. <code>hearing.defendant_present</code></h4>
+<ul>
+<li><strong>Type</strong>: <code>boolean</code></li>
+<li><strong>Description</strong>: Indicates whether the defendant is present at the hearing.</li>
+<li><strong>Example</strong>: <code>true</code></li>
+</ul>
+<h4 id="8-hearingdocumentation_language">8. <code>hearing.documentation_language</code></h4>
+<ul>
+<li><strong>Type</strong>: <code>keyword</code></li>
+<li><strong>Description</strong>: The language used in the documentation or transcripts of the hearing.</li>
+<li><strong>Example</strong>: <code>E English</code></li>
+</ul>
+<h4 id="9-hearingreport_requested_date">9. <code>hearing.report_requested_date</code></h4>
+<ul>
+<li><strong>Type</strong>: <code>date</code></li>
+<li><strong>Description</strong>: The date when a report (e.g., Pre-Sentence Report) was requested.</li>
+<li><strong>Example</strong>: <code>15-07-2023</code></li>
+</ul>
+<h4 id="10-hearingreport_completed_date">10. <code>hearing.report_completed_date</code></h4>
+<ul>
+<li><strong>Type</strong>: <code>date</code></li>
+<li><strong>Description</strong>: The date when the requested report was completed.</li>
+<li><strong>Example</strong>: <code>20-07-2023</code></li>
+</ul>
+<h4 id="11-hearingnotes">11. <code>hearing.notes</code></h4>
 <ul>
 <li><strong>Type</strong>: <code>text</code></li>
-<li><strong>Description</strong>: A detailed description of the offence.</li>
-<li><strong>Example</strong>: <code>Shoplifting incident at a retail store.</code></li>
-</ul>
-<h4 id="8-offencelegislation">8. <code>offence.legislation</code></h4>
-<ul>
-<li><strong>Type</strong>: <code>text</code></li>
-<li><strong>Description</strong>: The legislation under which the offence is charged.</li>
-<li><strong>Example</strong>: <code>Theft Act 1968</code></li>
-</ul>
-<h4 id="9-offencewelsh_title">9. <code>offence.welsh_title</code></h4>
-<ul>
-<li><strong>Type</strong>: <code>text</code></li>
-<li><strong>Description</strong>: The Welsh title of the offence, if applicable.</li>
-<li><strong>Example</strong>: <code>Ladrata Siopa</code></li>
-</ul>
-<h4 id="10-offencepenalty">10. <code>offence.penalty</code></h4>
-<ul>
-<li><strong>Type</strong>: <code>text</code></li>
-<li><strong>Description</strong>: The potential penalty for the offence.</li>
-<li><strong>Example</strong>: <code>Up to 6 months imprisonment or a fine</code></li>
-</ul>
-<h4 id="11-offencerelated_materials">11. <code>offence.related_materials</code></h4>
-<ul>
-<li><strong>Type</strong>: <code>array</code></li>
-<li><strong>Description</strong>: A list of material IDs related to the offence, such as evidence files or reports.</li>
-<li><strong>Example</strong>: <code>["MAT123", "MAT456"]</code></li>
-</ul>
-<h4 id="12-offencenotes">12. <code>offence.notes</code></h4>
-<ul>
-<li><strong>Type</strong>: <code>text</code></li>
-<li><strong>Description</strong>: Additional notes or remarks about the offence.</li>
-<li><strong>Example</strong>: <code>Offender has previous convictions for similar offences.</code></li>
+<li><strong>Description</strong>: Additional notes or remarks about the hearing.</li>
+<li><strong>Example</strong>: <code>Defendant requested an adjournment.</code></li>
 </ul>
 <h3 id="usage-notes">Usage Notes</h3>
 <ul>
-<li><strong>Core Fields</strong>: These fields must be present for each offence record to ensure accurate tracking and documentation within the case timeline.</li>
-<li><strong>Extended Fields</strong>: Additional fields can be used when further details are available or necessary for the offence context.</li>
+<li><strong>Core Fields</strong>: These fields must be present for each hearing to ensure accurate tracking and documentation within the case timeline.</li>
+<li><strong>Extended Fields</strong>: Additional fields can be used when further details are available or necessary for the hearing context.</li>
 </ul>
 <h3 id="example-document">Example Document</h3>
 <h4 id="yaml">YAML</h4>
-<div class="highlight"><pre><span></span><code><span class="nt">offence</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">OFF12345</span>
-<span class="w">  </span><span class="nt">case_id</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;CASE12345&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;CASE67890&quot;</span><span class="p p-Indicator">]</span>
-<span class="w">  </span><span class="nt">code</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CJS001</span>
-<span class="w">  </span><span class="nt">category</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">theft</span>
-<span class="w">  </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Shoplifting</span>
-<span class="w">  </span><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2023-08-10</span>
-<span class="w">  </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Shoplifting incident at a retail store.</span>
-<span class="w">  </span><span class="nt">legislation</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Theft Act 1968</span>
-<span class="w">  </span><span class="nt">welsh_title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Ladrata Siopa</span>
-<span class="w">  </span><span class="nt">penalty</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Up to 6 months imprisonment or a fine</span>
-<span class="w">  </span><span class="nt">related_materials</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;MAT123&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;MAT456&quot;</span><span class="p p-Indicator">]</span>
-<span class="w">  </span><span class="nt">notes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Offender has previous convictions for similar offences.</span>
+<div class="highlight"><pre><span></span><code><span class="nt">hearing</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">HEAR12345</span>
+<span class="w">  </span><span class="nt">cpr_id</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;CPR123456&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;CPR678910&quot;</span><span class="p p-Indicator">]</span>
+<span class="w">  </span><span class="nt">location</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">B Magistrates’ Courts, Anytown Court</span>
+<span class="w">  </span><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10-08-2023</span>
+<span class="w">  </span><span class="nt">time</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10:00 AM</span>
+<span class="w">  </span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">E English</span>
+<span class="w">  </span><span class="nt">defendant_present</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="nt">documentation_language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">E English</span>
+<span class="w">  </span><span class="nt">report_requested_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">15-07-2023</span>
+<span class="w">  </span><span class="nt">report_completed_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">20-07-2023</span>
+<span class="w">  </span><span class="nt">notes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Defendant requested an adjournment.</span>
 </code></pre></div>
 <h4 id="json">JSON</h4>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;offence&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;OFF12345&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;case_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;CASE12345&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;CASE67890&quot;</span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CJS001&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;category&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;theft&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Shoplifting&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-08-10&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Shoplifting incident at a retail store.&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;legislation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Theft Act 1968&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;welsh_title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ladrata Siopa&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;penalty&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Up to 6 months imprisonment or a fine&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;related_materials&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;MAT123&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;MAT456&quot;</span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;notes&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Offender has previous convictions for similar offences.&quot;</span>
+<span class="w">  </span><span class="nt">&quot;hearing&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;HEAR12345&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;cpr_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;CPR123456&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;CPR678910&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;location&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;B Magistrates’ Courts, Anytown Court&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;10-08-2023&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;10:00 AM&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;language&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;E English&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;defendant_present&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;documentation_language&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;E English&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;report_requested_date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;15-07-2023&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;report_completed_date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;20-07-2023&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;notes&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Defendant requested an adjournment.&quot;</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>

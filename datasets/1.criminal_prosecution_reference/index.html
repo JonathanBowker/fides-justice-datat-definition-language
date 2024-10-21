@@ -6,19 +6,19 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An advanced framework for defining and managing justice-related data structures and behaviours, designed to enhance the integration of artificial intelligence in legal systems.">
+        <meta name="description" content="An extensible framework and naming protocol for defining and managing justice-related data structures and behaviours, designed to facilitate the safe use of artificial intelligence (AI) within UK Justice and Forensics System.">
       
       
         <meta name="author" content="Jonathan Bowker">
       
       
-        <link rel="canonical" href="https://jonathanbowker.github.io/criminal-justice-schema/structures/result/">
+        <link rel="canonical" href="https://jonathanbowker.github.io/criminal-justice-schema/datasets/1.criminal_prosecution_reference/">
       
       
-        <link rel="prev" href="../postal_address/">
+        <link rel="prev" href="../0.overview/">
       
       
-        <link rel="next" href="../result_qualifier/">
+        <link rel="next" href="../2.hearing/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Result (Fixed) - Criminal Justice Schema (CJS)</title>
+        <title>Criminal Prosecution Reference - Fides - Criminal Justice Data Definition Language</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#result-fields" class="md-skip">
+        <a href="#criminal-prosecution-reference-dataset" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Criminal Justice Schema (CJS)" class="md-header__button md-logo" aria-label="Criminal Justice Schema (CJS)" data-md-component="logo">
+    <a href="../.." title="Fides - Criminal Justice Data Definition Language" class="md-header__button md-logo" aria-label="Fides - Criminal Justice Data Definition Language" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,13 +110,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Criminal Justice Schema (CJS)
+            Fides - Criminal Justice Data Definition Language
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Result (Fixed)
+              Criminal Prosecution Reference
             
           </span>
         </div>
@@ -229,13 +229,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Criminal Justice Schema (CJS)" class="md-nav__button md-logo" aria-label="Criminal Justice Schema (CJS)" data-md-component="logo">
+    <a href="../.." title="Fides - Criminal Justice Data Definition Language" class="md-nav__button md-logo" aria-label="Fides - Criminal Justice Data Definition Language" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Criminal Justice Schema (CJS)
+    Fides - Criminal Justice Data Definition Language
   </label>
   
     <div class="md-nav__source">
@@ -379,7 +379,7 @@
             
   
   <span class="md-ellipsis">
-    Data Structures
+    Case Schema
   </span>
   
 
@@ -389,7 +389,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Data Structures
+            Case Schema
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -400,137 +400,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../overview/" class="md-nav__link">
+      <a href="../0.overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Overview
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../criminal_prosecution_reference/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Criminal Prosecution Reference
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../hearing/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Hearing
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../offence/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Offence
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../organisation_unit_identifier/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Organisation Unit Identifier
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../person/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Person
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../postal_address/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Postal Address
   </span>
   
 
@@ -560,7 +434,7 @@
           
   
   <span class="md-ellipsis">
-    Result (Fixed)
+    Criminal Prosecution Reference
   </span>
   
 
@@ -571,7 +445,7 @@
         
   
   <span class="md-ellipsis">
-    Result (Fixed)
+    Criminal Prosecution Reference
   </span>
   
 
@@ -593,28 +467,52 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#field-set-overview" class="md-nav__link">
+  <a href="#dataset-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Field Set Overview
+      Dataset Overview
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Field Set Overview">
+    <nav class="md-nav" aria-label="Dataset Overview">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#core-fields" class="md-nav__link">
+  <a href="#administrative-fields" class="md-nav__link">
     <span class="md-ellipsis">
-      Core Fields
+      Administrative Fields
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primary-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primary Fields
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Primary Fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extended-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extended Fields
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#extended-fields" class="md-nav__link">
+  <a href="#related-entities" class="md-nav__link">
     <span class="md-ellipsis">
-      Extended Fields
+      Related Entities
     </span>
   </a>
   
@@ -631,162 +529,108 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-resultid" class="md-nav__link">
+  <a href="#1-criminal_prosecution_referenceid" class="md-nav__link">
     <span class="md-ellipsis">
-      1. result.id
+      1. criminal_prosecution_reference.id
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-resultcase_id" class="md-nav__link">
+  <a href="#2-criminal_prosecution_referencecreated_date" class="md-nav__link">
     <span class="md-ellipsis">
-      2. result.case_id
+      2. criminal_prosecution_reference.created_date
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-resultcode" class="md-nav__link">
+  <a href="#3-criminal_prosecution_referencemodified_date" class="md-nav__link">
     <span class="md-ellipsis">
-      3. result.code
+      3. criminal_prosecution_reference.modified_date
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-resultdescription" class="md-nav__link">
+  <a href="#4-criminal_prosecution_referencestatus" class="md-nav__link">
     <span class="md-ellipsis">
-      4. result.description
+      4. criminal_prosecution_reference.status
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-resulttype_code" class="md-nav__link">
+  <a href="#5-criminal_prosecution_referencecpr_defendant" class="md-nav__link">
     <span class="md-ellipsis">
-      5. result.type_code
+      5. criminal_prosecution_reference.cpr_defendant
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#6-resultengland_wales_indicator" class="md-nav__link">
+  <a href="#6-criminal_prosecution_referencecpr_offence_reason" class="md-nav__link">
     <span class="md-ellipsis">
-      6. result.england_wales_indicator
+      6. criminal_prosecution_reference.cpr_offence_reason
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#7-resultstart_date" class="md-nav__link">
+  <a href="#7-criminal_prosecution_referencecpr_offence_sequence" class="md-nav__link">
     <span class="md-ellipsis">
-      7. result.start_date
+      7. criminal_prosecution_reference.cpr_offence_sequence
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#8-resultend_date" class="md-nav__link">
+  <a href="#8-criminal_prosecution_referencenotes" class="md-nav__link">
     <span class="md-ellipsis">
-      8. result.end_date
+      8. criminal_prosecution_reference.notes
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#9-resultlast_amended_date" class="md-nav__link">
+  <a href="#9-criminal_prosecution_referencerelated_documents" class="md-nav__link">
     <span class="md-ellipsis">
-      9. result.last_amended_date
+      9. criminal_prosecution_reference.related_documents
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#10-resultapplicable_qualifier_code" class="md-nav__link">
+  <a href="#10-criminal_prosecution_referencejurisdiction" class="md-nav__link">
     <span class="md-ellipsis">
-      10. result.applicable_qualifier_code
+      10. criminal_prosecution_reference.jurisdiction
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#11-resultoffence_remand_status_code" class="md-nav__link">
+  <a href="#11-criminal_prosecution_referencecourt_name" class="md-nav__link">
     <span class="md-ellipsis">
-      11. result.offence_remand_status_code
+      11. criminal_prosecution_reference.court_name
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#12-resultduration_quantity" class="md-nav__link">
+  <a href="#12-criminal_prosecution_referencerelated_entities" class="md-nav__link">
     <span class="md-ellipsis">
-      12. result.duration_quantity
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#13-resultdate_quantity" class="md-nav__link">
-    <span class="md-ellipsis">
-      13. result.date_quantity
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#14-resulttime_quantity" class="md-nav__link">
-    <span class="md-ellipsis">
-      14. result.time_quantity
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#15-resultamount_quantity" class="md-nav__link">
-    <span class="md-ellipsis">
-      15. result.amount_quantity
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#16-resultnumber_quantity" class="md-nav__link">
-    <span class="md-ellipsis">
-      16. result.number_quantity
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#17-resulttext_quantity" class="md-nav__link">
-    <span class="md-ellipsis">
-      17. result.text_quantity
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#18-resultnotes" class="md-nav__link">
-    <span class="md-ellipsis">
-      18. result.notes
+      12. criminal_prosecution_reference.related_entities
     </span>
   </a>
   
@@ -860,7 +704,154 @@
   
   
     <li class="md-nav__item">
-      <a href="../result_qualifier/" class="md-nav__link">
+      <a href="../2.hearing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hearing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3.offence/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Offence
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12.evidence/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evidence
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4.organisation_unit_identifier/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Organisation Unit Identifier
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.person/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Person
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.postal_address/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Postal Address
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7.result_fixed/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Result (Fixed)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8.result_qualifier_fixed/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -881,7 +872,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../role/" class="md-nav__link">
+      <a href="../9.role/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -902,11 +893,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../material/" class="md-nav__link">
+      <a href="../10.system_id/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Material
+    System ID
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11.uk_internal_country/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UK Internal Country
   </span>
   
 
@@ -944,7 +956,7 @@
             
   
   <span class="md-ellipsis">
-    Examples
+    Taxonomy
   </span>
   
 
@@ -954,7 +966,70 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Examples
+            Taxonomy
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../taxonomy/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Case Examples
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Case Examples
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1034,28 +1109,52 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#field-set-overview" class="md-nav__link">
+  <a href="#dataset-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Field Set Overview
+      Dataset Overview
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Field Set Overview">
+    <nav class="md-nav" aria-label="Dataset Overview">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#core-fields" class="md-nav__link">
+  <a href="#administrative-fields" class="md-nav__link">
     <span class="md-ellipsis">
-      Core Fields
+      Administrative Fields
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primary-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primary Fields
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Primary Fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extended-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extended Fields
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#extended-fields" class="md-nav__link">
+  <a href="#related-entities" class="md-nav__link">
     <span class="md-ellipsis">
-      Extended Fields
+      Related Entities
     </span>
   </a>
   
@@ -1072,162 +1171,108 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-resultid" class="md-nav__link">
+  <a href="#1-criminal_prosecution_referenceid" class="md-nav__link">
     <span class="md-ellipsis">
-      1. result.id
+      1. criminal_prosecution_reference.id
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-resultcase_id" class="md-nav__link">
+  <a href="#2-criminal_prosecution_referencecreated_date" class="md-nav__link">
     <span class="md-ellipsis">
-      2. result.case_id
+      2. criminal_prosecution_reference.created_date
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-resultcode" class="md-nav__link">
+  <a href="#3-criminal_prosecution_referencemodified_date" class="md-nav__link">
     <span class="md-ellipsis">
-      3. result.code
+      3. criminal_prosecution_reference.modified_date
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-resultdescription" class="md-nav__link">
+  <a href="#4-criminal_prosecution_referencestatus" class="md-nav__link">
     <span class="md-ellipsis">
-      4. result.description
+      4. criminal_prosecution_reference.status
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-resulttype_code" class="md-nav__link">
+  <a href="#5-criminal_prosecution_referencecpr_defendant" class="md-nav__link">
     <span class="md-ellipsis">
-      5. result.type_code
+      5. criminal_prosecution_reference.cpr_defendant
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#6-resultengland_wales_indicator" class="md-nav__link">
+  <a href="#6-criminal_prosecution_referencecpr_offence_reason" class="md-nav__link">
     <span class="md-ellipsis">
-      6. result.england_wales_indicator
+      6. criminal_prosecution_reference.cpr_offence_reason
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#7-resultstart_date" class="md-nav__link">
+  <a href="#7-criminal_prosecution_referencecpr_offence_sequence" class="md-nav__link">
     <span class="md-ellipsis">
-      7. result.start_date
+      7. criminal_prosecution_reference.cpr_offence_sequence
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#8-resultend_date" class="md-nav__link">
+  <a href="#8-criminal_prosecution_referencenotes" class="md-nav__link">
     <span class="md-ellipsis">
-      8. result.end_date
+      8. criminal_prosecution_reference.notes
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#9-resultlast_amended_date" class="md-nav__link">
+  <a href="#9-criminal_prosecution_referencerelated_documents" class="md-nav__link">
     <span class="md-ellipsis">
-      9. result.last_amended_date
+      9. criminal_prosecution_reference.related_documents
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#10-resultapplicable_qualifier_code" class="md-nav__link">
+  <a href="#10-criminal_prosecution_referencejurisdiction" class="md-nav__link">
     <span class="md-ellipsis">
-      10. result.applicable_qualifier_code
+      10. criminal_prosecution_reference.jurisdiction
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#11-resultoffence_remand_status_code" class="md-nav__link">
+  <a href="#11-criminal_prosecution_referencecourt_name" class="md-nav__link">
     <span class="md-ellipsis">
-      11. result.offence_remand_status_code
+      11. criminal_prosecution_reference.court_name
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#12-resultduration_quantity" class="md-nav__link">
+  <a href="#12-criminal_prosecution_referencerelated_entities" class="md-nav__link">
     <span class="md-ellipsis">
-      12. result.duration_quantity
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#13-resultdate_quantity" class="md-nav__link">
-    <span class="md-ellipsis">
-      13. result.date_quantity
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#14-resulttime_quantity" class="md-nav__link">
-    <span class="md-ellipsis">
-      14. result.time_quantity
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#15-resultamount_quantity" class="md-nav__link">
-    <span class="md-ellipsis">
-      15. result.amount_quantity
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#16-resultnumber_quantity" class="md-nav__link">
-    <span class="md-ellipsis">
-      16. result.number_quantity
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#17-resulttext_quantity" class="md-nav__link">
-    <span class="md-ellipsis">
-      17. result.text_quantity
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#18-resultnotes" class="md-nav__link">
-    <span class="md-ellipsis">
-      18. result.notes
+      12. criminal_prosecution_reference.related_entities
     </span>
   </a>
   
@@ -1303,12 +1348,13 @@
   
 
 
-<h1 id="result-fields">Result Fields</h1>
-<p>The <strong>Result Fields</strong> section of the Criminal Justice Schema (CJS) language captures information about the results of legal proceedings, including outcomes, related qualifiers, and other associated details. These fields ensure comprehensive documentation and tracking of case outcomes within the criminal justice system.</p>
-<h2 id="field-set-overview">Field Set Overview</h2>
-<p>The <strong>Result Fields</strong> include attributes such as result codes, descriptions, and relevant dates, providing a detailed record of the results associated with legal cases.</p>
-<h3 id="core-fields">Core Fields</h3>
-<p>These are the essential fields required for documenting results:</p>
+<p>Here's the updated version of the <code>criminal_prosecution_reference.md</code> file, incorporating all related entities as they may connect to or relate with the <code>criminal_prosecution_reference</code> dataset.</p>
+<h1 id="criminal-prosecution-reference-dataset">Criminal Prosecution Reference Dataset</h1>
+<p>The <code>criminal_prosecution_reference</code> dataset holds information about the prosecution process within criminal cases. This includes identifiers that link defendants to specific offences and their sequences, ensuring the preparation and management of prosecutions. These fields ensure comprehensive documentation and tracking of prosecution activities within the justice system.</p>
+<h2 id="dataset-overview">Dataset Overview</h2>
+<p>This dataset contains attributes such as links to person or organisation records, offence codes, and offence sequences, offering a comprehensive record of prosecution activities associated with cases. It serves as the primary entity that connects and integrates all other related datasets within the Fides system.</p>
+<h3 id="administrative-fields">Administrative Fields</h3>
+<p>These fields provide essential administrative details for managing the dataset:</p>
 <table>
 <thead>
 <tr>
@@ -1320,57 +1366,65 @@
 </thead>
 <tbody>
 <tr>
-<td><code>result.id</code></td>
+<td><code>criminal_prosecution_reference.id</code></td>
 <td><code>keyword</code></td>
-<td>A unique identifier for each result record.</td>
-<td><code>RES12345</code></td>
+<td>Unique identifier for the Criminal Prosecution Reference.</td>
+<td><code>CPR000001</code></td>
 </tr>
 <tr>
-<td><code>result.case_id</code></td>
-<td><code>array</code></td>
-<td>An array of unique identifiers for the cases associated with the result.</td>
-<td><code>["CASE12345", "CASE67890"]</code></td>
-</tr>
-<tr>
-<td><code>result.code</code></td>
-<td><code>keyword</code></td>
-<td>The official CJS result code for the result.</td>
-<td><code>CJS001</code></td>
-</tr>
-<tr>
-<td><code>result.description</code></td>
-<td><code>text</code></td>
-<td>A brief description of the result.</td>
-<td><code>Custodial sentence imposed.</code></td>
-</tr>
-<tr>
-<td><code>result.type_code</code></td>
-<td><code>keyword</code></td>
-<td>The type code indicating the nature of the result (e.g., interim, final).</td>
-<td><code>final</code></td>
-</tr>
-<tr>
-<td><code>result.england_wales_indicator</code></td>
-<td><code>keyword</code></td>
-<td>Indicates whether the result is applicable in England and Wales.</td>
-<td><code>yes</code></td>
-</tr>
-<tr>
-<td><code>result.start_date</code></td>
+<td><code>criminal_prosecution_reference.created_date</code></td>
 <td><code>date</code></td>
-<td>The date when the result code became effective.</td>
-<td><code>2020-01-01</code></td>
+<td>The date when the record was created.</td>
+<td><code>10-08-2023</code></td>
 </tr>
 <tr>
-<td><code>result.end_date</code></td>
+<td><code>criminal_prosecution_reference.modified_date</code></td>
 <td><code>date</code></td>
-<td>The date when the result code ceased to be valid (if applicable).</td>
-<td><code>2023-12-31</code></td>
+<td>The date when the record was last modified.</td>
+<td><code>15-08-2023</code></td>
+</tr>
+<tr>
+<td><code>criminal_prosecution_reference.status</code></td>
+<td><code>keyword</code></td>
+<td>The current status of the prosecution record (e.g., active, inactive, archived).</td>
+<td><code>active</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="primary-fields">Primary Fields</h2>
+<p>These are the essential fields required for documenting prosecution activities:</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>criminal_prosecution_reference.cpr_defendant</code></td>
+<td><code>keyword</code></td>
+<td>Links to a person or organisation record related to the prosecution.</td>
+<td><code>PER123456</code></td>
+</tr>
+<tr>
+<td><code>criminal_prosecution_reference.cpr_offence_reason</code></td>
+<td><code>keyword</code></td>
+<td>Links to an offence code (e.g., MD71101 [Misuse of Drugs Act 1971, class B drug (cannabis)]).</td>
+<td><code>MD71101</code></td>
+</tr>
+<tr>
+<td><code>criminal_prosecution_reference.cpr_offence_sequence</code></td>
+<td><code>integer</code></td>
+<td>A three-digit sequence number (with leading zeroes) to ensure uniqueness of a CPR when multiple offences are linked.</td>
+<td><code>001</code></td>
 </tr>
 </tbody>
 </table>
 <h3 id="extended-fields">Extended Fields</h3>
-<p>These fields provide additional details and context for results:</p>
+<p>These fields provide additional context and metadata for prosecution activities:</p>
 <table>
 <thead>
 <tr>
@@ -1382,226 +1436,171 @@
 </thead>
 <tbody>
 <tr>
-<td><code>result.last_amended_date</code></td>
-<td><code>date</code></td>
-<td>The date when the result code was last amended.</td>
-<td><code>2021-05-15</code></td>
-</tr>
-<tr>
-<td><code>result.applicable_qualifier_code</code></td>
-<td><code>keyword</code></td>
-<td>The code for the qualifier applicable to the result.</td>
-<td><code>RQ002</code></td>
-</tr>
-<tr>
-<td><code>result.offence_remand_status_code</code></td>
-<td><code>keyword</code></td>
-<td>The remand status code associated with the offence related to the result.</td>
-<td><code>ON_BAIL</code></td>
-</tr>
-<tr>
-<td><code>result.duration_quantity</code></td>
-<td><code>integer</code></td>
-<td>The duration associated with the result (e.g., length of sentence).</td>
-<td><code>12</code></td>
-</tr>
-<tr>
-<td><code>result.date_quantity</code></td>
-<td><code>date</code></td>
-<td>The specific date associated with the result.</td>
-<td><code>2023-09-01</code></td>
-</tr>
-<tr>
-<td><code>result.time_quantity</code></td>
-<td><code>time</code></td>
-<td>The specific time associated with the result.</td>
-<td><code>14:00:00</code></td>
-</tr>
-<tr>
-<td><code>result.amount_quantity</code></td>
-<td><code>decimal</code></td>
-<td>Any amount related to the result (e.g., fine amount).</td>
-<td><code>500.00</code></td>
-</tr>
-<tr>
-<td><code>result.number_quantity</code></td>
-<td><code>integer</code></td>
-<td>Any numerical value related to the result.</td>
-<td><code>2</code></td>
-</tr>
-<tr>
-<td><code>result.text_quantity</code></td>
+<td><code>criminal_prosecution_reference.notes</code></td>
 <td><code>text</code></td>
-<td>Any textual information related to the result.</td>
-<td><code>Community service order</code></td>
+<td>Additional notes or remarks related to the prosecution record.</td>
+<td><code>Defendant has prior convictions.</code></td>
 </tr>
 <tr>
-<td><code>result.notes</code></td>
+<td><code>criminal_prosecution_reference.related_documents</code></td>
+<td><code>array</code></td>
+<td>A list of document IDs related to the prosecution, such as indictments or legal filings.</td>
+<td><code>["DOC123", "DOC456"]</code></td>
+</tr>
+<tr>
+<td><code>criminal_prosecution_reference.jurisdiction</code></td>
+<td><code>keyword</code></td>
+<td>The jurisdiction under which the prosecution is being carried out (e.g., England and Wales).</td>
+<td><code>England and Wales</code></td>
+</tr>
+<tr>
+<td><code>criminal_prosecution_reference.court_name</code></td>
 <td><code>text</code></td>
-<td>Additional notes or remarks about the result.</td>
-<td><code>Amended based on appeal outcome.</code></td>
+<td>The name of the court handling the prosecution.</td>
+<td><code>Central Criminal Court</code></td>
+</tr>
+<tr>
+<td><code>criminal_prosecution_reference.related_entities</code></td>
+<td><code>array</code></td>
+<td>An array of related entity IDs, linking to other datasets such as hearings, offences, evidence, and more.</td>
+<td><code>["HEARING001", "OFF12345", "EVD001"]</code></td>
 </tr>
 </tbody>
 </table>
+<h3 id="related-entities">Related Entities</h3>
+<p>The following entities may be linked or associated with <code>criminal_prosecution_reference</code>:</p>
+<ul>
+<li><code>criminal_prosecution_reference</code>: Holds the core prosecution reference information.</li>
+<li><code>hearing</code>: Tracks hearing details linked to the prosecution.</li>
+<li><code>offence</code>: Details the offences linked to a prosecution record.</li>
+<li><code>organisation_unit_identifier</code>: Represents organisation units involved in the prosecution (e.g., police departments, courts).</li>
+<li><code>person</code>: Links to individual or organisational records related to the prosecution.</li>
+<li><code>postal_address</code>: Details the addresses of entities involved (e.g., defendants, courts).</li>
+<li><code>result_fixed</code>: Stores outcomes and results of the prosecution.</li>
+<li><code>result_qualifier_fixed</code>: Adds additional information about prosecution outcomes.</li>
+<li><code>role</code>: Details roles played by individuals or organisations (e.g., prosecutor, defendant).</li>
+<li><code>system_id</code>: The system or platform managing the prosecution record.</li>
+<li><code>uk_internal_country</code>: Specifies the region within the UK for jurisdictional purposes.</li>
+<li><code>evidence</code>: Links to evidence records related to the prosecution (e.g., forensic reports, documents).</li>
+</ul>
 <h3 id="field-details">Field Details</h3>
-<h4 id="1-resultid">1. <code>result.id</code></h4>
+<h4 id="1-criminal_prosecution_referenceid">1. <code>criminal_prosecution_reference.id</code></h4>
 <ul>
 <li><strong>Type</strong>: <code>keyword</code></li>
-<li><strong>Description</strong>: A unique identifier for each result record.</li>
-<li><strong>Example</strong>: <code>RES12345</code></li>
+<li><strong>Description</strong>: Unique identifier for the Criminal Prosecution Reference.</li>
+<li><strong>Example</strong>: <code>CPR000001</code></li>
 </ul>
-<h4 id="2-resultcase_id">2. <code>result.case_id</code></h4>
+<h4 id="2-criminal_prosecution_referencecreated_date">2. <code>criminal_prosecution_reference.created_date</code></h4>
+<ul>
+<li><strong>Type</strong>: <code>date</code></li>
+<li><strong>Description</strong>: The date when the record was created.</li>
+<li><strong>Example</strong>: <code>10-08-2023</code></li>
+</ul>
+<h4 id="3-criminal_prosecution_referencemodified_date">3. <code>criminal_prosecution_reference.modified_date</code></h4>
+<ul>
+<li><strong>Type</strong>: <code>date</code></li>
+<li><strong>Description</strong>: The date when the record was last modified.</li>
+<li><strong>Example</strong>: <code>15-08-2023</code></li>
+</ul>
+<h4 id="4-criminal_prosecution_referencestatus">4. <code>criminal_prosecution_reference.status</code></h4>
+<ul>
+<li><strong>Type</strong>: <code>keyword</code></li>
+<li><strong>Description</strong>: The current status of the prosecution record.</li>
+<li><strong>Example</strong>: <code>active</code></li>
+</ul>
+<h4 id="5-criminal_prosecution_referencecpr_defendant">5. <code>criminal_prosecution_reference.cpr_defendant</code></h4>
+<ul>
+<li><strong>Type</strong>: <code>keyword</code></li>
+<li><strong>Description</strong>: Links to a person or organisation record related to the prosecution.</li>
+<li><strong>Example</strong>: <code>PER123456</code></li>
+</ul>
+<h4 id="6-criminal_prosecution_referencecpr_offence_reason">6. <code>criminal_prosecution_reference.cpr_offence_reason</code></h4>
+<ul>
+<li><strong>Type</strong>: <code>keyword</code></li>
+<li><strong>Description</strong>: Links to an offence code, such as <code>MD71101</code> (Misuse of Drugs Act 1971, class B drug - cannabis).</li>
+<li><strong>Example</strong>: <code>MD71101</code></li>
+</ul>
+<h4 id="7-criminal_prosecution_referencecpr_offence_sequence">7. <code>criminal_prosecution_reference.cpr_offence_sequence</code></h4>
+<ul>
+<li><strong>Type</strong>: <code>integer</code></li>
+<li><strong>Description</strong>: A three-digit sequence number (001 - 999) to ensure the uniqueness of a CPR when multiple offences are linked to a defendant.</li>
+<li><strong>Example</strong>: <code>001</code></li>
+</ul>
+<h4 id="8-criminal_prosecution_referencenotes">8. <code>criminal_prosecution_reference.notes</code></h4>
+<ul>
+<li><strong>Type</strong>: <code>text</code></li>
+<li><strong>Description</strong>: Additional notes or remarks related to the prosecution record.</li>
+<li><strong>Example</strong>: <code>Defendant has prior convictions.</code></li>
+</ul>
+<h4 id="9-criminal_prosecution_referencerelated_documents">9. <code>criminal_prosecution_reference.related_documents</code></h4>
 <ul>
 <li><strong>Type</strong>: <code>array</code></li>
-<li><strong>Description</strong>: An array of unique identifiers representing the cases linked to the result, allowing tracking across multiple cases.</li>
-<li><strong>Example</strong>: <code>["CASE12345", "CASE67890"]</code></li>
+<li><strong>Description</strong>: A list of document IDs related to the prosecution, such as indictments or legal filings.</li>
+<li><strong>Example</strong>: <code>["DOC123", "DOC456"]</code></li>
 </ul>
-<h4 id="3-resultcode">3. <code>result.code</code></h4>
+<h4 id="10-criminal_prosecution_referencejurisdiction">10. <code>criminal_prosecution_reference.jurisdiction</code></h4>
 <ul>
 <li><strong>Type</strong>: <code>keyword</code></li>
-<li><strong>Description</strong>: The official CJS result code for the result.</li>
-<li><strong>Example</strong>: <code>CJS001</code></li>
+<li><strong>Description</strong>: The jurisdiction under which the prosecution is being carried out.</li>
+<li><strong>Example</strong>: <code>England and Wales</code></li>
 </ul>
-<h4 id="4-resultdescription">4. <code>result.description</code></h4>
+<h4 id="11-criminal_prosecution_referencecourt_name">11. <code>criminal_prosecution_reference.court_name</code></h4>
 <ul>
 <li><strong>Type</strong>: <code>text</code></li>
-<li><strong>Description</strong>: A brief description of the result.</li>
-<li><strong>Example</strong>: <code>Custodial sentence imposed.</code></li>
+<li><strong>Description</strong>: The name of the court handling the prosecution.</li>
+<li><strong>Example</strong>: <code>Central Criminal Court</code></li>
 </ul>
-<h4 id="5-resulttype_code">5. <code>result.type_code</code></h4>
+<h4 id="12-criminal_prosecution_referencerelated_entities">12. <code>criminal_prosecution_reference.related_entities</code></h4>
 <ul>
-<li><strong>Type</strong>: <code>keyword</code></li>
-<li><strong>Description</strong>: The type code indicating the nature of the result (e.g., interim, final).</li>
-<li><strong>Example</strong>: <code>final</code></li>
-</ul>
-<h4 id="6-resultengland_wales_indicator">6. <code>result.england_wales_indicator</code></h4>
-<ul>
-<li><strong>Type</strong>: <code>keyword</code></li>
-<li><strong>Description</strong>: Indicates whether the result is applicable in England and Wales.</li>
-<li><strong>Example</strong>: <code>yes</code></li>
-</ul>
-<h4 id="7-resultstart_date">7. <code>result.start_date</code></h4>
-<ul>
-<li><strong>Type</strong>: <code>date</code></li>
-<li><strong>Description</strong>: The date when the result code became effective.</li>
-<li><strong>Example</strong>: <code>2020-01-01</code></li>
-</ul>
-<h4 id="8-resultend_date">8. <code>result.end_date</code></h4>
-<ul>
-<li><strong>Type</strong>: <code>date</code></li>
-<li><strong>Description</strong>: The date when the result code ceased to be valid (if applicable).</li>
-<li><strong>Example</strong>: <code>2023-12-31</code></li>
-</ul>
-<h4 id="9-resultlast_amended_date">9. <code>result.last_amended_date</code></h4>
-<ul>
-<li><strong>Type</strong>: <code>date</code></li>
-<li><strong>Description</strong>: The date when the result code was last amended.</li>
-<li><strong>Example</strong>: <code>2021-05-15</code></li>
-</ul>
-<h4 id="10-resultapplicable_qualifier_code">10. <code>result.applicable_qualifier_code</code></h4>
-<ul>
-<li><strong>Type</strong>: <code>keyword</code></li>
-<li><strong>Description</strong>: The code for the qualifier applicable to the result.</li>
-<li><strong>Example</strong>: <code>RQ002</code></li>
-</ul>
-<h4 id="11-resultoffence_remand_status_code">11. <code>result.offence_remand_status_code</code></h4>
-<ul>
-<li><strong>Type</strong>: <code>keyword</code></li>
-<li><strong>Description</strong>: The remand status code associated with the offence related to the result.</li>
-<li><strong>Example</strong>: <code>ON_BAIL</code></li>
-</ul>
-<h4 id="12-resultduration_quantity">12. <code>result.duration_quantity</code></h4>
-<ul>
-<li><strong>Type</strong>: <code>integer</code></li>
-<li><strong>Description</strong>: The duration associated with the result (e.g., length of sentence).</li>
-<li><strong>Example</strong>: <code>12</code></li>
-</ul>
-<h4 id="13-resultdate_quantity">13. <code>result.date_quantity</code></h4>
-<ul>
-<li><strong>Type</strong>: <code>date</code></li>
-<li><strong>Description</strong>: The specific date associated with the result.</li>
-<li><strong>Example</strong>: <code>2023-09-01</code></li>
-</ul>
-<h4 id="14-resulttime_quantity">14. <code>result.time_quantity</code></h4>
-<ul>
-<li><strong>Type</strong>: <code>time</code></li>
-<li><strong>Description</strong>: The specific time associated with the result.</li>
-<li><strong>Example</strong>: <code>14:00:00</code></li>
-</ul>
-<h4 id="15-resultamount_quantity">15. <code>result.amount_quantity</code></h4>
-<ul>
-<li><strong>Type</strong>: <code>decimal</code></li>
-<li><strong>Description</strong>: Any amount related to the result (e.g., fine amount).</li>
-<li><strong>Example</strong>: <code>500.00</code></li>
-</ul>
-<h4 id="16-resultnumber_quantity">16. <code>result.number_quantity</code></h4>
-<ul>
-<li><strong>Type</strong>: <code>integer</code></li>
-<li><strong>Description</strong>: Any numerical value related to the result.</li>
-<li><strong>Example</strong>: <code>2</code></li>
-</ul>
-<h4 id="17-resulttext_quantity">17. <code>result.text_quantity</code></h4>
-<ul>
-<li><strong>Type</strong>: <code>text</code></li>
-<li><strong>Description</strong>: Any textual information related to the result.</li>
-<li><strong>Example</strong>: <code>Community service order</code></li>
-</ul>
-<h4 id="18-resultnotes">18. <code>result.notes</code></h4>
-<ul>
-<li><strong>Type</strong>: <code>text</code></li>
-<li><strong>Description</strong>: Additional notes or remarks about the result.</li>
-<li><strong>Example</strong>: <code>Amended based on appeal outcome.</code></li>
+<li><strong>Type</strong>: <code>array</code></li>
+<li><strong>Description</strong>: An array of related entity IDs, linking to other datasets such as hearings, offences, evidence, and more.</li>
+<li><strong>Example</strong>: <code>["HEARING001", "OFF12345", "EVD001"]</code></li>
 </ul>
 <h3 id="usage-notes">Usage Notes</h3>
 <ul>
-<li><strong>Core Fields</strong>: These fields must be present for each result record to ensure accurate tracking and documentation within the case timeline.</li>
-<li><strong>Extended Fields</strong>: Additional fields can be used when further details are available or necessary for the result context.</li>
+<li><strong>Core Fields</strong>: These fields must be present for each prosecution record to maintain the integrity and traceability of prosecution data.</li>
+<li><strong>Offence Sequence</strong>: The three-digit format ensures consistency and helps distinguish between multiple offences related to the same defendant. If there are multiple offence sequences, they should be represented as an array.</li>
+<li><strong>Related Entities</strong>: Link other datasets (e.g., hearings, offences) to provide a complete view of prosecution activities.</li>
 </ul>
 <h3 id="example-document">Example Document</h3>
 <h4 id="yaml">YAML</h4>
-<div class="highlight"><pre><span></span><code><span class="nt">result</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RES12345</span>
-<span class="w">  </span><span class="nt">case_id</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;CASE12345&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;CASE67890&quot;</span><span class="p p-Indicator">]</span>
-<span class="w">  </span><span class="nt">code</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CJS001</span>
-<span class="w">  </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Custodial sentence imposed.</span>
-<span class="w">  </span><span class="nt">type_code</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">final</span>
-<span class="w">  </span><span class="nt">england_wales_indicator</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">yes</span>
-<span class="w">  </span><span class="nt">start_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2020-01-01</span>
-<span class="w">  </span><span class="nt">end_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2023-12-31</span>
-<span class="w">  </span><span class="nt">last_amended_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2021-05-15</span>
-<span class="w">  </span><span class="nt">applicable_qualifier_code</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RQ002</span>
-<span class="w">  </span><span class="nt">offence_remand_status_code</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ON_BAIL</span>
-<span class="w">  </span><span class="nt">duration_quantity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">12</span>
-<span class="w">  </span><span class="nt">date_quantity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2023-09-01</span>
-<span class="w">  </span><span class="nt">time_quantity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">14:00:00</span>
-<span class="w">  </span><span class="nt">amount_quantity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">500.00</span>
-<span class="w">  </span><span class="nt">number_quantity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
-<span class="w">  </span><span class="nt">text_quantity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Community service order</span>
-<span class="w">  </span><span class="nt">notes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Amended based on appeal outcome.</span>
+<div class="highlight"><pre><span></span><code><span class="nt">criminal_prosecution_reference</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CPR000001</span>
+<span class="w">  </span><span class="nt">created_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;10-08-2023&quot;</span>
+<span class="w">  </span><span class="nt">modified_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;15-08-2023&quot;</span>
+<span class="w">  </span><span class="nt">status</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">active</span>
+<span class="w">  </span><span class="nt">cpr_defendant</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PER123456</span>
+<span class="w">  </span><span class="nt">cpr_offence_reason</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MD71101</span>
+<span class="w">  </span><span class="nt">cpr_offence_sequence</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">001</span>
+<span class="w">  </span><span class="nt">notes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Defendant has prior convictions.</span>
+<span class="w">  </span><span class="nt">related_documents</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DOC123</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DOC456</span>
+<span class="w">  </span><span class="nt">jurisdiction</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">England and Wales</span>
+<span class="w">  </span><span class="nt">court_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Central Criminal Court</span>
+<span class="w">  </span><span class="nt">related_entities</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">HEARING001</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">OFF12345</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">EVD001</span>
 </code></pre></div>
 <h4 id="json">JSON</h4>
-<p><code>json
-{
-  "result": {
-    "id": "RES12345",
-    "case_id": ["CASE12345", "CASE67890"],
-    "code": "CJS001",
-    "description": "Custodial sentence imposed.",
-    "type_code": "final",
-    "england_wales_indicator": "yes",
-    "start_date": "2020-01-01",
-    "end_date": "2023-12-31",
-    "last_amended_date": "2021-05-15",
-    "applicable_qualifier_code": "RQ002",
-    "offence_remand_status_code": "ON_BAIL",
-    "duration_quantity": 12,
-    "date_quantity": "2023-09-01",
-    "time_quantity": "14:00:00",
-    "amount_quantity": 500.00,
-    "number_quantity": 2,
-    "text_quantity": "Community service order",
-    "notes": "Amended based on appeal outcome."
-  }</code></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;criminal_prosecution_reference&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CPR000001&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;created_date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;10-08-2023&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;modified_date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;15-08-2023&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;active&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;cpr_defendant&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PER123456&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;cpr_offence_reason&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MD71101&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;cpr_offence_sequence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">001</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;notes&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Defendant has prior convictions.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;related_documents&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;DOC123&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;DOC456&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;jurisdiction&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;England and Wales&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;court_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Central Criminal Court&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;related_entities&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;HEARING001&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;OFF12345&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;EVD001&quot;</span><span class="p">]</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 
 
 

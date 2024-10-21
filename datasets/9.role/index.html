@@ -6,15 +6,19 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An advanced framework for defining and managing justice-related data structures and behaviours, designed to enhance the integration of artificial intelligence in legal systems.">
+        <meta name="description" content="An extensible framework and naming protocol for defining and managing justice-related data structures and behaviours, designed to facilitate the safe use of artificial intelligence (AI) within UK Justice and Forensics System.">
       
       
         <meta name="author" content="Jonathan Bowker">
       
       
-        <link rel="canonical" href="https://jonathanbowker.github.io/criminal-justice-schema/structures/getting_started/">
+        <link rel="canonical" href="https://jonathanbowker.github.io/criminal-justice-schema/datasets/9.role/">
       
       
+        <link rel="prev" href="../8.result_qualifier_fixed/">
+      
+      
+        <link rel="next" href="../10.system_id/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +26,7 @@
     
     
       
-        <title>Getting Started with Criminal Justice Schema (CJS) language - Criminal Justice Schema (CJS)</title>
+        <title>Role - Fides - Criminal Justice Data Definition Language</title>
       
     
     
@@ -76,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#getting-started-with-criminal-justice-schema-cjs-language" class="md-skip">
+        <a href="#role-dataset" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +96,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Criminal Justice Schema (CJS)" class="md-header__button md-logo" aria-label="Criminal Justice Schema (CJS)" data-md-component="logo">
+    <a href="../.." title="Fides - Criminal Justice Data Definition Language" class="md-header__button md-logo" aria-label="Fides - Criminal Justice Data Definition Language" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -106,13 +110,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Criminal Justice Schema (CJS)
+            Fides - Criminal Justice Data Definition Language
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Getting Started with Criminal Justice Schema (CJS) language
+              Role
             
           </span>
         </div>
@@ -225,13 +229,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Criminal Justice Schema (CJS)" class="md-nav__button md-logo" aria-label="Criminal Justice Schema (CJS)" data-md-component="logo">
+    <a href="../.." title="Fides - Criminal Justice Data Definition Language" class="md-nav__button md-logo" aria-label="Fides - Criminal Justice Data Definition Language" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Criminal Justice Schema (CJS)
+    Fides - Criminal Justice Data Definition Language
   </label>
   
     <div class="md-nav__source">
@@ -356,34 +360,36 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    Data Structures
+    Case Schema
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Data Structures
+            Case Schema
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -394,7 +400,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../overview/" class="md-nav__link">
+      <a href="../0.overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -415,7 +421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../criminal_prosecution_reference/" class="md-nav__link">
+      <a href="../1.criminal_prosecution_reference/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -436,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hearing/" class="md-nav__link">
+      <a href="../2.hearing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -457,7 +463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../offence/" class="md-nav__link">
+      <a href="../3.offence/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -478,7 +484,28 @@
   
   
     <li class="md-nav__item">
-      <a href="../organisation_unit_identifier/" class="md-nav__link">
+      <a href="../12.evidence/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Evidence
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4.organisation_unit_identifier/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -499,7 +526,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../person/" class="md-nav__link">
+      <a href="../5.person/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -520,7 +547,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../postal_address/" class="md-nav__link">
+      <a href="../6.postal_address/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -541,7 +568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../result/" class="md-nav__link">
+      <a href="../7.result_fixed/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -562,7 +589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../result_qualifier/" class="md-nav__link">
+      <a href="../8.result_qualifier_fixed/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -580,14 +607,198 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../role/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Role
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
     Role
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dataset-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dataset Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dataset Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#version-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version Information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#administrative-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Administrative Fields
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primary-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primary Fields
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Primary Fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extended-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extended Fields
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-parts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Component Parts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Component Parts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-role-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Role Type
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage Notes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-document" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Document
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example Document">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#yaml" class="md-nav__link">
+    <span class="md-ellipsis">
+      YAML
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    <span class="md-ellipsis">
+      JSON
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10.system_id/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System ID
   </span>
   
 
@@ -604,11 +815,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../material/" class="md-nav__link">
+      <a href="../11.uk_internal_country/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Material
+    UK Internal Country
   </span>
   
 
@@ -646,7 +857,7 @@
             
   
   <span class="md-ellipsis">
-    Examples
+    Taxonomy
   </span>
   
 
@@ -656,7 +867,70 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Examples
+            Taxonomy
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../taxonomy/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Case Examples
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Case Examples
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -736,38 +1010,125 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#requirements" class="md-nav__link">
+  <a href="#dataset-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Requirements
+      Dataset Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dataset Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#version-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Version Information
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#administrative-fields" class="md-nav__link">
     <span class="md-ellipsis">
-      Installation
+      Administrative Fields
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#additional-considerations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Additional Considerations
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#schema-overview-schemaoverviewmd" class="md-nav__link">
+  <a href="#primary-fields" class="md-nav__link">
     <span class="md-ellipsis">
-      Schema Overview (schema/overview.md)
+      Primary Fields
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Primary Fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extended-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extended Fields
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component-parts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Component Parts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Component Parts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-role-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Role Type
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage Notes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-document" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Document
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example Document">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#yaml" class="md-nav__link">
+    <span class="md-ellipsis">
+      YAML
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    <span class="md-ellipsis">
+      JSON
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -789,49 +1150,168 @@
   
 
 
-<h1 id="getting-started-with-criminal-justice-schema-cjs-language">Getting Started with Criminal Justice Schema (CJS) language</h1>
-<p>This guide provides a comprehensive walkthrough for implementing CJS within your criminal trial case management system.</p>
-<h2 id="requirements">Requirements</h2>
+<h1 id="role-dataset">Role Dataset</h1>
+<p>The <code>role</code> dataset captures information about the roles of individuals or organisations within legal proceedings. These fields ensure precise documentation of roles and their attributes, facilitating consistent tracking within the criminal justice system.</p>
+<h2 id="dataset-overview">Dataset Overview</h2>
+<p>The dataset includes attributes such as role codes, descriptions, and associated entities, providing a detailed record of each role within a case.</p>
+<h3 id="version-information">Version Information</h3>
 <ul>
-<li>Basic understanding of NoSQL databases e.g. Firebase, MongoDB, Elasticsearch.</li>
-<li>Knowledge of JSON or YAML for structuring data.</li>
-<li>Access to an appropriate database environment.</li>
+<li><strong>Version</strong>: 5</li>
+<li><strong>Approval Date</strong>: 17th December 2013</li>
 </ul>
-<h2 id="installation">Installation</h2>
-<ol>
-<li>
-<p>Clone the CJS repository:
-   <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/JonathanBowker/judicial-electronic-data-interchange.git
-</code></pre></div></p>
-</li>
-<li>
-<p>Navigate to the project directory:
-   <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>judicial-electronic-data-interchange
-</code></pre></div></p>
-</li>
-<li>
-<p>Follow any additional setup instructions in the repository’s README file to install dependencies and set up your environment.</p>
-</li>
-</ol>
-<h2 id="additional-considerations">Additional Considerations</h2>
+<h3 id="administrative-fields">Administrative Fields</h3>
+<p>These fields are essential for managing and linking roles to other entities:</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>role.id</code></td>
+<td><code>keyword</code></td>
+<td>A unique identifier for each role record.</td>
+<td><code>ROLE12345</code></td>
+</tr>
+<tr>
+<td><code>role.case_id</code></td>
+<td><code>array</code></td>
+<td>An array of unique identifiers for the cases associated with the role.</td>
+<td><code>["CASE12345", "CASE67890"]</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="primary-fields">Primary Fields</h2>
+<p>These are the primary fields required for documenting roles:</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>role.code</code></td>
+<td><code>keyword</code></td>
+<td>The official CJS role code for the individual or organisation. Possible codes: <code>Appr</code> (Appropriate Adult), <code>Defe</code> (Defendant), <code>Info</code> (Informant), <code>Inte</code> (Interpreter), <code>Poli</code> (Police Worker), <code>Pris</code> (Prisoner), <code>Victi</code> (Victim), <code>Witn</code> (Witness), <code>Pers</code> (Youth Offending Team Person Dealing At Court), <code>Prac</code> (Youth Offending Team Practitioner), <code>Youn</code> (Young Person).</td>
+<td><code>Defe</code></td>
+</tr>
+<tr>
+<td><code>role.description</code></td>
+<td><code>text</code></td>
+<td>A brief description of the role within the case.</td>
+<td><code>The accused individual</code></td>
+</tr>
+<tr>
+<td><code>role.type</code></td>
+<td><code>keyword</code></td>
+<td>The type of role (e.g., Defendant, Witness, Legal).</td>
+<td><code>Defendant</code></td>
+</tr>
+<tr>
+<td><code>role.start_date</code></td>
+<td><code>date</code></td>
+<td>The date when the role assignment began.</td>
+<td><code>2020-01-01</code></td>
+</tr>
+<tr>
+<td><code>role.end_date</code></td>
+<td><code>date</code></td>
+<td>The date when the role assignment ended (if applicable).</td>
+<td><code>2023-12-31</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="extended-fields">Extended Fields</h3>
+<p>These fields provide additional details and context for roles:</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>role.last_amended_date</code></td>
+<td><code>date</code></td>
+<td>The date when the role details were last amended.</td>
+<td><code>2021-05-15</code></td>
+</tr>
+<tr>
+<td><code>role.qualification_code</code></td>
+<td><code>keyword</code></td>
+<td>The code for any qualification applicable to the role.</td>
+<td><code>QLF002</code></td>
+</tr>
+<tr>
+<td><code>role.status_code</code></td>
+<td><code>keyword</code></td>
+<td>The status code associated with the role (e.g., active, inactive).</td>
+<td><code>ACTIVE</code></td>
+</tr>
+<tr>
+<td><code>role.notes</code></td>
+<td><code>text</code></td>
+<td>Additional notes or remarks about the role.</td>
+<td><code>Role status updated based on court order.</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="component-parts">Component Parts</h3>
+<h4 id="1-role-type">1. <strong>Role Type</strong></h4>
 <ul>
-<li>Integrate CJS with existing databases and applications using the provided guidelines and integration examples.</li>
-<li>Explore sample code snippets demonstrating how to set up the schema in various environments (e.g., MongoDB, Elasticsearch).</li>
+<li><strong>Field Name</strong>: <code>role.type</code></li>
+<li><strong>Type</strong>: <code>keyword</code></li>
+<li><strong>Description</strong>: The type of role being documented (e.g., Defendant, Witness, Interpreter). This categorises the role accurately.</li>
+<li><strong>Example</strong>: <code>Defendant</code></li>
 </ul>
-<h2 id="schema-overview-schemaoverviewmd">Schema Overview (schema/overview.md)</h2>
-<p><strong>Example Content:</strong>
-<div class="highlight"><pre><span></span><code><span class="gh"># Schema Overview</span>
-
-The Criminal Justice Schema (CJS) language  schema is organized into several key components, each representing a distinct aspect of criminal trial cases. The schema includes:
-
-<span class="k">-</span><span class="w"> </span><span class="gs">**Case Details**</span>: Information related to the case, such as the case ID, type, jurisdiction, and current status.
-<span class="k">-</span><span class="w"> </span><span class="gs">**Participants**</span>: Data on individuals involved in the trial, including defendants, judges, attorneys, and witnesses.
-<span class="k">-</span><span class="w"> </span><span class="gs">**Evidence Details**</span>: Metadata covering different types of evidence, including physical, digital, and testimonial, along with information on the chain of custody.
-<span class="k">-</span><span class="w"> </span><span class="gs">**Court Proceedings**</span>: Information on court events such as hearings, motions, court orders, and verdicts.
-
-Each component is designed to ensure comprehensive data capture, facilitating interoperability and consistency across various justice systems.
-</code></pre></div></p>
-<p>By following this guide, you will gain a foundational understanding of how to implement and integrate CJS effectively into your criminal trial case management system.</p>
+<h3 id="usage-notes">Usage Notes</h3>
+<ul>
+<li><strong>Core Fields</strong>: These fields must be present for each role record to ensure accurate tracking and documentation within the case timeline.</li>
+<li><strong>Extended Fields</strong>: Additional fields can be used when further details are available or necessary for the role context.</li>
+</ul>
+<h3 id="example-document">Example Document</h3>
+<h4 id="yaml">YAML</h4>
+<div class="highlight"><pre><span></span><code><span class="nt">role</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ROLE12345</span>
+<span class="w">  </span><span class="nt">case_id</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;CASE12345&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;CASE67890&quot;</span><span class="p p-Indicator">]</span>
+<span class="w">  </span><span class="nt">code</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Defe</span>
+<span class="w">  </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">The accused individual</span>
+<span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Defendant</span>
+<span class="w">  </span><span class="nt">start_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2020-01-01</span>
+<span class="w">  </span><span class="nt">end_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2023-12-31</span>
+<span class="w">  </span><span class="nt">last_amended_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2021-05-15</span>
+<span class="w">  </span><span class="nt">qualification_code</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">QLF002</span>
+<span class="w">  </span><span class="nt">status_code</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ACTIVE</span>
+<span class="w">  </span><span class="nt">notes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Role status updated based on court order.</span>
+</code></pre></div>
+<h4 id="json">JSON</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;role&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ROLE12345&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;case_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;CASE12345&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;CASE67890&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Defe&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The accused individual&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Defendant&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;start_date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2020-01-01&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;end_date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-12-31&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;last_amended_date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2021-05-15&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;qualification_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;QLF002&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;status_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ACTIVE&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;notes&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Role status updated based on court order.&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 
 
 

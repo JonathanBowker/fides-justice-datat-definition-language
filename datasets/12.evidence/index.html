@@ -6,19 +6,19 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An advanced framework for defining and managing justice-related data structures and behaviours, designed to enhance the integration of artificial intelligence in legal systems.">
+        <meta name="description" content="An extensible framework and naming protocol for defining and managing justice-related data structures and behaviours, designed to facilitate the safe use of artificial intelligence (AI) within UK Justice and Forensics System.">
       
       
         <meta name="author" content="Jonathan Bowker">
       
       
-        <link rel="canonical" href="https://jonathanbowker.github.io/criminal-justice-schema/structures/person/">
+        <link rel="canonical" href="https://jonathanbowker.github.io/criminal-justice-schema/datasets/12.evidence/">
       
       
-        <link rel="prev" href="../organisation_unit_identifier/">
+        <link rel="prev" href="../3.offence/">
       
       
-        <link rel="next" href="../postal_address/">
+        <link rel="next" href="../4.organisation_unit_identifier/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Person - Criminal Justice Schema (CJS)</title>
+        <title>Evidence - Fides - Criminal Justice Data Definition Language</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#person-fields" class="md-skip">
+        <a href="#evidence-dataset" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Criminal Justice Schema (CJS)" class="md-header__button md-logo" aria-label="Criminal Justice Schema (CJS)" data-md-component="logo">
+    <a href="../.." title="Fides - Criminal Justice Data Definition Language" class="md-header__button md-logo" aria-label="Fides - Criminal Justice Data Definition Language" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,13 +110,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Criminal Justice Schema (CJS)
+            Fides - Criminal Justice Data Definition Language
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Person
+              Evidence
             
           </span>
         </div>
@@ -229,13 +229,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Criminal Justice Schema (CJS)" class="md-nav__button md-logo" aria-label="Criminal Justice Schema (CJS)" data-md-component="logo">
+    <a href="../.." title="Fides - Criminal Justice Data Definition Language" class="md-nav__button md-logo" aria-label="Fides - Criminal Justice Data Definition Language" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Criminal Justice Schema (CJS)
+    Fides - Criminal Justice Data Definition Language
   </label>
   
     <div class="md-nav__source">
@@ -379,7 +379,7 @@
             
   
   <span class="md-ellipsis">
-    Data Structures
+    Case Schema
   </span>
   
 
@@ -389,7 +389,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Data Structures
+            Case Schema
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -400,7 +400,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../overview/" class="md-nav__link">
+      <a href="../0.overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -421,7 +421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../criminal_prosecution_reference/" class="md-nav__link">
+      <a href="../1.criminal_prosecution_reference/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -442,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hearing/" class="md-nav__link">
+      <a href="../2.hearing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -463,32 +463,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../offence/" class="md-nav__link">
+      <a href="../3.offence/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Offence
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../organisation_unit_identifier/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Organisation Unit Identifier
   </span>
   
 
@@ -518,7 +497,7 @@
           
   
   <span class="md-ellipsis">
-    Person
+    Evidence
   </span>
   
 
@@ -529,7 +508,7 @@
         
   
   <span class="md-ellipsis">
-    Person
+    Evidence
   </span>
   
 
@@ -551,28 +530,52 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#field-set-overview" class="md-nav__link">
+  <a href="#dataset-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Field Set Overview
+      Dataset Overview
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Field Set Overview">
+    <nav class="md-nav" aria-label="Dataset Overview">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#core-fields" class="md-nav__link">
+  <a href="#administrative-fields" class="md-nav__link">
     <span class="md-ellipsis">
-      Core Fields
+      Administrative Fields
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primary-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primary Fields
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Primary Fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extended-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extended Fields
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#extended-fields" class="md-nav__link">
+  <a href="#usage-notes" class="md-nav__link">
     <span class="md-ellipsis">
-      Extended Fields
+      Usage Notes
     </span>
   </a>
   
@@ -632,7 +635,49 @@
   
   
     <li class="md-nav__item">
-      <a href="../postal_address/" class="md-nav__link">
+      <a href="../4.organisation_unit_identifier/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Organisation Unit Identifier
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5.person/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Person
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6.postal_address/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -653,7 +698,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../result/" class="md-nav__link">
+      <a href="../7.result_fixed/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -674,7 +719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../result_qualifier/" class="md-nav__link">
+      <a href="../8.result_qualifier_fixed/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -695,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../role/" class="md-nav__link">
+      <a href="../9.role/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -716,11 +761,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../material/" class="md-nav__link">
+      <a href="../10.system_id/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Material
+    System ID
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11.uk_internal_country/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UK Internal Country
   </span>
   
 
@@ -758,7 +824,7 @@
             
   
   <span class="md-ellipsis">
-    Examples
+    Taxonomy
   </span>
   
 
@@ -768,7 +834,70 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Examples
+            Taxonomy
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../taxonomy/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Case Examples
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Case Examples
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -848,28 +977,52 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#field-set-overview" class="md-nav__link">
+  <a href="#dataset-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Field Set Overview
+      Dataset Overview
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Field Set Overview">
+    <nav class="md-nav" aria-label="Dataset Overview">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#core-fields" class="md-nav__link">
+  <a href="#administrative-fields" class="md-nav__link">
     <span class="md-ellipsis">
-      Core Fields
+      Administrative Fields
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primary-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primary Fields
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Primary Fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extended-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extended Fields
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#extended-fields" class="md-nav__link">
+  <a href="#usage-notes" class="md-nav__link">
     <span class="md-ellipsis">
-      Extended Fields
+      Usage Notes
     </span>
   </a>
   
@@ -931,12 +1084,12 @@
   
 
 
-<h1 id="person-fields">Person Fields</h1>
-<p>The <strong>Person Fields</strong> section of the Criminal Justice Schema (CJS) language captures detailed information about individuals involved in legal cases, including defendants, offenders, police personnel, and other relevant persons. These fields ensure comprehensive documentation and identification of individuals within the criminal justice system.</p>
-<h2 id="field-set-overview">Field Set Overview</h2>
-<p>The <strong>Person Fields</strong> include attributes such as personal identification numbers, name details, demographic information, and other relevant data, providing a complete record of individuals associated with cases.</p>
-<h3 id="core-fields">Core Fields</h3>
-<p>These are the essential fields required for documenting persons:</p>
+<h1 id="evidence-dataset">Evidence Dataset</h1>
+<p>The <code>evidence</code> dataset holds information related to evidence in legal cases. This includes depositions, expert reports, and other physical or digital records relevant to a case. The fields ensure comprehensive documentation and tracking of all materials associated with legal proceedings within the justice system.</p>
+<h2 id="dataset-overview">Dataset Overview</h2>
+<p>The dataset includes attributes such as evidence type, source, and associated case information, providing a complete record of all evidence linked to cases.</p>
+<h3 id="administrative-fields">Administrative Fields</h3>
+<p>These fields are essential for managing and linking evidence to other entities:</p>
 <table>
 <thead>
 <tr>
@@ -948,69 +1101,71 @@
 </thead>
 <tbody>
 <tr>
-<td><code>person.id</code></td>
+<td><code>evidence.id</code></td>
 <td><code>keyword</code></td>
-<td>A unique identifier for each person record.</td>
-<td><code>PER12345</code></td>
+<td>A unique identifier for each evidence record.</td>
+<td><code>EVD001</code></td>
 </tr>
 <tr>
-<td><code>person.case_id</code></td>
-<td><code>array</code></td>
-<td>An array of unique identifiers for the cases associated with the person.</td>
-<td><code>["CASE12345", "CASE67890"]</code></td>
+<td><code>evidence.cpr_id</code></td>
+<td><code>keyword</code></td>
+<td>The ID of the case associated with the evidence.</td>
+<td><code>CPR123456</code></td>
 </tr>
+</tbody>
+</table>
+<h2 id="primary-fields">Primary Fields</h2>
+<p>These are the primary fields required for documenting evidence:</p>
+<table>
+<thead>
 <tr>
-<td><code>person.given_name</code></td>
+<th>Field Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>evidence.title</code></td>
 <td><code>text</code></td>
-<td>The given name of the person.</td>
-<td><code>John</code></td>
+<td>The title of the evidence.</td>
+<td><code>Forensic Report on CCTV Footage</code></td>
 </tr>
 <tr>
-<td><code>person.family_name</code></td>
+<td><code>evidence.category</code></td>
+<td><code>keyword</code></td>
+<td>The category of the evidence (e.g., forensic, legal document).</td>
+<td><code>forensic</code></td>
+</tr>
+<tr>
+<td><code>evidence.source</code></td>
 <td><code>text</code></td>
-<td>The family name or surname of the person.</td>
-<td><code>Doe</code></td>
+<td>The origin or source of the evidence (e.g., police report, forensic lab).</td>
+<td><code>Anytown Forensic Lab</code></td>
 </tr>
 <tr>
-<td><code>person.date_of_birth</code></td>
+<td><code>evidence.version</code></td>
+<td><code>keyword</code></td>
+<td>The version of the evidence document or report.</td>
+<td><code>1</code></td>
+</tr>
+<tr>
+<td><code>evidence.date_published</code></td>
 <td><code>date</code></td>
-<td>The date of birth of the person.</td>
-<td><code>1980-01-01</code></td>
+<td>The date when the evidence was published or recorded.</td>
+<td><code>2023-10-12</code></td>
 </tr>
 <tr>
-<td><code>person.gender_type_code</code></td>
-<td><code>keyword</code></td>
-<td>The gender type code of the person.</td>
-<td><code>male</code></td>
-</tr>
-<tr>
-<td><code>person.national_insurance_number</code></td>
-<td><code>keyword</code></td>
-<td>The person’s National Insurance Number, if applicable.</td>
-<td><code>QQ123456C</code></td>
-</tr>
-<tr>
-<td><code>person.address</code></td>
+<td><code>evidence.description</code></td>
 <td><code>text</code></td>
-<td>The postal address of the person.</td>
-<td><code>123 High Street, Anytown</code></td>
-</tr>
-<tr>
-<td><code>person.ethnicity_self_defined_code</code></td>
-<td><code>keyword</code></td>
-<td>The self-defined ethnicity code of the person.</td>
-<td><code>White British</code></td>
-</tr>
-<tr>
-<td><code>person.religion</code></td>
-<td><code>text</code></td>
-<td>The religion of the person, if applicable.</td>
-<td><code>Christian</code></td>
+<td>A detailed description of the evidence.</td>
+<td><code>Analysis of CCTV footage showing the robbery.</code></td>
 </tr>
 </tbody>
 </table>
 <h3 id="extended-fields">Extended Fields</h3>
-<p>These fields provide additional details and context for persons:</p>
+<p>These fields provide additional details and context for the evidence:</p>
 <table>
 <thead>
 <tr>
@@ -1022,154 +1177,135 @@
 </thead>
 <tbody>
 <tr>
-<td><code>person.arrest_summons_number</code></td>
+<td><code>evidence.language</code></td>
 <td><code>keyword</code></td>
-<td>The arrest summons number associated with the person.</td>
-<td><code>ASN123456</code></td>
-</tr>
-<tr>
-<td><code>person.criminal_records_office_number</code></td>
-<td><code>keyword</code></td>
-<td>The Criminal Records Office (CRO) number of the person.</td>
-<td><code>CRO123456</code></td>
-</tr>
-<tr>
-<td><code>person.driving_licence_number</code></td>
-<td><code>keyword</code></td>
-<td>The driving licence number of the person, if applicable.</td>
-<td><code>D1234567</code></td>
-</tr>
-<tr>
-<td><code>person.passport_number</code></td>
-<td><code>keyword</code></td>
-<td>The passport number of the person, if applicable.</td>
-<td><code>123456789</code></td>
-</tr>
-<tr>
-<td><code>person.police_national_computer_id</code></td>
-<td><code>keyword</code></td>
-<td>The Police National Computer (PNC) ID of the person.</td>
-<td><code>PNC123456</code></td>
-</tr>
-<tr>
-<td><code>person.police_worker_collar_number</code></td>
-<td><code>keyword</code></td>
-<td>The collar number for police workers associated with the person.</td>
-<td><code>PC123</code></td>
-</tr>
-<tr>
-<td><code>person.noms_number</code></td>
-<td><code>keyword</code></td>
-<td>The National Offender Management Service (NOMS) number for the person.</td>
-<td><code>NOMS12345</code></td>
-</tr>
-<tr>
-<td><code>person.language_requirement</code></td>
-<td><code>text</code></td>
-<td>The language requirement for the person, if any.</td>
+<td>The language in which the evidence is recorded or published.</td>
 <td><code>English</code></td>
 </tr>
 <tr>
-<td><code>person.contact_details</code></td>
-<td><code>text</code></td>
-<td>Contact information for the person, such as a phone number or email.</td>
-<td><code>john.doe@example.com</code></td>
-</tr>
-<tr>
-<td><code>person.security_remarks</code></td>
-<td><code>text</code></td>
-<td>Any security remarks related to the person.</td>
-<td><code>Monitored for high-risk status.</code></td>
-</tr>
-<tr>
-<td><code>person.perceived_birth_year</code></td>
-<td><code>integer</code></td>
-<td>The perceived birth year of the person, if the actual date is unknown.</td>
-<td><code>1980</code></td>
-</tr>
-<tr>
-<td><code>person.occupation_code</code></td>
+<td><code>evidence.jurisdiction</code></td>
 <td><code>keyword</code></td>
-<td>The occupation code describing the person’s occupation.</td>
-<td><code>OCC123</code></td>
+<td>The jurisdiction relevant to the evidence (e.g., England and Wales).</td>
+<td><code>England and Wales</code></td>
 </tr>
 <tr>
-<td><code>person.youth_offending_team_unique_person_id</code></td>
+<td><code>evidence.access_level</code></td>
 <td><code>keyword</code></td>
-<td>The unique ID for youth offending teams associated with the person.</td>
-<td><code>YOT123</code></td>
+<td>The access level of the evidence (e.g., restricted, public).</td>
+<td><code>restricted</code></td>
 </tr>
 <tr>
-<td><code>person.no_fixed_abode</code></td>
-<td><code>boolean</code></td>
-<td>Indicates whether the person has a fixed address.</td>
-<td><code>true</code></td>
+<td><code>evidence.file_type</code></td>
+<td><code>keyword</code></td>
+<td>The format or file type of the evidence (e.g., PDF, JPEG).</td>
+<td><code>PDF</code></td>
 </tr>
 <tr>
-<td><code>person.notes</code></td>
+<td><code>evidence.url</code></td>
 <td><code>text</code></td>
-<td>Additional notes or remarks about the person.</td>
-<td><code>Previously convicted of similar offences.</code></td>
+<td>The URL where the evidence can be accessed, if available.</td>
+<td><code>http://forensiclabs.gov.uk/reports/EVD001.pdf</code></td>
+</tr>
+<tr>
+<td><code>evidence.related_cases</code></td>
+<td><code>array</code></td>
+<td>An array of case IDs related to the evidence.</td>
+<td><code>["CPR123456"]</code></td>
+</tr>
+<tr>
+<td><code>evidence.author</code></td>
+<td><code>text</code></td>
+<td>The name of the person or entity responsible for creating the evidence.</td>
+<td><code>Dr. Jane Doe</code></td>
+</tr>
+<tr>
+<td><code>evidence.usage_notes</code></td>
+<td><code>text</code></td>
+<td>Additional notes on how the evidence should be used.</td>
+<td><code>For use in court proceedings only.</code></td>
+</tr>
+<tr>
+<td><code>evidence.expiry_date</code></td>
+<td><code>date</code></td>
+<td>The expiry date of the evidence, if applicable.</td>
+<td><code>null</code></td>
+</tr>
+<tr>
+<td><code>evidence.keywords</code></td>
+<td><code>array</code></td>
+<td>Keywords associated with the evidence.</td>
+<td><code>["CCTV", "Forensic Report", "Robbery"]</code></td>
+</tr>
+<tr>
+<td><code>evidence.regulatory_compliance</code></td>
+<td><code>keyword</code></td>
+<td>Compliance requirements related to the evidence.</td>
+<td><code>CJSE</code></td>
+</tr>
+<tr>
+<td><code>evidence.ai_rules</code></td>
+<td><code>text</code></td>
+<td>Rules or restrictions for AI usage related to the evidence.</td>
+<td><code>No AI usage without case officer approval.</code></td>
 </tr>
 </tbody>
 </table>
+<h3 id="usage-notes">Usage Notes</h3>
+<ul>
+<li><strong>Core Fields</strong>: These fields must be present for each evidence record to ensure accurate tracking and documentation within the case timeline.</li>
+<li><strong>Extended Fields</strong>: Additional fields can be used when further details are available or necessary for the evidence context.</li>
+</ul>
 <h3 id="example-document">Example Document</h3>
 <h4 id="yaml">YAML</h4>
-<div class="highlight"><pre><span></span><code><span class="nt">person</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PER12345</span>
-<span class="w">  </span><span class="nt">case_id</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;CASE12345&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;CASE67890&quot;</span><span class="p p-Indicator">]</span>
-<span class="w">  </span><span class="nt">given_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">John</span>
-<span class="w">  </span><span class="nt">family_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Doe</span>
-<span class="w">  </span><span class="nt">date_of_birth</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1980-01-01</span>
-<span class="w">  </span><span class="nt">gender_type_code</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">male</span>
-<span class="w">  </span><span class="nt">national_insurance_number</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">QQ123456C</span>
-<span class="w">  </span><span class="nt">address</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">123 High Street, Anytown</span>
-<span class="w">  </span><span class="nt">ethnicity_self_defined_code</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">White British</span>
-<span class="w">  </span><span class="nt">religion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Christian</span>
-<span class="w">  </span><span class="nt">arrest_summons_number</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ASN123456</span>
-<span class="w">  </span><span class="nt">criminal_records_office_number</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CRO123456</span>
-<span class="w">  </span><span class="nt">driving_licence_number</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">D1234567</span>
-<span class="w">  </span><span class="nt">passport_number</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">123456789</span>
-<span class="w">  </span><span class="nt">police_national_computer_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PNC123456</span>
-<span class="w">  </span><span class="nt">police_worker_collar_number</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PC123</span>
-<span class="w">  </span><span class="nt">noms_number</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">NOMS12345</span>
-<span class="w">  </span><span class="nt">language_requirement</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">English</span>
-<span class="w">  </span><span class="nt">contact_details</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">john.doe@example.com</span>
-<span class="w">  </span><span class="nt">security_remarks</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Monitored for high-risk status.</span>
-<span class="w">  </span><span class="nt">perceived_birth_year</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1980</span>
-<span class="w">  </span><span class="nt">occupation_code</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">OCC123</span>
-<span class="w">  </span><span class="nt">youth_offending_team_unique_person_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">YOT123</span>
-<span class="w">  </span><span class="nt">no_fixed_abode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="w">  </span><span class="nt">notes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Previously convicted of similar offences.</span>
+<div class="highlight"><pre><span></span><code><span class="nt">evidence</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">EVD001</span>
+<span class="w">  </span><span class="nt">cpr_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CPR123456</span>
+<span class="w">  </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Forensic Report on CCTV Footage</span>
+<span class="w">  </span><span class="nt">category</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">forensic</span>
+<span class="w">  </span><span class="nt">source</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Anytown Forensic Lab</span>
+<span class="w">  </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;1&quot;</span>
+<span class="w">  </span><span class="nt">date_published</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2023-10-12&quot;</span>
+<span class="w">  </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Analysis of CCTV footage showing the robbery.</span>
+<span class="w">  </span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">English</span>
+<span class="w">  </span><span class="nt">jurisdiction</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">England and Wales</span>
+<span class="w">  </span><span class="nt">access_level</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">restricted</span>
+<span class="w">  </span><span class="nt">file_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PDF</span>
+<span class="w">  </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://forensiclabs.gov.uk/reports/EVD001.pdf</span>
+<span class="w">  </span><span class="nt">related_cases</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CPR123456</span>
+<span class="w">  </span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Dr. Jane Doe</span>
+<span class="w">  </span><span class="nt">usage_notes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">For use in court proceedings only.</span>
+<span class="w">  </span><span class="nt">expiry_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="w">  </span><span class="nt">keywords</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CCTV</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Forensic Report</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Robbery</span>
+<span class="w">  </span><span class="nt">regulatory_compliance</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CJSE</span>
+<span class="w">  </span><span class="nt">ai_rules</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">No AI usage without case officer approval.</span>
 </code></pre></div>
 <h4 id="json">JSON</h4>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;person&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PER12345&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;case_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;CASE12345&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;CASE67890&quot;</span><span class="p">],</span>
-<span class="w">    </span><span class="nt">&quot;given_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;John&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;family_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Doe&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;date_of_birth&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1980-01-01&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;gender_type_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;male&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;national_insurance_number&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;QQ123456C&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;address&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;123 High Street, Anytown&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;ethnicity_self_defined_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;White British&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;religion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Christian&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;arrest_summons_number&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ASN123456&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;criminal_records_office_number&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CRO123456&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;driving_licence_number&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;D1234567&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;passport_number&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;123456789&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;police_national_computer_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PNC123456&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;police_worker_collar_number&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PC123&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;noms_number&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;NOMS12345&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;language_requirement&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;English&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;contact_details&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;john.doe@example.com&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;security_remarks&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Monitored for high-risk status.&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;perceived_birth_year&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1980</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;occupation_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;OCC123&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;youth_offending_team_unique_person_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;YOT123&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;no_fixed_abode&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;notes&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Previously convicted of similar offences.&quot;</span>
+<span class="w">  </span><span class="nt">&quot;evidence&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;EVD001&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;cpr_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CPR123456&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Forensic Report on CCTV Footage&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;category&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;forensic&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;source&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Anytown Forensic Lab&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;date_published&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-10-12&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Analysis of CCTV footage showing the robbery.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;language&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;English&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;jurisdiction&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;England and Wales&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;access_level&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;restricted&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;file_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PDF&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://forensiclabs.gov.uk/reports/EVD001.pdf&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;related_cases&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;CPR123456&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;author&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Dr. Jane Doe&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;usage_notes&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;For use in court proceedings only.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;expiry_date&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;keywords&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;CCTV&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Forensic Report&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Robbery&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;regulatory_compliance&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CJSE&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;ai_rules&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;No AI usage without case officer approval.&quot;</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>

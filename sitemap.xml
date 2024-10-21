@@ -13,6 +13,58 @@
          <lastmod>2024-10-21</lastmod>
     </url>
     <url>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/datasets/0.overview/</loc>
+         <lastmod>2024-10-21</lastmod>
+    </url>
+    <url>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/datasets/1.criminal_prosecution_reference/</loc>
+         <lastmod>2024-10-21</lastmod>
+    </url>
+    <url>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/datasets/10.system_id/</loc>
+         <lastmod>2024-10-21</lastmod>
+    </url>
+    <url>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/datasets/11.uk_internal_country/</loc>
+         <lastmod>2024-10-21</lastmod>
+    </url>
+    <url>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/datasets/12.evidence/</loc>
+         <lastmod>2024-10-21</lastmod>
+    </url>
+    <url>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/datasets/2.hearing/</loc>
+         <lastmod>2024-10-21</lastmod>
+    </url>
+    <url>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/datasets/3.offence/</loc>
+         <lastmod>2024-10-21</lastmod>
+    </url>
+    <url>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/datasets/4.organisation_unit_identifier/</loc>
+         <lastmod>2024-10-21</lastmod>
+    </url>
+    <url>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/datasets/5.person/</loc>
+         <lastmod>2024-10-21</lastmod>
+    </url>
+    <url>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/datasets/6.postal_address/</loc>
+         <lastmod>2024-10-21</lastmod>
+    </url>
+    <url>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/datasets/7.result_fixed/</loc>
+         <lastmod>2024-10-21</lastmod>
+    </url>
+    <url>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/datasets/8.result_qualifier_fixed/</loc>
+         <lastmod>2024-10-21</lastmod>
+    </url>
+    <url>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/datasets/9.role/</loc>
+         <lastmod>2024-10-21</lastmod>
+    </url>
+    <url>
          <loc>https://jonathanbowker.github.io/criminal-justice-schema/examples/json-examples/</loc>
          <lastmod>2024-10-21</lastmod>
     </url>
@@ -29,55 +81,7 @@
          <lastmod>2024-10-21</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/criminal-justice-schema/structures/</loc>
-         <lastmod>2024-10-21</lastmod>
-    </url>
-    <url>
-         <loc>https://jonathanbowker.github.io/criminal-justice-schema/structures/criminal_prosecution_reference/</loc>
-         <lastmod>2024-10-21</lastmod>
-    </url>
-    <url>
-         <loc>https://jonathanbowker.github.io/criminal-justice-schema/structures/getting_started/</loc>
-         <lastmod>2024-10-21</lastmod>
-    </url>
-    <url>
-         <loc>https://jonathanbowker.github.io/criminal-justice-schema/structures/hearing/</loc>
-         <lastmod>2024-10-21</lastmod>
-    </url>
-    <url>
-         <loc>https://jonathanbowker.github.io/criminal-justice-schema/structures/material/</loc>
-         <lastmod>2024-10-21</lastmod>
-    </url>
-    <url>
-         <loc>https://jonathanbowker.github.io/criminal-justice-schema/structures/offence/</loc>
-         <lastmod>2024-10-21</lastmod>
-    </url>
-    <url>
-         <loc>https://jonathanbowker.github.io/criminal-justice-schema/structures/organisation_unit_identifier/</loc>
-         <lastmod>2024-10-21</lastmod>
-    </url>
-    <url>
-         <loc>https://jonathanbowker.github.io/criminal-justice-schema/structures/overview/</loc>
-         <lastmod>2024-10-21</lastmod>
-    </url>
-    <url>
-         <loc>https://jonathanbowker.github.io/criminal-justice-schema/structures/person/</loc>
-         <lastmod>2024-10-21</lastmod>
-    </url>
-    <url>
-         <loc>https://jonathanbowker.github.io/criminal-justice-schema/structures/postal_address/</loc>
-         <lastmod>2024-10-21</lastmod>
-    </url>
-    <url>
-         <loc>https://jonathanbowker.github.io/criminal-justice-schema/structures/result/</loc>
-         <lastmod>2024-10-21</lastmod>
-    </url>
-    <url>
-         <loc>https://jonathanbowker.github.io/criminal-justice-schema/structures/result_qualifier/</loc>
-         <lastmod>2024-10-21</lastmod>
-    </url>
-    <url>
-         <loc>https://jonathanbowker.github.io/criminal-justice-schema/structures/role/</loc>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/taxonomy/overview/</loc>
          <lastmod>2024-10-21</lastmod>
     </url>
 </urlset>
