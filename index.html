@@ -6,13 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An extensible framework and naming protocol for defining and managing criminal case related data structures and behaviours, and facilitating repsonsible and trustworthy use of generative artificial intelligence (AI) within legal processes and forensic analysis operations.">
+        <meta name="description" content="A Data Definition Language (DDL) based on Criminal Justice System Exchange Data Standards that describes data and its relationships within the Criminal Justice System. It provides an extensible framework and naming protocol for managing criminal case data structures and behaviours. Fides offers a standardised structure for lawyers, barristers, forensic analysts, judges, and criminal justice organisational units to consistently communicate and integrate generative artificial intelligence (AI) within legal processes and criminal justice operations.">
       
       
         <meta name="author" content="Jonathan Bowker">
       
       
-        <link rel="canonical" href="https://jonathanbowker.github.io/criminal-justice-schema/">
+        <link rel="canonical" href="https://jonathanbowker.github.io/fides/">
       
       
       
@@ -24,7 +24,7 @@
     
     
       
-        <title>Fides - CJS Data Definition Language</title>
+        <title>Fides - Criminal Data Definition Language</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#what-is-fides-case-definition-language" class="md-skip">
+        <a href="#what-is-fides" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Fides - CJS Data Definition Language" class="md-header__button md-logo" aria-label="Fides - CJS Data Definition Language" data-md-component="logo">
+    <a href="." title="Fides - Criminal Data Definition Language" class="md-header__button md-logo" aria-label="Fides - Criminal Data Definition Language" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -108,7 +108,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Fides - CJS Data Definition Language
+            Fides - Criminal Data Definition Language
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -191,7 +191,7 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/JonathanBowker/criminal-justice-schema" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/JonathanBowker/fides" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
@@ -227,17 +227,17 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Fides - CJS Data Definition Language" class="md-nav__button md-logo" aria-label="Fides - CJS Data Definition Language" data-md-component="logo">
+    <a href="." title="Fides - Criminal Data Definition Language" class="md-nav__button md-logo" aria-label="Fides - Criminal Data Definition Language" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Fides - CJS Data Definition Language
+    Fides - Criminal Data Definition Language
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/JonathanBowker/criminal-justice-schema" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/JonathanBowker/fides" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
@@ -303,9 +303,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#standardised-interoperable-efficient" class="md-nav__link">
+  <a href="#simple-flexible-extensible" class="md-nav__link">
     <span class="md-ellipsis">
-      Standardised. Interoperable. Efficient.
+      Simple. Flexible. Extensible.
     </span>
   </a>
   
@@ -979,9 +979,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#standardised-interoperable-efficient" class="md-nav__link">
+  <a href="#simple-flexible-extensible" class="md-nav__link">
     <span class="md-ellipsis">
-      Standardised. Interoperable. Efficient.
+      Simple. Flexible. Extensible.
     </span>
   </a>
   
@@ -1092,43 +1092,43 @@
   
 
 
-<p>This is the documentation of <strong>Fides version 1.0.0</strong>.</p>
-<h1 id="what-is-fides-case-definition-language">What is Fides Case Definition Language?</h1>
-<h3 id="standardised-interoperable-efficient">Standardised. Interoperable. Efficient.</h3>
-<p>Fides (<em>pronounced /fee-dhez/, from Latin: Fidēs - the goddess of trust, faithfulness, and good faith</em>) is a  <strong>Criminal Case Definition Language</strong> based on the <a href="https://www.gov.uk/guidance/criminal-justice-system-data-standards-forum-guidance">Criminal Justice System Exchange Data Standards</a>. It serves as a structured language that categorises, codes, and facilitates the safe and consistent processing of criminal justice data with generative artificial intelligence (AI).</p>
-<p>Fides provides a standardised and human-readable format for managing data transfers between individuals, information management systems, and artificial intelligence (AI). It is simple, flexible, and extendable, using tools that are freely accessible.</p>
-<p><strong>Fides</strong> is an open-source, <strong>human- and machine-readable</strong> language for defining justice-related datasets, behaviours, and usage patterns. Developed by experts in data management and AI, legal professionals, and forensic analysts, Fides supports the integration of case and evidence data with AI models to ensure that justice-related data remains consistent, accessible, and secure. By providing a unified format, Fides enables effective communication between individuals, information management systems, and AI technologies.</p>
+<p>This is the documentation for <strong>Fides version 1.0.0</strong>.</p>
+<h1 id="what-is-fides">What is Fides?</h1>
+<h3 id="simple-flexible-extensible">Simple. Flexible. Extensible.</h3>
+<p>Fides (<em>pronounced /fee-dhez/, from Latin: Fidēs - the goddess of trust, faithfulness, and good faith</em>) is a <strong>Criminal Data Definition Language</strong> based on the <a href="https://www.gov.uk/guidance/criminal-justice-system-data-standards-forum-guidance">Criminal Justice System Exchange Data Standards</a>. It is a structured language that describes data and its relationships within the Criminal Justice System, facilitating the safe and consistent processing of synthetic criminal data with artificial intelligence (AI).</p>
+<p>Fides provides a standardised, human-readable format for generating and managing data using generative AI. It is simple, flexible, and extensible, and can be created and edited with freely accessible tools.</p>
+<p><strong>Fides</strong> is an open-source, <strong>human- and machine-readable</strong> language for defining justice-related datasets, behaviours, and usage patterns. Developed by experts in data management, AI, legal professionals, and forensic analysts, Fides supports the integration of case and evidence data with AI models to ensure that justice-related data remains consistent, accessible, and secure. By providing a unified format, Fides enables effective communication between individuals, information management systems, and AI technologies.</p>
 <h2 id="benefits-of-fides">Benefits of Fides</h2>
-<p><strong>Fides</strong> offers numerous benefits, including standardisation, interoperability, efficiency, and AI integration, while ensuring data security and compliance with government standards. These advantages contribute to the transformation of the Criminal Justice System, making it faster, more efficient, and adaptable to technological advancements. Key benefits include:</p>
+<p><strong>Fides</strong> offers numerous advantages, including standardisation, interoperability, efficiency, and AI integration, while ensuring data security and compliance with government standards. These benefits contribute to transforming the Criminal Justice System, making it faster, more efficient, and adaptable to technological advancements. Key benefits include:</p>
 <h3 id="1-standardisation">1. <strong>Standardisation</strong></h3>
 <ul>
 <li><strong>Consistent Data Structure</strong>: Fides ensures a unified format for justice-related data, maintaining consistency across different platforms.</li>
-<li><strong>Common Language</strong>: With a standardised set of fields and data types, Fides establishes a shared language for Criminal Justice Operations, ensuring data quality.</li>
+<li><strong>Common Language</strong>: With a standardised set of fields and data types, Fides establishes a shared language for Criminal Justice Operations, ensuring high data quality.</li>
 </ul>
 <h3 id="2-interoperability">2. <strong>Interoperability</strong></h3>
 <ul>
-<li><strong>Seamless Data Exchange</strong>: Fides enables efficient data exchange across diverse systems used in Criminal Justice Operations, supporting integration without the need for bespoke solutions.</li>
-<li><strong>AI Compatibility</strong>: The Fides structure is designed to integrate seamlessly with both traditional database management systems and advanced AI technologies, including Large Language Models (LLMs). It ensures compatibility and effective use of generative AI capabilities.</li>
+<li><strong>Seamless Data Exchange</strong>: Fides enables efficient data exchange across diverse systems used in Criminal Justice Operations, supporting integration without bespoke solutions.</li>
+<li><strong>AI Compatibility</strong>: The Fides structure is designed to integrate seamlessly with traditional database management systems and advanced AI technologies, including Large Language Models (LLMs). It ensures compatibility and efficient use of generative AI capabilities.</li>
 </ul>
 <h3 id="3-efficiency">3. <strong>Efficiency</strong></h3>
 <ul>
 <li><strong>Automated Case Management</strong>: The standard format supports automation in case management, reducing manual input and increasing processing speed and accuracy.</li>
-<li><strong>Enhanced Collaboration</strong>: A consistent data structure promotes efficient collaboration among entities (e.g., police, courts, legal professionals, forensic scientists and analysts and AI) by providing real-time access to information.</li>
+<li><strong>Enhanced Collaboration</strong>: A consistent data structure promotes efficient collaboration among entities (e.g., police, courts, legal professionals, forensic scientists, and analysts) by providing real-time access to information.</li>
 </ul>
 <h3 id="4-scalability-and-extensibility">4. <strong>Scalability and Extensibility</strong></h3>
 <ul>
 <li><strong>Flexible and Adaptable</strong>: Fides is designed to be extensible, allowing for new fields or data types to be added as technology and needs evolve.</li>
-<li><strong>Future-Ready</strong>: The framework supports integration of emerging AI models and analytics tools, making it adaptable to future developments in the justice sector.</li>
+<li><strong>Future-Ready</strong>: The framework supports the integration of emerging AI models and analytics tools, making it adaptable to future developments in the justice sector.</li>
 </ul>
 <h3 id="5-usability">5. <strong>Usability</strong></h3>
 <ul>
-<li><strong>Human- and Machine-Readable Format</strong>: Fides is structured for both human and machine readability, enhancing collaboration among  stakeholders.</li>
+<li><strong>Human- and Machine-Readable Format</strong>: Fides is structured for both human and machine readability, enhancing collaboration among stakeholders.</li>
 <li><strong>User-Friendly Documentation</strong>: The structured taxonomy simplifies usage for developers, data scientists, and legal experts, reducing the learning curve and increasing productivity.</li>
 </ul>
 <h3 id="6-support-for-ai-and-generative-technologies">6. <strong>Support for AI and Generative Technologies</strong></h3>
 <ul>
 <li><strong>Retrieval-Augmented Generation (RAG) Compatibility</strong>: Fides supports RAG systems, improving case preparation, evidence analysis, and decision-making processes.</li>
-<li><strong>Data Integration with AI</strong>: The standardised format enables accurate synthetic data generation for trainign AI models, seamless integration of case data with AI models, improving the accuracy and reliability of AI-generated insights.</li>
+<li><strong>Data Integration with AI</strong>: The standardised format enables accurate synthetic data generation for training AI models, ensuring seamless integration of case data with AI models and improving the accuracy and reliability of AI-generated insights.</li>
 </ul>
 <h3 id="7-data-integrity-and-security">7. <strong>Data Integrity and Security</strong></h3>
 <ul>
@@ -1138,7 +1138,7 @@
 <h3 id="8-compliance-with-open-standards">8. <strong>Compliance with Open Standards</strong></h3>
 <ul>
 <li><strong>Alignment with Government Standards</strong>: Fides adheres to the UK government’s Open Standards Principles, ensuring compatibility with public sector frameworks and technologies.</li>
-<li><strong>Ease of Adoption</strong>: By aligning with established standards, Fides promotes transparency and simplifies adoption among CJOs and technology providers for Criminal Justice Data Operations.</li>
+<li><strong>Ease of Adoption</strong>: By aligning with established standards, Fides promotes transparency and simplifies adoption among Criminal Justice Organisations (CJOs) and technology providers for Criminal Justice Data Operations.</li>
 </ul>
 
 
