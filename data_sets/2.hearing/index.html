@@ -12,13 +12,13 @@
         <meta name="author" content="Jonathan Bowker">
       
       
-        <link rel="canonical" href="https://jonathanbowker.github.io/criminal-justice-schema/data_catalogue/0.overview/">
+        <link rel="canonical" href="https://jonathanbowker.github.io/criminal-justice-schema/data_sets/2.hearing/">
       
       
-        <link rel="prev" href="../../references/glossary/">
+        <link rel="prev" href="../1.criminal_prosecution_reference/">
       
       
-        <link rel="next" href="../1.criminal_prosecution_reference/">
+        <link rel="next" href="../3.offence/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Overview - Fides - Case Definition Language</title>
+        <title>Hearing - Fides - Case Definition Language</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#fides-data-catalogue" class="md-skip">
+        <a href="#hearing-dataset" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Hearing
             
           </span>
         </div>
@@ -379,7 +379,7 @@
             
   
   <span class="md-ellipsis">
-    Dataset Catalogue
+    Data Sets
   </span>
   
 
@@ -389,7 +389,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Dataset Catalogue
+            Data Sets
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -397,30 +397,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Overview
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../0.overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -429,35 +409,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#entity-table" class="md-nav__link">
-    <span class="md-ellipsis">
-      Entity Table
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -488,10 +439,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../2.hearing/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Hearing
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -500,6 +471,230 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dataset-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dataset Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dataset Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#administrative-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Administrative Fields
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primary-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primary Fields
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Primary Fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extended-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extended Fields
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#field-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Field Details
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Field Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-hearingid" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. hearing.id
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-hearingcpr_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. hearing.cpr_id
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-hearinglocation" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. hearing.location
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-hearingdate" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. hearing.date
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-hearingtime" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. hearing.time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-hearinglanguage" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. hearing.language
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-hearingdefendant_present" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. hearing.defendant_present
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-hearingdocumentation_language" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. hearing.documentation_language
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-hearingreport_requested_date" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. hearing.report_requested_date
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-hearingreport_completed_date" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. hearing.report_completed_date
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-hearingnotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. hearing.notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage Notes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-document" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Document
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example Document">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#yaml" class="md-nav__link">
+    <span class="md-ellipsis">
+      YAML
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    <span class="md-ellipsis">
+      JSON
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -896,11 +1091,206 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#entity-table" class="md-nav__link">
+  <a href="#dataset-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Entity Table
+      Dataset Overview
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Dataset Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#administrative-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Administrative Fields
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primary-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primary Fields
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Primary Fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extended-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extended Fields
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#field-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Field Details
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Field Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-hearingid" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. hearing.id
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-hearingcpr_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. hearing.cpr_id
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-hearinglocation" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. hearing.location
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-hearingdate" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. hearing.date
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-hearingtime" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. hearing.time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-hearinglanguage" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. hearing.language
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-hearingdefendant_present" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. hearing.defendant_present
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-hearingdocumentation_language" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. hearing.documentation_language
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-hearingreport_requested_date" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. hearing.report_requested_date
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-hearingreport_completed_date" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. hearing.report_completed_date
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-hearingnotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. hearing.notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage Notes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-document" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Document
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example Document">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#yaml" class="md-nav__link">
+    <span class="md-ellipsis">
+      YAML
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    <span class="md-ellipsis">
+      JSON
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -922,81 +1312,222 @@
   
 
 
-<h1 id="fides-data-catalogue">Fides Data Catalogue</h1>
-<p>Welcome to the <strong>Fides</strong> dataset catalogue overview. This page offers a comprehensive insight into the diverse data structures utilised within the criminal justice system. Each dataset is essential for managing justice-related information, ensuring interoperability, standardisation, and efficiency throughout the system.</p>
-<h2 id="entity-table">Entity Table</h2>
+<h1 id="hearing-dataset">Hearing Dataset</h1>
+<p>The <code>hearing</code> dataset contains information about legal hearings within the criminal justice system. This includes details about the location, date, time, language used, and whether the defendant was present. These fields ensure comprehensive documentation and tracking of hearings within the justice system.</p>
+<h2 id="dataset-overview">Dataset Overview</h2>
+<p>This dataset includes attributes such as the court location, hearing date and time, language used, and the presence of the defendant, providing a complete record of hearings associated with cases.</p>
+<h3 id="administrative-fields">Administrative Fields</h3>
+<p>These fields are required for managing and identifying hearing activities:</p>
 <table>
 <thead>
 <tr>
-<th><strong>Name</strong></th>
-<th><strong>Description</strong></th>
-<th><strong>Fields</strong></th>
-<th><strong>Version</strong></th>
+<th>Field Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Criminal Prosecution Reference</strong></td>
-<td>A nationally unique and non-reused reference for a person or organisation linked to an offence or another reason for the purposes of the preparation and prosecution of criminal cases or for offender management.</td>
-<td><code>cpr_defendant</code>, <code>cpr_offence_reason</code>, <code>cpr_offence_reason_sequence</code></td>
-<td>Version 5</td>
+<td><code>hearing.id</code></td>
+<td><code>keyword</code></td>
+<td>A unique identifier for each hearing record.</td>
+<td><code>HEAR12345</code></td>
 </tr>
 <tr>
-<td><strong>Hearing</strong></td>
-<td>This is due to a requirement to identify data elements that are relevant to the hearing of a case that would otherwise be repeated for each offence within the case.</td>
-<td><code>court_hearing_location</code>, <code>date_of_hearing</code>, <code>time_of_hearing</code>, <code>hearing_language_indicator</code>, <code>hearing_documentation_language</code>, <code>defendant_present_at_hearing</code>, <code>report_requested_date</code>, <code>report_completed_date</code></td>
-<td>Version 5</td>
-</tr>
-<tr>
-<td><strong>Offence</strong></td>
-<td>The fixed (static) CJS Data Standard Offence structure “Offence” is used in the generic sense covering the reasons for bringing a court case against a person, covering criminal offences, breach proceedings, and civil proceedings. Local variations of offence wordings are not permitted.</td>
-<td><code>cjs_offence_code</code>, <code>offence_category_code</code>, <code>offence_title</code>, <code>offence_welsh_title</code>, <code>standard_offence_wording</code>, <code>welsh_offence_wording</code>, <code>standard_statement_of_facts</code>, <code>welsh_statement_of_facts</code>, <code>legislation</code>, <code>welsh_legislation</code>, <code>offence_start_date</code>, <code>offence_end_date</code>, <code>recordable_on_pnc_indicator</code>, <code>notifiable_to_home_office_indicator</code>, <code>custodial_indicator</code>, <code>fine_indicator</code>, <code>complex_penalty_details</code>, <code>max_custodial_sentence_length_magistrates_court</code>, <code>max_custodial_sentence_length_crown_court</code>, <code>max_custodial_sentence_unit_magistrates_court</code>, <code>max_custodial_sentence_unit_crown_court</code>, <code>max_fine_type_magistrates_court</code>, <code>max_fine_type_crown_court</code>, <code>max_fine_magistrates_court</code>, <code>max_fine_crown_court</code>, <code>disqualification_type_code</code>, <code>max_penalty_points</code>, <code>min_penalty_points</code>, <code>dvla_code</code>, <code>home_office_classification</code>, <code>offence_national_region_code</code></td>
-<td>Version 6</td>
-</tr>
-<tr>
-<td><strong>Organisation Unit Identifier</strong></td>
-<td>A code to represent a physical and/or logical organisation unit at a level within a Criminal Justice Organisation, or an external organisation which accesses the CJS Exchange. This “structure level” data element is defined using codes only; literal values exist for each subordinate data element. Also used within CPR Defendant or Offender.</td>
-<td><code>ou_code_top_level</code>, <code>ou_code_second_level</code>, <code>ou_code_third_level</code>, <code>ou_code_bottom_level</code>, <code>ou_top_level_name</code>, <code>ou_second_level_name_or_type</code>, <code>ou_third_level_name</code>, <code>ou_third_level_legacy_code</code>, <code>ou_bottom_level_name</code>, <code>ou_start_date</code>, <code>ou_end_date</code>, <code>ou_notes</code></td>
-<td>Version 5</td>
-</tr>
-<tr>
-<td><strong>Person</strong></td>
-<td>The Person Data Structure forms the data elements describing a Person (including a Defendant or Offender) as required by CJSE. Wherever applicable and possible, the data elements comply with e-GIF/GMS.</td>
-<td><code>arrest_summons_number</code>, <code>criminal_records_office_number</code>, <code>driving_licence_number</code>, <code>national_insurance_number</code>, <code>passport_number</code>, <code>police_national_computer_id</code>, <code>police_worker_collar_number</code>, <code>police_worker_reference_number</code>, <code>noms_number</code>, <code>person_name_type</code>, <code>person_birth_date</code>, <code>gender_type_code</code>, <code>person_title</code>, <code>name_change_sequence_number</code>, <code>given_name</code>, <code>family_name</code>, <code>person_name_suffix</code>, <code>person_requested_name</code>, <code>driving_licence_type_code</code>, <code>driving_licence_issue_number</code>, <code>driving_licence_cpart_issue_no</code>, <code>ethnicity_self_defined_code</code>, <code>ethnicity_self_defined_extra_definition</code>, <code>ethnicity_observed_4_plus_1_code</code>, <code>ethnicity_observed_6_plus_1_code</code>, <code>language_requirement</code>, <code>specific_requirements</code>, <code>security_remarks</code>, <code>religion</code>, <code>person_notes</code>, <code>person_remand_status</code>, <code>disability_self_defined_code</code>, <code>preferred_method_of_contact</code>, <code>vehicle_operator's_licence_number</code>, <code>perceived_birth_year</code>, <code>offender_code</code>, <code>occupation</code>, <code>occupation_code</code>, <code>police_officer_rank_description</code>, <code>police_officer_rank_input_code</code>, <code>police_officer_rank_numeric_code</code>, <code>person_stated_nationality</code>, <code>youth_offending_team_unique_person_id</code>, <code>no_fixed_abode</code></td>
-<td>Version 5</td>
-</tr>
-<tr>
-<td><strong>Postal Address</strong></td>
-<td>This is the postal address of a Person or Organisation. As a structure, it is a subtype of an inferred structure “Contact Detail”.</td>
-<td><code>uk_address</code>, <code>uk_postcode</code>, <code>country</code></td>
-<td>Version 4</td>
-</tr>
-<tr>
-<td><strong>Result</strong></td>
-<td>The CJSE Result Structure, containing data elements that are a fixed part of a result and are used as reference data within a result code. Results can be interim, partial, or final, depending on their status in relation to the offence. Administrative results are also included.</td>
-<td><code>cjs_result_code</code>, <code>result_description</code>, <code>result_type_code</code>, <code>england_and_wales_indicator</code>, <code>cjs_result_code_start_date</code>, <code>cjs_result_code_last_amended_date</code>, <code>cjs_result_code_end_date</code>, <code>result_applicable_qualifier_code</code>, <code>offence_remand_status_code</code>, <code>duration_quantity</code>, <code>date_quantity</code>, <code>time_quantity</code>, <code>amount_quantity</code>, <code>number_quantity</code>, <code>text_quantity</code>, <code>cjs_result_code_notes</code></td>
-<td>Version 5</td>
-</tr>
-<tr>
-<td><strong>Result Qualifier</strong></td>
-<td>Data elements that are a fixed part of a Result Qualifier and are used as reference data within a Result Qualifier Code. A result qualifier gives additional information about an instance of a result.</td>
-<td><code>result_qualifier_code</code>, <code>result_qualifier_code_description</code>, <code>result_qualifier_start_date</code>, <code>result_qualifier_last_amended_date</code>, <code>result_qualifier_end_date</code>, <code>result_qualifier_notes</code></td>
-<td>Version 5</td>
-</tr>
-<tr>
-<td><strong>Role</strong></td>
-<td>This shows the role of a Person or an Organisation.</td>
-<td><code>role_type_code</code>, <code>role_type_description</code></td>
-<td>Version 5</td>
-</tr>
-<tr>
-<td><strong>Material</strong></td>
-<td>A comprehensive catalogue of reference materials used within the judicial and criminal justice system. It includes items such as laws, regulations, forensic reports, bench books, and witness statements. This catalogue ensures accurate, up-to-date, and comprehensive data is available for judicial procedures, forensic analysis, and AI/LLM support.</td>
-<td><code>title</code>, <code>category</code>, <code>source</code>, <code>version</code>, <code>date_published</code>, <code>date_last_updated</code>, <code>description</code>, <code>language</code>, <code>jurisdiction</code>, <code>access_level</code>, <code>file_type</code>, <code>url</code>, <code>related_cases</code>, <code>author</code>, <code>usage_notes</code>, <code>expiry_date</code>, <code>keywords</code>, <code>regulatory_compliance</code>, <code>notes</code>, <code>ai_rules</code></td>
-<td>Version 1</td>
+<td><code>hearing.cpr_id</code></td>
+<td><code>array</code></td>
+<td>An array of unique identifiers for the cases associated with the hearing.</td>
+<td><code>["CPR123456", "CPR678910"]</code></td>
 </tr>
 </tbody>
 </table>
+<h2 id="primary-fields">Primary Fields</h2>
+<p>These fields capture the essential details about the hearing:</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hearing.location</code></td>
+<td><code>keyword</code></td>
+<td>The court and location where the hearing is held.</td>
+<td><code>B Magistrates’ Courts, Anytown Court</code></td>
+</tr>
+<tr>
+<td><code>hearing.date</code></td>
+<td><code>date</code></td>
+<td>The date when the hearing takes place.</td>
+<td><code>10-08-2023</code></td>
+</tr>
+<tr>
+<td><code>hearing.time</code></td>
+<td><code>keyword</code></td>
+<td>The time when the hearing takes place.</td>
+<td><code>10:00 AM</code></td>
+</tr>
+<tr>
+<td><code>hearing.language</code></td>
+<td><code>keyword</code></td>
+<td>The language used during the hearing (<code>W Welsh</code>, <code>E English</code>).</td>
+<td><code>E English</code></td>
+</tr>
+<tr>
+<td><code>hearing.defendant_present</code></td>
+<td><code>boolean</code></td>
+<td>Indicates whether the defendant is present at the hearing.</td>
+<td><code>true</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="extended-fields">Extended Fields</h3>
+<p>These fields provide additional details and context for the hearing:</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hearing.documentation_language</code></td>
+<td><code>keyword</code></td>
+<td>The language used in the documentation or transcripts of the hearing (<code>W Welsh</code>, <code>E English</code>).</td>
+<td><code>E English</code></td>
+</tr>
+<tr>
+<td><code>hearing.report_requested_date</code></td>
+<td><code>date</code></td>
+<td>The date when a report (e.g., Pre-Sentence Report) was requested.</td>
+<td><code>15-07-2023</code></td>
+</tr>
+<tr>
+<td><code>hearing.report_completed_date</code></td>
+<td><code>date</code></td>
+<td>The date when the requested report was completed.</td>
+<td><code>20-07-2023</code></td>
+</tr>
+<tr>
+<td><code>hearing.notes</code></td>
+<td><code>text</code></td>
+<td>Additional notes or remarks about the hearing.</td>
+<td><code>Defendant requested an adjournment.</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="field-details">Field Details</h3>
+<h4 id="1-hearingid">1. <code>hearing.id</code></h4>
+<ul>
+<li><strong>Type</strong>: <code>keyword</code></li>
+<li><strong>Description</strong>: A unique identifier for each hearing record.</li>
+<li><strong>Example</strong>: <code>HEAR12345</code></li>
+</ul>
+<h4 id="2-hearingcpr_id">2. <code>hearing.cpr_id</code></h4>
+<ul>
+<li><strong>Type</strong>: <code>array</code></li>
+<li><strong>Description</strong>: An array of unique identifiers representing the cases linked to the hearing, allowing tracking across multiple cases.</li>
+<li><strong>Example</strong>: <code>["CPR123456", "CPR678910"]</code></li>
+</ul>
+<h4 id="3-hearinglocation">3. <code>hearing.location</code></h4>
+<ul>
+<li><strong>Type</strong>: <code>keyword</code></li>
+<li><strong>Description</strong>: The court and location where the hearing is held.</li>
+<li><strong>Example</strong>: <code>B Magistrates’ Courts, Anytown Court</code></li>
+</ul>
+<h4 id="4-hearingdate">4. <code>hearing.date</code></h4>
+<ul>
+<li><strong>Type</strong>: <code>date</code></li>
+<li><strong>Description</strong>: The date when the hearing takes place.</li>
+<li><strong>Example</strong>: <code>10-08-2023</code></li>
+</ul>
+<h4 id="5-hearingtime">5. <code>hearing.time</code></h4>
+<ul>
+<li><strong>Type</strong>: <code>keyword</code></li>
+<li><strong>Description</strong>: The time when the hearing takes place.</li>
+<li><strong>Example</strong>: <code>10:00 AM</code></li>
+</ul>
+<h4 id="6-hearinglanguage">6. <code>hearing.language</code></h4>
+<ul>
+<li><strong>Type</strong>: <code>keyword</code></li>
+<li><strong>Description</strong>: The language used during the hearing.</li>
+<li><strong>Example</strong>: <code>E English</code></li>
+</ul>
+<h4 id="7-hearingdefendant_present">7. <code>hearing.defendant_present</code></h4>
+<ul>
+<li><strong>Type</strong>: <code>boolean</code></li>
+<li><strong>Description</strong>: Indicates whether the defendant is present at the hearing.</li>
+<li><strong>Example</strong>: <code>true</code></li>
+</ul>
+<h4 id="8-hearingdocumentation_language">8. <code>hearing.documentation_language</code></h4>
+<ul>
+<li><strong>Type</strong>: <code>keyword</code></li>
+<li><strong>Description</strong>: The language used in the documentation or transcripts of the hearing.</li>
+<li><strong>Example</strong>: <code>E English</code></li>
+</ul>
+<h4 id="9-hearingreport_requested_date">9. <code>hearing.report_requested_date</code></h4>
+<ul>
+<li><strong>Type</strong>: <code>date</code></li>
+<li><strong>Description</strong>: The date when a report (e.g., Pre-Sentence Report) was requested.</li>
+<li><strong>Example</strong>: <code>15-07-2023</code></li>
+</ul>
+<h4 id="10-hearingreport_completed_date">10. <code>hearing.report_completed_date</code></h4>
+<ul>
+<li><strong>Type</strong>: <code>date</code></li>
+<li><strong>Description</strong>: The date when the requested report was completed.</li>
+<li><strong>Example</strong>: <code>20-07-2023</code></li>
+</ul>
+<h4 id="11-hearingnotes">11. <code>hearing.notes</code></h4>
+<ul>
+<li><strong>Type</strong>: <code>text</code></li>
+<li><strong>Description</strong>: Additional notes or remarks about the hearing.</li>
+<li><strong>Example</strong>: <code>Defendant requested an adjournment.</code></li>
+</ul>
+<h3 id="usage-notes">Usage Notes</h3>
+<ul>
+<li><strong>Core Fields</strong>: These fields must be present for each hearing to ensure accurate tracking and documentation within the case timeline.</li>
+<li><strong>Extended Fields</strong>: Additional fields can be used when further details are available or necessary for the hearing context.</li>
+</ul>
+<h3 id="example-document">Example Document</h3>
+<h4 id="yaml">YAML</h4>
+<div class="highlight"><pre><span></span><code><span class="nt">hearing</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">HEAR12345</span>
+<span class="w">  </span><span class="nt">cpr_id</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;CPR123456&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;CPR678910&quot;</span><span class="p p-Indicator">]</span>
+<span class="w">  </span><span class="nt">location</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">B Magistrates’ Courts, Anytown Court</span>
+<span class="w">  </span><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10-08-2023</span>
+<span class="w">  </span><span class="nt">time</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10:00 AM</span>
+<span class="w">  </span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">E English</span>
+<span class="w">  </span><span class="nt">defendant_present</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="nt">documentation_language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">E English</span>
+<span class="w">  </span><span class="nt">report_requested_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">15-07-2023</span>
+<span class="w">  </span><span class="nt">report_completed_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">20-07-2023</span>
+<span class="w">  </span><span class="nt">notes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Defendant requested an adjournment.</span>
+</code></pre></div>
+<h4 id="json">JSON</h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;hearing&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;HEAR12345&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;cpr_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;CPR123456&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;CPR678910&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;location&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;B Magistrates’ Courts, Anytown Court&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;10-08-2023&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;10:00 AM&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;language&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;E English&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;defendant_present&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;documentation_language&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;E English&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;report_requested_date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;15-07-2023&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;report_completed_date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;20-07-2023&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;notes&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Defendant requested an adjournment.&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 
 
 
