@@ -572,6 +572,55 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#2-role-code" class="md-nav__link">
+    2. Role Code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-role-start-date" class="md-nav__link">
+    3. Role Start Date
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-role-end-date" class="md-nav__link">
+    4. Role End Date
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-last-amended-date" class="md-nav__link">
+    5. Last Amended Date
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-qualification-code" class="md-nav__link">
+    6. Qualification Code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-status-code" class="md-nav__link">
+    7. Status Code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-notes" class="md-nav__link">
+    8. Notes
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -804,6 +853,55 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#2-role-code" class="md-nav__link">
+    2. Role Code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-role-start-date" class="md-nav__link">
+    3. Role Start Date
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-role-end-date" class="md-nav__link">
+    4. Role End Date
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-last-amended-date" class="md-nav__link">
+    5. Last Amended Date
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-qualification-code" class="md-nav__link">
+    6. Qualification Code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-status-code" class="md-nav__link">
+    7. Status Code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-notes" class="md-nav__link">
+    8. Notes
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -897,12 +995,6 @@
 <td>A unique identifier for each role record.</td>
 <td><code>ROLE12345</code></td>
 </tr>
-<tr>
-<td><code>role.case_id</code></td>
-<td><code>array</code></td>
-<td>An array of unique identifiers for the cases associated with the role.</td>
-<td><code>["CASE12345", "CASE67890"]</code></td>
-</tr>
 </tbody>
 </table>
 <h2 id="primary-fields">Primary Fields</h2>
@@ -992,8 +1084,68 @@
 <ul>
 <li><strong>Field Name</strong>: <code>role.type</code></li>
 <li><strong>Type</strong>: <code>keyword</code></li>
-<li><strong>Description</strong>: The type of role being documented (e.g., Defendant, Witness, Interpreter). This categorises the role accurately.</li>
+<li><strong>Description</strong>: Defines the role type, such as Defendant, Witness, Interpreter, or Legal, which is used to categorise the individual or entity's function within the case.</li>
 <li><strong>Example</strong>: <code>Defendant</code></li>
+</ul>
+<h4 id="2-role-code">2. <strong>Role Code</strong></h4>
+<ul>
+<li><strong>Field Name</strong>: <code>role.code</code></li>
+<li><strong>Type</strong>: <code>keyword</code></li>
+<li><strong>Description</strong>: The official CJS code for each role, helping standardise and track the role of individuals or organisations within criminal justice processes. Possible codes include:</li>
+<li><code>Appr</code>: Appropriate Adult</li>
+<li><code>Defe</code>: Defendant</li>
+<li><code>Info</code>: Informant</li>
+<li><code>Inte</code>: Interpreter</li>
+<li><code>Poli</code>: Police Worker</li>
+<li><code>Pris</code>: Prisoner</li>
+<li><code>Victi</code>: Victim</li>
+<li><code>Witn</code>: Witness</li>
+<li><code>Pers</code>: Youth Offending Team Person Dealing at Court</li>
+<li><code>Prac</code>: Youth Offending Team Practitioner</li>
+<li><code>Youn</code>: Young Person</li>
+<li><strong>Example</strong>: <code>Defe</code></li>
+</ul>
+<h4 id="3-role-start-date">3. <strong>Role Start Date</strong></h4>
+<ul>
+<li><strong>Field Name</strong>: <code>role.start_date</code></li>
+<li><strong>Type</strong>: <code>date</code></li>
+<li><strong>Description</strong>: The date the individual or organisation assumed the role. This helps maintain an accurate timeline of involvement.</li>
+<li><strong>Example</strong>: <code>2020-01-01</code></li>
+</ul>
+<h4 id="4-role-end-date">4. <strong>Role End Date</strong></h4>
+<ul>
+<li><strong>Field Name</strong>: <code>role.end_date</code></li>
+<li><strong>Type</strong>: <code>date</code></li>
+<li><strong>Description</strong>: The date the role concluded, if applicable. This field is used to document changes in role over time.</li>
+<li><strong>Example</strong>: <code>2023-12-31</code></li>
+</ul>
+<h4 id="5-last-amended-date">5. <strong>Last Amended Date</strong></h4>
+<ul>
+<li><strong>Field Name</strong>: <code>role.last_amended_date</code></li>
+<li><strong>Type</strong>: <code>date</code></li>
+<li><strong>Description</strong>: The last date on which the role details were updated or amended.</li>
+<li><strong>Example</strong>: <code>2021-05-15</code></li>
+</ul>
+<h4 id="6-qualification-code">6. <strong>Qualification Code</strong></h4>
+<ul>
+<li><strong>Field Name</strong>: <code>role.qualification_code</code></li>
+<li><strong>Type</strong>: <code>keyword</code></li>
+<li><strong>Description</strong>: A code representing any professional qualifications applicable to the role. This is particularly useful for roles requiring specific credentials, like legal or medical qualifications.</li>
+<li><strong>Example</strong>: <code>QLF002</code></li>
+</ul>
+<h4 id="7-status-code">7. <strong>Status Code</strong></h4>
+<ul>
+<li><strong>Field Name</strong>: <code>role.status_code</code></li>
+<li><strong>Type</strong>: <code>keyword</code></li>
+<li><strong>Description</strong>: Indicates the current status of the role, such as <code>ACTIVE</code> or <code>INACTIVE</code>. This field assists in understanding the present status of role participants in ongoing or closed cases.</li>
+<li><strong>Example</strong>: <code>ACTIVE</code></li>
+</ul>
+<h4 id="8-notes">8. <strong>Notes</strong></h4>
+<ul>
+<li><strong>Field Name</strong>: <code>role.notes</code></li>
+<li><strong>Type</strong>: <code>text</code></li>
+<li><strong>Description</strong>: Additional remarks or contextual notes related to the role. This field can document observations, updates, or specific conditions tied to the role’s responsibilities.</li>
+<li><strong>Example</strong>: <code>Role status updated based on court order.</code></li>
 </ul>
 <h3 id="usage-notes">Usage Notes</h3>
 <ul>
@@ -1004,7 +1156,6 @@
 <h4 id="yaml">YAML</h4>
 <div class="highlight"><pre><span></span><code><span class="nt">role</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ROLE12345</span>
-<span class="w">  </span><span class="nt">case_id</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;CASE12345&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;CASE67890&quot;</span><span class="p p-Indicator">]</span>
 <span class="w">  </span><span class="nt">code</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Defe</span>
 <span class="w">  </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">The accused individual</span>
 <span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Defendant</span>
@@ -1019,7 +1170,6 @@
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;role&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ROLE12345&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;case_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;CASE12345&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;CASE67890&quot;</span><span class="p">],</span>
 <span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Defe&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The accused individual&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Defendant&quot;</span><span class="p">,</span>

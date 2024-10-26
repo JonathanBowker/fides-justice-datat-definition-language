@@ -552,50 +552,43 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-result_qualifiercase_id" class="md-nav__link">
-    2. result_qualifier.case_id
+  <a href="#2-result_qualifiercode" class="md-nav__link">
+    2. result_qualifier.code
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-result_qualifiercode" class="md-nav__link">
-    3. result_qualifier.code
+  <a href="#3-result_qualifierdescription" class="md-nav__link">
+    3. result_qualifier.description
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-result_qualifierdescription" class="md-nav__link">
-    4. result_qualifier.description
+  <a href="#4-result_qualifierstart_date" class="md-nav__link">
+    4. result_qualifier.start_date
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-result_qualifierstart_date" class="md-nav__link">
-    5. result_qualifier.start_date
+  <a href="#5-result_qualifierend_date" class="md-nav__link">
+    5. result_qualifier.end_date
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#6-result_qualifierend_date" class="md-nav__link">
-    6. result_qualifier.end_date
+  <a href="#6-result_qualifierlast_amended_date" class="md-nav__link">
+    6. result_qualifier.last_amended_date
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#7-result_qualifierlast_amended_date" class="md-nav__link">
-    7. result_qualifier.last_amended_date
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#8-result_qualifiernotes" class="md-nav__link">
-    8. result_qualifier.notes
+  <a href="#7-result_qualifiernotes" class="md-nav__link">
+    7. result_qualifier.notes
   </a>
   
 </li>
@@ -840,50 +833,43 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-result_qualifiercase_id" class="md-nav__link">
-    2. result_qualifier.case_id
+  <a href="#2-result_qualifiercode" class="md-nav__link">
+    2. result_qualifier.code
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-result_qualifiercode" class="md-nav__link">
-    3. result_qualifier.code
+  <a href="#3-result_qualifierdescription" class="md-nav__link">
+    3. result_qualifier.description
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-result_qualifierdescription" class="md-nav__link">
-    4. result_qualifier.description
+  <a href="#4-result_qualifierstart_date" class="md-nav__link">
+    4. result_qualifier.start_date
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-result_qualifierstart_date" class="md-nav__link">
-    5. result_qualifier.start_date
+  <a href="#5-result_qualifierend_date" class="md-nav__link">
+    5. result_qualifier.end_date
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#6-result_qualifierend_date" class="md-nav__link">
-    6. result_qualifier.end_date
+  <a href="#6-result_qualifierlast_amended_date" class="md-nav__link">
+    6. result_qualifier.last_amended_date
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#7-result_qualifierlast_amended_date" class="md-nav__link">
-    7. result_qualifier.last_amended_date
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#8-result_qualifiernotes" class="md-nav__link">
-    8. result_qualifier.notes
+  <a href="#7-result_qualifiernotes" class="md-nav__link">
+    7. result_qualifier.notes
   </a>
   
 </li>
@@ -976,12 +962,6 @@
 <td>A unique identifier for each result qualifier record.</td>
 <td><code>QUAL12345</code></td>
 </tr>
-<tr>
-<td><code>result_qualifier.case_id</code></td>
-<td><code>array</code></td>
-<td>An array of unique identifiers for the cases associated with the result qualifier.</td>
-<td><code>["CASE12345", "CASE67890"]</code></td>
-</tr>
 </tbody>
 </table>
 <h2 id="primary-fields">Primary Fields</h2>
@@ -1055,43 +1035,37 @@
 <li><strong>Description</strong>: A unique identifier for each result qualifier record.</li>
 <li><strong>Example</strong>: <code>QUAL12345</code></li>
 </ul>
-<h4 id="2-result_qualifiercase_id">2. <code>result_qualifier.case_id</code></h4>
-<ul>
-<li><strong>Type</strong>: <code>array</code></li>
-<li><strong>Description</strong>: An array of unique identifiers representing the cases linked to the result qualifier, allowing tracking across multiple cases.</li>
-<li><strong>Example</strong>: <code>["CASE12345", "CASE67890"]</code></li>
-</ul>
-<h4 id="3-result_qualifiercode">3. <code>result_qualifier.code</code></h4>
+<h4 id="2-result_qualifiercode">2. <code>result_qualifier.code</code></h4>
 <ul>
 <li><strong>Type</strong>: <code>keyword</code></li>
 <li><strong>Description</strong>: The official code representing the result qualifier.</li>
 <li><strong>Example</strong>: <code>RQ001</code></li>
 </ul>
-<h4 id="4-result_qualifierdescription">4. <code>result_qualifier.description</code></h4>
+<h4 id="3-result_qualifierdescription">3. <code>result_qualifier.description</code></h4>
 <ul>
 <li><strong>Type</strong>: <code>text</code></li>
 <li><strong>Description</strong>: A description of the result qualifier.</li>
 <li><strong>Example</strong>: <code>Indicates offence was racially aggravated.</code></li>
 </ul>
-<h4 id="5-result_qualifierstart_date">5. <code>result_qualifier.start_date</code></h4>
+<h4 id="4-result_qualifierstart_date">4. <code>result_qualifier.start_date</code></h4>
 <ul>
 <li><strong>Type</strong>: <code>date</code></li>
 <li><strong>Description</strong>: The date when the result qualifier became valid.</li>
 <li><strong>Example</strong>: <code>2020-01-01</code></li>
 </ul>
-<h4 id="6-result_qualifierend_date">6. <code>result_qualifier.end_date</code></h4>
+<h4 id="5-result_qualifierend_date">5. <code>result_qualifier.end_date</code></h4>
 <ul>
 <li><strong>Type</strong>: <code>date</code></li>
 <li><strong>Description</strong>: The date when the result qualifier ceased to be valid (if applicable).</li>
 <li><strong>Example</strong>: <code>2023-12-31</code></li>
 </ul>
-<h4 id="7-result_qualifierlast_amended_date">7. <code>result_qualifier.last_amended_date</code></h4>
+<h4 id="6-result_qualifierlast_amended_date">6. <code>result_qualifier.last_amended_date</code></h4>
 <ul>
 <li><strong>Type</strong>: <code>date</code></li>
 <li><strong>Description</strong>: The date when the result qualifier was last amended.</li>
 <li><strong>Example</strong>: <code>2021-05-15</code></li>
 </ul>
-<h4 id="8-result_qualifiernotes">8. <code>result_qualifier.notes</code></h4>
+<h4 id="7-result_qualifiernotes">7. <code>result_qualifier.notes</code></h4>
 <ul>
 <li><strong>Type</strong>: <code>text</code></li>
 <li><strong>Description</strong>: Additional notes or remarks about the result qualifier.</li>
@@ -1106,7 +1080,6 @@
 <h4 id="yaml">YAML</h4>
 <div class="highlight"><pre><span></span><code><span class="nt">result_qualifier</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">QUAL12345</span>
-<span class="w">  </span><span class="nt">case_id</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;CASE12345&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;CASE67890&quot;</span><span class="p p-Indicator">]</span>
 <span class="w">  </span><span class="nt">code</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RQ001</span>
 <span class="w">  </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Indicates offence was racially aggravated.</span>
 <span class="w">  </span><span class="nt">start_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2020-01-01</span>
@@ -1118,7 +1091,6 @@
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;result_qualifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;QUAL12345&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;case_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;CASE12345&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;CASE67890&quot;</span><span class="p">],</span>
 <span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;RQ001&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Indicates offence was racially aggravated.&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;start_date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2020-01-01&quot;</span><span class="p">,</span>
