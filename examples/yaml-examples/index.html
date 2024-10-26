@@ -685,143 +685,208 @@
 <h1 id="example-case-file-yaml">Example Case File YAML</h1>
 <p>This is a fully populated YAML example of a case (case.yaml) demonstrating the integration of all related fields including events, participants, offences, evidence, judicial procedures, victim support, probation/parole, sentences, enforcement actions, and bail/detention records. This example provides a comprehensive view of how the data interrelates within the schema.</p>
 <h3 id="yaml-representation">YAML Representation</h3>
-<div class="highlight"><pre><span></span><code><span class="nt">case</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CASE12345</span>
-<span class="w">  </span><span class="nt">status</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">open</span>
-<span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">criminal</span>
-<span class="w">  </span><span class="nt">start_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2023-01-10&quot;</span>
-<span class="w">  </span><span class="nt">end_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
-<span class="w">  </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Armed robbery at a commercial property involving multiple suspects.</span>
-<span class="w">  </span><span class="nt">location</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Anytown District Court</span>
+<div class="highlight"><pre><span></span><code><span class="nt">criminal_prosecution_reference</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;CPR000001&quot;</span>
+<span class="w">  </span><span class="nt">created_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;10-08-2023&quot;</span>
+<span class="w">  </span><span class="nt">modified_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;15-08-2023&quot;</span>
+<span class="w">  </span><span class="nt">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;active&quot;</span>
+<span class="w">  </span><span class="nt">cpr_defendant</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;PER123456&quot;</span>
+<span class="w">  </span><span class="nt">cpr_offence_reason</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;MD71101&quot;</span>
+<span class="w">  </span><span class="nt">cpr_offence_sequence</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="w">  </span><span class="nt">notes</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Defendant</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">prior</span><span class="nv"> </span><span class="s">convictions.&quot;</span>
 <span class="w">  </span><span class="nt">related_documents</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DOC123</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DOC456</span>
-<span class="w">  </span><span class="nt">notes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">The case involves multiple defendants and victims, and the preliminary hearing is scheduled for the next month.</span>
-<span class="w">  </span><span class="nt">criminal_prosecution_reference</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">defendant_or_offender</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PART123</span>
-<span class="w">    </span><span class="nt">offence_reason</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">robbery</span>
-<span class="w">    </span><span class="nt">offence_reason_sequence</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
-<span class="w">  </span><span class="nt">participants</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PART123</span>
-<span class="w">      </span><span class="nt">role</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">defendant</span>
-<span class="w">      </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">John Doe</span>
-<span class="w">      </span><span class="nt">cpr</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CPR12345</span>
-<span class="w">      </span><span class="nt">contact_info</span><span class="p">:</span>
-<span class="w">        </span><span class="nt">email</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">johndoe@example.com</span>
-<span class="w">        </span><span class="nt">phone</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;+44</span><span class="nv"> </span><span class="s">123</span><span class="nv"> </span><span class="s">456</span><span class="nv"> </span><span class="s">789&quot;</span>
-<span class="w">        </span><span class="nt">postal_address</span><span class="p">:</span>
-<span class="w">          </span><span class="nt">uk_address</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">123 High Street, Anytown</span>
-<span class="w">          </span><span class="nt">uk_postcode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AT1 2BC</span>
-<span class="w">          </span><span class="nt">country</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">UK</span>
-<span class="w">      </span><span class="nt">organisation_unit_identifier</span><span class="p">:</span>
-<span class="w">        </span><span class="nt">ou_code_top_level</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Police Department</span>
-<span class="w">        </span><span class="nt">ou_code_bottom_level</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Arrests Division</span>
-<span class="w">        </span><span class="nt">ou_start_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2023-01-01&quot;</span>
-<span class="w">        </span><span class="nt">ou_end_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
-<span class="w">        </span><span class="nt">ou_notes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Active unit handling criminal arrests.</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PART456</span>
-<span class="w">      </span><span class="nt">role</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">defendant</span>
-<span class="w">      </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Jane Smith</span>
-<span class="w">      </span><span class="nt">cpr</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CPR67890</span>
-<span class="w">      </span><span class="nt">contact_info</span><span class="p">:</span>
-<span class="w">        </span><span class="nt">email</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">janesmith@example.com</span>
-<span class="w">        </span><span class="nt">phone</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;+44</span><span class="nv"> </span><span class="s">987</span><span class="nv"> </span><span class="s">654</span><span class="nv"> </span><span class="s">321&quot;</span>
-<span class="w">        </span><span class="nt">postal_address</span><span class="p">:</span>
-<span class="w">          </span><span class="nt">uk_address</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">456 Maple Avenue, Anytown</span>
-<span class="w">          </span><span class="nt">uk_postcode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AT3 5XY</span>
-<span class="w">          </span><span class="nt">country</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">UK</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PART789</span>
-<span class="w">      </span><span class="nt">role</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">victim</span>
-<span class="w">      </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Mark Johnson</span>
-<span class="w">      </span><span class="nt">cpr</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CPR98765</span>
-<span class="w">      </span><span class="nt">affiliation</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Private Citizen</span>
-<span class="w">      </span><span class="nt">contact_info</span><span class="p">:</span>
-<span class="w">        </span><span class="nt">email</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">markjohnson@example.com</span>
-<span class="w">        </span><span class="nt">phone</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;+44</span><span class="nv"> </span><span class="s">555</span><span class="nv"> </span><span class="s">123</span><span class="nv"> </span><span class="s">456&quot;</span>
-<span class="w">        </span><span class="nt">postal_address</span><span class="p">:</span>
-<span class="w">          </span><span class="nt">uk_address</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">789 Elm Street, Anytown</span>
-<span class="w">          </span><span class="nt">uk_postcode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AT6 9ZW</span>
-<span class="w">          </span><span class="nt">country</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">UK</span>
-<span class="w">  </span><span class="nt">hearings</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">HRG001</span>
-<span class="w">      </span><span class="nt">case_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CASE12345</span>
-<span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">preliminary_hearing</span>
-<span class="w">      </span><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2023-02-15&quot;</span>
-<span class="w">      </span><span class="nt">time</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;10:00&quot;</span>
-<span class="w">      </span><span class="nt">location</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Courtroom 2, Anytown District Court</span>
-<span class="w">      </span><span class="nt">language_indicator</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">English</span>
-<span class="w">      </span><span class="nt">documentation_language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">English</span>
-<span class="w">      </span><span class="nt">defendant_present</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="w">      </span><span class="nt">related_documents</span><span class="p">:</span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DOC456</span>
-<span class="w">      </span><span class="nt">report_requested_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2023-02-01&quot;</span>
-<span class="w">      </span><span class="nt">report_completed_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2023-02-10&quot;</span>
-<span class="w">  </span><span class="nt">offences</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">OFF123</span>
-<span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">robbery</span>
-<span class="w">      </span><span class="nt">cjs_offence_code</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CJS211</span>
-<span class="w">      </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Armed robbery at a commercial property</span>
-<span class="w">      </span><span class="nt">location</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">123 Market Street, Anytown</span>
-<span class="w">      </span><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2023-01-10&quot;</span>
-<span class="w">      </span><span class="nt">severity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">felony</span>
-<span class="w">      </span><span class="nt">legislation</span><span class="p">:</span>
-<span class="w">        </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Penal Code 211</span>
-<span class="w">        </span><span class="nt">jurisdiction</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">England and Wales</span>
-<span class="w">      </span><span class="nt">recordable_on_pnc_indicator</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="w">      </span><span class="nt">notifiable_to_home_office_indicator</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="w">      </span><span class="nt">custodial_indicator</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">max_c</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;DOC123&quot;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;DOC456&quot;</span>
+<span class="w">  </span><span class="nt">jurisdiction</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;England</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">Wales&quot;</span>
+<span class="w">  </span><span class="nt">court_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Central</span><span class="nv"> </span><span class="s">Criminal</span><span class="nv"> </span><span class="s">Court&quot;</span>
+<span class="w">  </span><span class="nt">related_entities</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;HEARING001&quot;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;OFF12345&quot;</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;EVD001&quot;</span>
 
-<span class="nt">ustodial_sentence_length_crown_court</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10 years</span>
-<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">max_fine_crown_court</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">unlimited</span>
-<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">victim_ids</span><span class="p p-Indicator">:</span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PART789</span>
-<span class="w w-Error">      </span><span class="nt">offender_ids</span><span class="p">:</span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PART123</span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PART456</span>
-<span class="w w-Error">  </span><span class="nt">results</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RES001</span>
-<span class="w">      </span><span class="nt">case_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CASE12345</span>
-<span class="w">      </span><span class="nt">result_code</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CJS001</span>
-<span class="w">      </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Preliminary hearing completed.</span>
-<span class="w">      </span><span class="nt">type_code</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">interim</span>
-<span class="w">      </span><span class="nt">england_wales_indicator</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="w">      </span><span class="nt">start_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2023-02-15&quot;</span>
-<span class="w">      </span><span class="nt">end_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
-<span class="w">      </span><span class="nt">last_amended_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2023-02-16&quot;</span>
-<span class="w">      </span><span class="nt">notes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Decision pending further evidence submission.</span>
-<span class="w">  </span><span class="nt">result_qualifiers</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">result_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RES001</span>
-<span class="w">      </span><span class="nt">qualifier_code</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RQ001</span>
-<span class="w">      </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Hearing result awaiting final ruling.</span>
-<span class="w">      </span><span class="nt">start_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2023-02-15&quot;</span>
-<span class="w">      </span><span class="nt">last_amended_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2023-02-16&quot;</span>
-<span class="w">      </span><span class="nt">end_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
-<span class="w">      </span><span class="nt">notes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Requires additional forensic analysis.</span>
-<span class="w">  </span><span class="nt">materials</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MAT001</span>
-<span class="w">      </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Forensic Report on CCTV Footage</span>
-<span class="w">      </span><span class="nt">category</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">forensic</span>
-<span class="w">      </span><span class="nt">source</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Anytown Forensic Lab</span>
-<span class="w">      </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;1&quot;</span>
-<span class="w">      </span><span class="nt">date_published</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2023-01-13&quot;</span>
-<span class="w">      </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Analysis of CCTV footage showing the robbery.</span>
-<span class="w">      </span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">English</span>
-<span class="w">      </span><span class="nt">jurisdiction</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">England and Wales</span>
-<span class="w">      </span><span class="nt">access_level</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">restricted</span>
-<span class="w">      </span><span class="nt">file_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PDF</span>
-<span class="w">      </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://forensiclabs.gov.uk/reports/MAT001.pdf</span>
-<span class="w">      </span><span class="nt">related_cases</span><span class="p">:</span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CASE12345</span>
-<span class="w">      </span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Dr. Jane Doe</span>
-<span class="w">      </span><span class="nt">usage_notes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">For use in court proceedings only.</span>
-<span class="w">      </span><span class="nt">expiry_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
-<span class="w">      </span><span class="nt">keywords</span><span class="p">:</span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CCTV</span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Forensic Report</span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Robbery</span>
-<span class="w">      </span><span class="nt">regulatory_compliance</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CJSE</span>
-<span class="w">      </span><span class="nt">ai_rules</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">No AI usage without case officer approval.</span>
+<span class="nt">hearing</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;HEAR12345&quot;</span>
+<span class="w">    </span><span class="nt">location</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;B</span><span class="nv"> </span><span class="s">Magistrates’</span><span class="nv"> </span><span class="s">Courts,</span><span class="nv"> </span><span class="s">Anytown</span><span class="nv"> </span><span class="s">Court&quot;</span>
+<span class="w">    </span><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;10-08-2023&quot;</span>
+<span class="w">    </span><span class="nt">time</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;10:00</span><span class="nv"> </span><span class="s">AM&quot;</span>
+<span class="w">    </span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;English&quot;</span>
+<span class="w">    </span><span class="nt">defendant_present</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">documentation_language</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;English&quot;</span>
+<span class="w">    </span><span class="nt">report_requested_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;15-07-2023&quot;</span>
+<span class="w">    </span><span class="nt">report_completed_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;20-07-2023&quot;</span>
+<span class="w">    </span><span class="nt">notes</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Defendant</span><span class="nv"> </span><span class="s">requested</span><span class="nv"> </span><span class="s">an</span><span class="nv"> </span><span class="s">adjournment.&quot;</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;HEAR12346&quot;</span>
+<span class="w">    </span><span class="nt">location</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;B</span><span class="nv"> </span><span class="s">Magistrates’</span><span class="nv"> </span><span class="s">Courts,</span><span class="nv"> </span><span class="s">Anytown</span><span class="nv"> </span><span class="s">Court&quot;</span>
+<span class="w">    </span><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;10-08-2023&quot;</span>
+<span class="w">    </span><span class="nt">time</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;10:00</span><span class="nv"> </span><span class="s">AM&quot;</span>
+<span class="w">    </span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;English&quot;</span>
+<span class="w">    </span><span class="nt">defendant_present</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">documentation_language</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;English&quot;</span>
+<span class="w">    </span><span class="nt">report_requested_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;15-07-2023&quot;</span>
+<span class="w">    </span><span class="nt">report_completed_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;20-07-2023&quot;</span>
+<span class="w">    </span><span class="nt">notes</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Defendant</span><span class="nv"> </span><span class="s">requested</span><span class="nv"> </span><span class="s">an</span><span class="nv"> </span><span class="s">adjournment.&quot;</span>
+
+<span class="nt">offence</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;OFF12345&quot;</span>
+<span class="w">    </span><span class="nt">cjs_offence_code</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;CJS001&quot;</span>
+<span class="w">    </span><span class="nt">category_code</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;theft&quot;</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Shoplifting&quot;</span>
+<span class="w">    </span><span class="nt">date_start</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;10-08-2023&quot;</span>
+<span class="w">    </span><span class="nt">date_end</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Shoplifting</span><span class="nv"> </span><span class="s">incident</span><span class="nv"> </span><span class="s">at</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">retail</span><span class="nv"> </span><span class="s">store.&quot;</span>
+<span class="w">    </span><span class="nt">legislation_id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Theft</span><span class="nv"> </span><span class="s">Act</span><span class="nv"> </span><span class="s">1968&quot;</span>
+<span class="w">    </span><span class="nt">welsh_legislation</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Deddf</span><span class="nv"> </span><span class="s">Lladrata</span><span class="nv"> </span><span class="s">1968&quot;</span>
+<span class="w">    </span><span class="nt">welsh_title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Ladrata</span><span class="nv"> </span><span class="s">Siopa&quot;</span>
+<span class="w">    </span><span class="nt">standard_offence_wording</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Theft</span><span class="nv"> </span><span class="s">from</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">retail</span><span class="nv"> </span><span class="s">establishment.&quot;</span>
+<span class="w">    </span><span class="nt">welsh_offence_wording</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Ladrata</span><span class="nv"> </span><span class="s">o</span><span class="nv"> </span><span class="s">siop</span><span class="nv"> </span><span class="s">manwerthu.&quot;</span>
+<span class="w">    </span><span class="nt">penalty</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Up</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">6</span><span class="nv"> </span><span class="s">months</span><span class="nv"> </span><span class="s">imprisonment</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">fine&quot;</span>
+<span class="w">    </span><span class="nt">recordable_on_pnc</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">notifiable_to_home_office</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">custodial_indicator</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">fine_indicator</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">max_custodial_sentence_length_mag_court</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">6</span>
+<span class="w">    </span><span class="nt">max_custodial_sentence_length_crown_court</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">60</span>
+<span class="w">    </span><span class="nt">max_fine_mag_court</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2500.00</span>
+<span class="w">    </span><span class="nt">max_fine_crown_court</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10000.00</span>
+<span class="w">    </span><span class="nt">dvla_code</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;DV123&quot;</span>
+<span class="w">    </span><span class="nt">home_office_classification</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;HO101&quot;</span>
+<span class="w">    </span><span class="nt">notes</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Offender</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">previous</span><span class="nv"> </span><span class="s">convictions.&quot;</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;OFF12346&quot;</span>
+<span class="w">    </span><span class="nt">cjs_offence_code</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;CJS002&quot;</span>
+<span class="w">    </span><span class="nt">category_code</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;theft&quot;</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Theft</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">Motor</span><span class="nv"> </span><span class="s">Vehicle&quot;</span>
+<span class="w">    </span><span class="nt">date_start</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;15-08-2023&quot;</span>
+<span class="w">    </span><span class="nt">date_end</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Theft</span><span class="nv"> </span><span class="s">incident</span><span class="nv"> </span><span class="s">involving</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">motor</span><span class="nv"> </span><span class="s">vehicle.&quot;</span>
+<span class="w">    </span><span class="nt">legislation_id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Theft</span><span class="nv"> </span><span class="s">Act</span><span class="nv"> </span><span class="s">1968&quot;</span>
+<span class="w">    </span><span class="nt">welsh_legislation</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Deddf</span><span class="nv"> </span><span class="s">Lladrata</span><span class="nv"> </span><span class="s">1968&quot;</span>
+<span class="w">    </span><span class="nt">welsh_title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Ladrata</span><span class="nv"> </span><span class="s">Cerbyd</span><span class="nv"> </span><span class="s">Modur&quot;</span>
+<span class="w">    </span><span class="nt">standard_offence_wording</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Theft</span><span class="nv"> </span><span class="s">from</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">motor</span><span class="nv"> </span><span class="s">vehicle.&quot;</span>
+<span class="w">    </span><span class="nt">welsh_offence_wording</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Ladrata</span><span class="nv"> </span><span class="s">o</span><span class="nv"> </span><span class="s">gerbyd</span><span class="nv"> </span><span class="s">modur.&quot;</span>
+<span class="w">    </span><span class="nt">penalty</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Up</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">2</span><span class="nv"> </span><span class="s">years</span><span class="nv"> </span><span class="s">imprisonment</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">fine&quot;</span>
+<span class="w">    </span><span class="nt">recordable_on_pnc</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">notifiable_to_home_office</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">custodial_indicator</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">fine_indicator</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">max_custodial_sentence_length_mag_court</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">12</span>
+<span class="w">    </span><span class="nt">max_custodial_sentence_length_crown_court</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">120</span>
+<span class="w">    </span><span class="nt">max_fine_mag_court</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5000.00</span>
+<span class="w">    </span><span class="nt">max_fine_crown_court</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">20000.00</span>
+<span class="w">    </span><span class="nt">dvla_code</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;DV456&quot;</span>
+<span class="w">    </span><span class="nt">home_office_classification</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;HO102&quot;</span>
+<span class="w">    </span><span class="nt">notes</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Vehicle</span><span class="nv"> </span><span class="s">theft</span><span class="nv"> </span><span class="s">incident.&quot;</span>
+
+<span class="nt">evidence</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;EVD001&quot;</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Forensic</span><span class="nv"> </span><span class="s">Report</span><span class="nv"> </span><span class="s">on</span><span class="nv"> </span><span class="s">CCTV</span><span class="nv"> </span><span class="s">Footage&quot;</span>
+<span class="w">    </span><span class="nt">category</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;forensic&quot;</span>
+<span class="w">    </span><span class="nt">source</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Anytown</span><span class="nv"> </span><span class="s">Forensic</span><span class="nv"> </span><span class="s">Lab&quot;</span>
+<span class="w">    </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;1&quot;</span>
+<span class="w">    </span><span class="nt">date_published</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2023-10-12&quot;</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Analysis</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">CCTV</span><span class="nv"> </span><span class="s">footage</span><span class="nv"> </span><span class="s">showing</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">robbery.&quot;</span>
+<span class="w">    </span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;English&quot;</span>
+<span class="w">    </span><span class="nt">jurisdiction</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;England</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">Wales&quot;</span>
+<span class="w">    </span><span class="nt">access_level</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;restricted&quot;</span>
+<span class="w">    </span><span class="nt">file_type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;PDF&quot;</span>
+<span class="w">    </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;http://forensiclabs.gov.uk/reports/EVD001.pdf&quot;</span>
+<span class="w">    </span><span class="nt">related_cases</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;CPR123456&quot;</span>
+<span class="w">    </span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Dr.</span><span class="nv"> </span><span class="s">Jane</span><span class="nv"> </span><span class="s">Doe&quot;</span>
+<span class="w">    </span><span class="nt">usage_notes</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;For</span><span class="nv"> </span><span class="s">use</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">court</span><span class="nv"> </span><span class="s">proceedings</span><span class="nv"> </span><span class="s">only.&quot;</span>
+<span class="w">    </span><span class="nt">expiry_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="w">    </span><span class="nt">keywords</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;CCTV&quot;</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;Forensic</span><span class="nv"> </span><span class="s">Report&quot;</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;Robbery&quot;</span>
+<span class="w">    </span><span class="nt">regulatory_compliance</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;CJSE&quot;</span>
+<span class="w">    </span><span class="nt">ai_rules</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;No</span><span class="nv"> </span><span class="s">AI</span><span class="nv"> </span><span class="s">usage</span><span class="nv"> </span><span class="s">without</span><span class="nv"> </span><span class="s">case</span><span class="nv"> </span><span class="s">officer</span><span class="nv"> </span><span class="s">approval.&quot;</span>
+
+<span class="nt">organisation_unit</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ORG12345&quot;</span>
+<span class="w">    </span><span class="nt">code</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;POLICE_UNIT_001&quot;</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Anytown</span><span class="nv"> </span><span class="s">Police</span><span class="nv"> </span><span class="s">Department&quot;</span>
+<span class="w">    </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;top&quot;</span>
+<span class="w">    </span><span class="nt">start_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;01-01-2020&quot;</span>
+<span class="w">    </span><span class="nt">end_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;31-12-2023&quot;</span>
+<span class="w">    </span><span class="nt">parent_code</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;MINISTRY_001&quot;</span>
+<span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;police</span><span class="nv"> </span><span class="s">station&quot;</span>
+<span class="w">    </span><span class="nt">legacy_code</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;OLD_CODE_123&quot;</span>
+<span class="w">    </span><span class="nt">notes</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Merged</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">another</span><span class="nv"> </span><span class="s">unit</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">2023.&quot;</span>
+
+<span class="nt">person</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;PER12345&quot;</span>
+<span class="w">    </span><span class="nt">given_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;John&quot;</span>
+<span class="w">    </span><span class="nt">family_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Doe&quot;</span>
+<span class="w">    </span><span class="nt">role</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">code</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Defe&quot;</span>
+<span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;The</span><span class="nv"> </span><span class="s">accused</span><span class="nv"> </span><span class="s">individual&quot;</span>
+<span class="w">        </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Defendant&quot;</span>
+<span class="w">        </span><span class="nt">start_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2020-01-01&quot;</span>
+<span class="w">        </span><span class="nt">end_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2023-12-31&quot;</span>
+<span class="w">        </span><span class="nt">last_amended_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-05-15&quot;</span>
+<span class="w">        </span><span class="nt">qualification_code</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;QLF002&quot;</span>
+<span class="w">        </span><span class="nt">status_code</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ACTIVE&quot;</span>
+<span class="w">        </span><span class="nt">notes</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Role</span><span class="nv"> </span><span class="s">status</span><span class="nv"> </span><span class="s">updated</span><span class="nv"> </span><span class="s">based</span><span class="nv"> </span><span class="s">on</span><span class="nv"> </span><span class="s">court</span><span class="nv"> </span><span class="s">order.&quot;</span>
+<span class="w">    </span><span class="nt">date_of_birth</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;01-01-1980&quot;</span>
+<span class="w">    </span><span class="nt">gender_type_code</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;male&quot;</span>
+<span class="w">    </span><span class="nt">national_insurance_number</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;QQ123456C&quot;</span>
+<span class="w">    </span><span class="nt">address</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">address_line_1</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;123</span><span class="nv"> </span><span class="s">High</span><span class="nv"> </span><span class="s">Street&quot;</span>
+<span class="w">        </span><span class="nt">address_line_2</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Flat</span><span class="nv"> </span><span class="s">2B&quot;</span>
+<span class="w">        </span><span class="nt">town_city</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Anytown&quot;</span>
+<span class="w">        </span><span class="nt">county</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Anyshire&quot;</span>
+<span class="w">        </span><span class="nt">postcode</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;AB12</span><span class="nv"> </span><span class="s">3CD&quot;</span>
+<span class="w">        </span><span class="nt">country</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;United</span><span class="nv"> </span><span class="s">Kingdom&quot;</span>
+<span class="w">        </span><span class="nt">start_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2020-01-01&quot;</span>
+<span class="w">        </span><span class="nt">end_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2023-12-31&quot;</span>
+<span class="w">        </span><span class="nt">address_type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;residential&quot;</span>
+<span class="w">        </span><span class="nt">notes</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;This</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">defendant&#39;s</span><span class="nv"> </span><span class="s">previous</span><span class="nv"> </span><span class="s">address.&quot;</span>
+<span class="w">    </span><span class="nt">ethnicity_self_defined_code</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;White</span><span class="nv"> </span><span class="s">British&quot;</span>
+<span class="w">    </span><span class="nt">religion</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Christian&quot;</span>
+<span class="w">    </span><span class="nt">arrest_summons_number</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ASN123456&quot;</span>
+<span class="w">    </span><span class="nt">criminal_records_office_number</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;CRO123456&quot;</span>
+<span class="w">    </span><span class="nt">driving_licence_number</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;D1234567&quot;</span>
+<span class="w">    </span><span class="nt">passport_number</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;123456789&quot;</span>
+<span class="w">    </span><span class="nt">police_national_computer_id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;PNC123456&quot;</span>
+<span class="w">    </span><span class="nt">police_worker_collar_number</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;PC123&quot;</span>
+<span class="w">    </span><span class="nt">noms_number</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;NOMS12345&quot;</span>
+<span class="w">    </span><span class="nt">language_requirement</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;English&quot;</span>
+<span class="w">    </span><span class="nt">contact_details</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">phone</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;+44</span><span class="nv"> </span><span class="s">123</span><span class="nv"> </span><span class="s">456</span><span class="nv"> </span><span class="s">7890&quot;</span>
+<span class="w">      </span><span class="nt">email</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;john.doe@example.com&quot;</span>
+<span class="w">    </span><span class="nt">security_remarks</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Monitored</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">high-risk</span><span class="nv"> </span><span class="s">status.&quot;</span>
+<span class="w">    </span><span class="nt">perceived_birth_year</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1980</span>
+<span class="w">    </span><span class="nt">occupation_code</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;OCC123&quot;</span>
+<span class="w">    </span><span class="nt">youth_offending_team_unique_person_id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;YOT123&quot;</span>
+<span class="w">    </span><span class="nt">no_fixed_abode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">notes</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Previously</span><span class="nv"> </span><span class="s">convicted</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">similar</span><span class="nv"> </span><span class="s">offences.&quot;</span>
+
+<span class="nt">result</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;RES12345&quot;</span>
+<span class="w">    </span><span class="nt">cjs_result_code</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;CJS001&quot;</span>
+<span class="w">    </span><span class="nt">result_description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Custodial</span><span class="nv"> </span><span class="s">sentence</span><span class="nv"> </span><span class="s">imposed.&quot;</span>
+<span class="w">    </span><span class="nt">result_type_code</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;final&quot;</span>
+<span class="w">    </span><span class="nt">england_wales_indicator</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;yes&quot;</span>
+<span class="w">    </span><span class="nt">cjs_result_code_start_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2020-01-01&quot;</span>
+<span class="w">    </span><span class="nt">cjs_result_code_end_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2023-12-31&quot;</span>
+<span class="w">    </span><span class="nt">cjs_result_code_last_amended_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-05-15&quot;</span>
+<span class="w">    </span><span class="nt">result_applicable_qualifier_code</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;RQ002&quot;</span>
+<span class="w">    </span><span class="nt">offence_remand_status_code</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;P</span><span class="nv"> </span><span class="s">Conditional</span><span class="nv"> </span><span class="s">bail</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">pre-release</span><span class="nv"> </span><span class="s">conditions&quot;</span>
+<span class="w">    </span><span class="nt">duration_quantity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">12</span>
+<span class="w">    </span><span class="nt">date_quantity</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2023-09-01&quot;</span>
+<span class="w">    </span><span class="nt">time_quantity</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;14:00:00&quot;</span>
+<span class="w">    </span><span class="nt">amount_quantity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">500.00</span>
+<span class="w">    </span><span class="nt">number_quantity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="w">    </span><span class="nt">text_quantity</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Community</span><span class="nv"> </span><span class="s">service</span><span class="nv"> </span><span class="s">order&quot;</span>
+<span class="w">    </span><span class="nt">cjs_result_code_notes</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Details</span><span class="nv"> </span><span class="s">regarding</span><span class="nv"> </span><span class="s">appeal</span><span class="nv"> </span><span class="s">conditions.&quot;</span>
+<span class="w">    </span><span class="nt">result_qualifier</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;QUAL12345&quot;</span>
+<span class="w">      </span><span class="nt">code</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;RQ001&quot;</span>
+<span class="w">      </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Indicates</span><span class="nv"> </span><span class="s">offence</span><span class="nv"> </span><span class="s">was</span><span class="nv"> </span><span class="s">racially</span><span class="nv"> </span><span class="s">aggravated.&quot;</span>
+<span class="w">      </span><span class="nt">start_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2020-01-01&quot;</span>
+<span class="w">      </span><span class="nt">end_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2023-12-31&quot;</span>
+<span class="w">      </span><span class="nt">last_amended_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-05-15&quot;</span>
+<span class="w">      </span><span class="nt">notes</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Qualifier</span><span class="nv"> </span><span class="s">amended</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">align</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">new</span><span class="nv"> </span><span class="s">legislation.&quot;</span>
 </code></pre></div>
 
 
