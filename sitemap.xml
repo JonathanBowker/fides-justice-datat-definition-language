@@ -1,95 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://jonathanbowker.github.io/fides/</loc>
+         <loc>https://jonathanbowker.github.io/brando-ddl/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/fides/about/about/</loc>
+         <loc>https://jonathanbowker.github.io/brando-ddl/contact/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/fides/about/forum/</loc>
+         <loc>https://jonathanbowker.github.io/brando-ddl/brand_strategy/core_concepts/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/fides/blog/2024-01-01-welcome/</loc>
+         <loc>https://jonathanbowker.github.io/brando-ddl/brand_strategy/creating_yaml_guidelines/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/fides/blog/2024-02-15-update/</loc>
+         <loc>https://jonathanbowker.github.io/brando-ddl/brand_strategy/defining_elements/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/fides/data_sets/0.overview/</loc>
+         <loc>https://jonathanbowker.github.io/brando-ddl/examples/sample_yaml_files/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/fides/data_sets/1.criminal_prosecution_reference/</loc>
+         <loc>https://jonathanbowker.github.io/brando-ddl/examples/template_library/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/fides/data_sets/10.system_id/</loc>
+         <loc>https://jonathanbowker.github.io/brando-ddl/examples/use_cases/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/fides/data_sets/11.uk_internal_country/</loc>
+         <loc>https://jonathanbowker.github.io/brando-ddl/implementation/best_practices/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/fides/data_sets/12.evidence/</loc>
+         <loc>https://jonathanbowker.github.io/brando-ddl/implementation/integrating_with_ai/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/fides/data_sets/13.case/</loc>
+         <loc>https://jonathanbowker.github.io/brando-ddl/implementation/prompt_engineering/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/fides/data_sets/2.hearing/</loc>
+         <loc>https://jonathanbowker.github.io/brando-ddl/introduction/about/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/fides/data_sets/3.offence/</loc>
+         <loc>https://jonathanbowker.github.io/brando-ddl/introduction/generative_ai/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/fides/data_sets/4.organisation_unit_identifier/</loc>
+         <loc>https://jonathanbowker.github.io/brando-ddl/introduction/why_yaml/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/fides/data_sets/5.person/</loc>
+         <loc>https://jonathanbowker.github.io/brando-ddl/resources/additional_reading/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/fides/data_sets/6.postal_address/</loc>
+         <loc>https://jonathanbowker.github.io/brando-ddl/resources/glossary/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/fides/data_sets/7.result_fixed/</loc>
+         <loc>https://jonathanbowker.github.io/brando-ddl/resources/tools_plugins/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/fides/data_sets/8.result_qualifier_fixed/</loc>
+         <loc>https://jonathanbowker.github.io/brando-ddl/verbal_identity/messaging_frameworks/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/fides/data_sets/9.role/</loc>
+         <loc>https://jonathanbowker.github.io/brando-ddl/verbal_identity/tone_of_voice/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/fides/examples/json-examples/</loc>
+         <loc>https://jonathanbowker.github.io/brando-ddl/verbal_identity/verbal_elements/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/fides/examples/yaml-examples/</loc>
+         <loc>https://jonathanbowker.github.io/brando-ddl/visual_identity/imagery_guidelines/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/fides/references/data_standards/</loc>
+         <loc>https://jonathanbowker.github.io/brando-ddl/visual_identity/typography_colours/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/fides/references/glossary/</loc>
+         <loc>https://jonathanbowker.github.io/brando-ddl/visual_identity/visual_elements/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
 </urlset>
