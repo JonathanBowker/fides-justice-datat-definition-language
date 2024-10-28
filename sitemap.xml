@@ -1,95 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://jonathanbowker.github.io/brando-ddl/</loc>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/brando-ddl/contact/</loc>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/blog/2024-01-01-welcome/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/brando-ddl/brand_strategy/core_concepts/</loc>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/blog/2024-02-15-update/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/brando-ddl/brand_strategy/creating_yaml_guidelines/</loc>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/data_catalogue/0.overview/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/brando-ddl/brand_strategy/defining_elements/</loc>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/data_catalogue/1.criminal_prosecution_reference/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/brando-ddl/examples/sample_yaml_files/</loc>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/data_catalogue/10.system_id/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/brando-ddl/examples/template_library/</loc>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/data_catalogue/11.uk_internal_country/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/brando-ddl/examples/use_cases/</loc>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/data_catalogue/12.evidence/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/brando-ddl/implementation/best_practices/</loc>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/data_catalogue/2.hearing/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/brando-ddl/implementation/integrating_with_ai/</loc>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/data_catalogue/3.offence/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/brando-ddl/implementation/prompt_engineering/</loc>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/data_catalogue/4.organisation_unit_identifier/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/brando-ddl/introduction/about/</loc>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/data_catalogue/5.person/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/brando-ddl/introduction/generative_ai/</loc>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/data_catalogue/6.postal_address/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/brando-ddl/introduction/why_yaml/</loc>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/data_catalogue/7.result_fixed/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/brando-ddl/resources/additional_reading/</loc>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/data_catalogue/8.result_qualifier_fixed/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/brando-ddl/resources/glossary/</loc>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/data_catalogue/9.role/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/brando-ddl/resources/tools_plugins/</loc>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/examples/json-examples/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/brando-ddl/verbal_identity/messaging_frameworks/</loc>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/examples/yaml-examples/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/brando-ddl/verbal_identity/tone_of_voice/</loc>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/references/data_standards/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/brando-ddl/verbal_identity/verbal_elements/</loc>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/references/glossary/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
     <url>
-         <loc>https://jonathanbowker.github.io/brando-ddl/visual_identity/imagery_guidelines/</loc>
-         <lastmod>2024-10-28</lastmod>
-    </url>
-    <url>
-         <loc>https://jonathanbowker.github.io/brando-ddl/visual_identity/typography_colours/</loc>
-         <lastmod>2024-10-28</lastmod>
-    </url>
-    <url>
-         <loc>https://jonathanbowker.github.io/brando-ddl/visual_identity/visual_elements/</loc>
+         <loc>https://jonathanbowker.github.io/criminal-justice-schema/taxonomy/overview/</loc>
          <lastmod>2024-10-28</lastmod>
     </url>
 </urlset>
